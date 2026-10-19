@@ -14,7 +14,7 @@ It is run for 25 questions and for two bi-encoders, and the answers come from a 
 | Section | Content |
 |---|---|
 | 1 | Load the PDF (two columns, read one column at a time) and cut it into 1,504 chunks of 200 words with a 40-word overlap |
-| 2 | The 25 questions and a gold phrase for each; the passage each phrase matches is printed so every label can be checked |
+| 2 | The 25 questions and, for each, the SRD passage that answers it (chosen by hand, tied to the chunks by a short quote); the matching passage is printed so every choice can be checked |
 | 3 | Stage 1 (bi-encoder + FAISS, top 10) and stage 2 (cross-encoder re-sort) for both embedders, with stage timings |
 | 4 | The retrieved chunks written to `outputs/retrieved_chunks.md` |
 | 5-6 | Retrieval metrics, rank shift per question, results by question type, cost of running the cross-encoder on every chunk |
@@ -67,7 +67,7 @@ Tested with torch 2.11 (CUDA 12.8), transformers 5.20, sentence-transformers 6.1
 `torchvision` because its processor is multimodal. On these cards use float16 for Qwen and float32 for EmbeddingGemma 2 (no native bfloat16).
 
 ## Limits
-25 questions on one rulebook is small, and 8 of them were chosen because retrieval fails on them. The gold phrases, gold key facts and answer
+25 questions on one rulebook is small, and 8 of them were chosen because retrieval fails on them. The gold passages, gold key facts and answer
 verdicts were written and judged by hand. The cross-encoder is a general web-search model, not trained on rules text.
 
 ## Attribution
