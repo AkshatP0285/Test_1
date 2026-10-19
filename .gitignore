@@ -1,0 +1,6 @@
+.env
+*.env
+.gemini_env
+__pycache__/
+.ipynb_checkpoints/
+RAG_LMA_Assignment_v1.pdf

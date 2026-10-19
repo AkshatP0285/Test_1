@@ -1,0 +1,25 @@
+{
+ "latency": [
+  {
+   "step": "Stage 1: bi-encoder embed query + FAISS top-10",
+   "mean_ms": 11.3,
+   "std_ms": 1.6
+  },
+  {
+   "step": "Stage 2: cross-encoder on 10 pairs",
+   "mean_ms": 19.0,
+   "std_ms": 0.5
+  },
+  {
+   "step": "LLM generation (Gemini API, per answer)",
+   "mean_ms": 948.9,
+   "std_ms": NaN
+  },
+  {
+   "step": "Cross-encoder on ALL 1504 chunks (1 query)",
+   "mean_ms": 1786.4,
+   "std_ms": 12.4
+  }
+ ],
+ "per_chunk_ms": 1.1877659574468085
+}

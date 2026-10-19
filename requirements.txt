@@ -1,0 +1,10 @@
+torch
+sentence-transformers
+faiss-cpu
+pymupdf
+google-genai
+pandas
+numpy
+jupyter
+nbconvert
+ipykernel

@@ -1,0 +1,13 @@
+embedder,category,n,recall@3 base,recall@3 rerank
+bge-small,Counter-example,2,0,0
+bge-small,Exception / corner,8,6,7
+bge-small,Keyword trap,1,0,1
+bge-small,Keyword trap (synonym),1,1,1
+bge-small,Negation / constraint,6,5,6
+bge-small,Neutral rule,7,6,6
+embeddinggemma-2,Counter-example,2,0,1
+embeddinggemma-2,Exception / corner,8,5,6
+embeddinggemma-2,Keyword trap,1,0,1
+embeddinggemma-2,Keyword trap (synonym),1,1,1
+embeddinggemma-2,Negation / constraint,6,4,6
+embeddinggemma-2,Neutral rule,7,6,6

@@ -1,0 +1,1833 @@
+{
+ "results": [
+  {
+   "embedder": "bge-small",
+   "category": "Keyword trap",
+   "query": "What breaks my focus on a spell?",
+   "pipeline": "baseline",
+   "thinking": false,
+   "context_ids": [
+    334,
+    371,
+    368
+   ],
+   "gold_in_context": false,
+   "answer": "Taking damage while concentrating on a spell requires a Constitution saving throw to maintain concentration. Casting another spell that requires concentration breaks your focus. Normal activity, such as moving and attacking, doesn\u2019t interfere with concentration. The provided context does not answer this.",
+   "think": "",
+   "new_tokens": 50,
+   "seconds": 3.292415138799697,
+   "truncated": false
+  },
+  {
+   "embedder": "bge-small",
+   "category": "Keyword trap",
+   "query": "What breaks my focus on a spell?",
+   "pipeline": "baseline",
+   "thinking": true,
+   "context_ids": [
+    334,
+    371,
+    368
+   ],
+   "gold_in_context": false,
+   "answer": "The provided context states that concentration can be broken by casting another concentration-requiring spell or taking damage. Additionally, normal activity like moving or attacking doesn't interfere, but distractions (e.g., searching) may break concentration.  \n**Exception:** Casting another spell requiring concentration or taking damage explicitly break focus.",
+   "think": "Okay, let's see. The user is asking what breaks your focus on a spell in D&D 5e. I need to check the provided context passages to find the answer.\n\nLooking at Passage 2, page 102: It mentions that concentration can be broken by casting another spell that requires concentration. Also, taking damage while concentrating requires a Constitution save. So those are two factors. Additionally, Passage 1 talks about concentration being broken if your attention is diverted, like when you take the Search action or other activities. Wait, but the question is specifically about what breaks focus, which is concentration. \n\nPassage 2 lists casting another concentration spell and taking damage as factors. Also, moving and attacking normally don't interfere, but other actions might. However, the main points from Passage 2 are casting another spell requiring concentration and taking damage. The answer should include those two. Also, maybe the example in Passage 1 about readying magic missile breaking concentration if you take damage before releasing it. But the main factors are casting another spell and taking damage. So the answer is those two things.",
+   "new_tokens": 290,
+   "seconds": 18.20401683798991,
+   "truncated": false
+  },
+  {
+   "embedder": "bge-small",
+   "category": "Keyword trap",
+   "query": "What breaks my focus on a spell?",
+   "pipeline": "rerank",
+   "thinking": false,
+   "context_ids": [
+    334,
+    372,
+    371
+   ],
+   "gold_in_context": true,
+   "answer": "Breaking concentration on a spell includes casting another spell that requires concentration, taking damage (which requires a Constitution saving throw), being incapacitated or killed, and certain environmental phenomena that might require a Constitution saving throw. Normal activity like moving and attacking does not interfere with concentration. The provided context does not answer this.",
+   "think": "",
+   "new_tokens": 62,
+   "seconds": 4.047743981005624,
+   "truncated": false
+  },
+  {
+   "embedder": "bge-small",
+   "category": "Keyword trap",
+   "query": "What breaks my focus on a spell?",
+   "pipeline": "rerank",
+   "thinking": true,
+   "context_ids": [
+    334,
+    372,
+    371
+   ],
+   "gold_in_context": true,
+   "answer": "Factors that break concentration on a spell include taking damage (requiring a Constitution saving throw), being incapacitated or killed, casting another concentration-requiring spell, and certain environmental phenomena (as determined by the GM). Normal activity like moving or attacking does not interfere.",
+   "think": "Okay, let's see. The user is asking what breaks your focus on a spell in D&D 5e. I need to check the provided context passages to find the answer.\n\nLooking at Passage 1, it mentions that concentration is required for a spell, and if broken, the spell dissipates. It also gives an example where readying magic missile could break concentration. But the main factors are in Passage 2 and 3.\n\nPassage 2 says taking damage requires a Constitution save to maintain concentration. If you take damage from multiple sources, you make separate saves. Also, being incapacitated or killed breaks concentration. Additionally, the GM might have environmental phenomena require a save.\n\nPassage 3 adds that casting another concentration-requiring spell breaks focus. Also, normal activity like moving and attacking doesn't interfere, but factors like casting another spell, taking damage, or being incapacitated break it.\n\nSo the main points are: taking damage (with saves), being incapacitated/killed, casting another concentration spell, and possible environmental effects as per GM discretion. The answer should list these factors concisely.",
+   "new_tokens": 282,
+   "seconds": 17.694204296916723,
+   "truncated": false
+  },
+  {
+   "embedder": "bge-small",
+   "category": "Negation / constraint",
+   "query": "Do I need to see a target to attack it?",
+   "pipeline": "baseline",
+   "thinking": false,
+   "context_ids": [
+    340,
+    334,
+    341
+   ],
+   "gold_in_context": false,
+   "answer": "Yes, you need to see a target to attack it. To make a melee attack, the target must be within 5 feet of you. You can make an opportunity attack when a hostile creature moves out of your reach, but you must see the creature to attack it. The provided context does not explicitly mention line of sight for all attacks, but it does specify that opportunity attacks require seeing the provoking creature.",
+   "think": "",
+   "new_tokens": 84,
+   "seconds": 5.399327990133315,
+   "truncated": false
+  },
+  {
+   "embedder": "bge-small",
+   "category": "Negation / constraint",
+   "query": "Do I need to see a target to attack it?",
+   "pipeline": "baseline",
+   "thinking": true,
+   "context_ids": [
+    340,
+    334,
+    341
+   ],
+   "gold_in_context": false,
+   "answer": "The provided context does not answer this.",
+   "think": "Okay, let's tackle this question. The user is asking if they need to see a target to attack it. I need to check the provided context passages to find the answer.\n\nLooking at Passage 1, it talks about opportunity attacks, where you can attack when a hostile creature moves out of your reach. It mentions that you can make an opportunity attack when a hostile creature that you can see moves out of your reach. So, seeing the target is required for opportunity attacks. But the question is general\u2014do you need to see a target to attack it in any case?\n\nPassage 2 mentions the Search action and using objects, but not directly about attacking. Passage 3 repeats the opportunity attack info. The main point here is that for opportunity attacks, you need to see the creature. However, the question is broader. \n\nIn D&D 5e, generally, you need to see a target to attack it. The rules state that you can attack a target within your range, and for opportunity attacks, you must see the creature moving out of reach. But the question is whether seeing is required for any attack. The context here specifically mentions opportunity attacks requiring visibility. However, the general rule is that you need to see a target to attack it, as per the basic attack rules. But the provided passages don't explicitly state that. The passages only mention the specific case of opportunity attacks. \n\nSince the question is about any attack, but the context only discusses opportunity attacks requiring sight, maybe the answer is that you need to see the target for opportunity attacks, but the general rule isn't covered here. However, the user's question is whether you need to see a target to attack it. The answer in the context is that for opportunity attacks, you must see the creature. But the general rule might be that you need to see the target for any attack. However, the context doesn't explicitly state that. The answer might be that the context doesn't answer this, but I need to check again.\n\nWait, in the context, the first passage says \"you can make an opportunity attack when a hostile creature that you can see moves out of your reach.\" So for opportunity attacks, you need to see the target. But for regular attacks, the rules don't mention visibility. However, the general rule in D&D is that you need to see a target to attack it. But the provided passages don't explicitly state that. The answer might be that the context doesn't answer this. But the user's question is about any attack. The context only mentions opportunity attacks. So the answer would be that the context doesn't answer this. But wait, the first passage says that when making a melee attack, you attack targets within 5 feet. But that doesn't mention seeing. However, the general rule in D&D is that you need to see a target to attack it. But the context here only specifies for opportunity attacks. Therefore, the answer is that the context does not answer this. Wait, but the first passage says that you can make an opportunity attack when a hostile creature that you can see moves out of your reach. So for opportunity attacks, you need to see the target. But for regular attacks, the context doesn't specify. However, the question is general. The answer is that the context doesn't answer this. But maybe the answer is that you do need to see the target for opportunity attacks, but the question is about any attack. The answer is that the context does not answer this. Alternatively, the answer is that you need to see the target for opportunity attacks, but the general rule is not covered here. So the answer would be that the context does not answer this. Wait, the user is asking if you need to see a target to attack it. The context only mentions that for opportunity attacks, you need to see the target. But for regular attacks, the rules don't mention visibility. However, the general rule in D&D is that you need to see a target to attack it. But the context provided here doesn't state that. Therefore, the answer is that the context does not answer this. But the answer might be that you need to see the target for opportunity attacks, but the question is general. Therefore, the answer is that the context does not answer this.",
+   "new_tokens": 884,
+   "seconds": 54.991339904023334,
+   "truncated": false
+  },
+  {
+   "embedder": "bge-small",
+   "category": "Negation / constraint",
+   "query": "Do I need to see a target to attack it?",
+   "pipeline": "rerank",
+   "thinking": false,
+   "context_ids": [
+    338,
+    342,
+    337
+   ],
+   "gold_in_context": true,
+   "answer": "No, you do not need to see a target to attack it. If you attack a target you can\u2019t see, you have disadvantage on the attack roll. If the target isn\u2019t in the location you targeted, you automatically miss. However, if the target can\u2019t see you, you have advantage on attack rolls against it.",
+   "think": "",
+   "new_tokens": 67,
+   "seconds": 4.378359531052411,
+   "truncated": false
+  },
+  {
+   "embedder": "bge-small",
+   "category": "Negation / constraint",
+   "query": "Do I need to see a target to attack it?",
+   "pipeline": "rerank",
+   "thinking": true,
+   "context_ids": [
+    338,
+    342,
+    337
+   ],
+   "gold_in_context": true,
+   "answer": "You do not need to see a target to attack it, but you have disadvantage on attack rolls when you can\u2019t see the target. If the target can\u2019t see you, you gain advantage. The GM typically does not specify whether an attack missed due to unseen targeting.",
+   "think": "Okay, let's tackle this question. The user is asking if they need to see a target to attack it in D&D 5e. I need to check the provided passages to find the answer.\n\nLooking at Passage 1, page 94: It mentions that when you attack a target you can't see, you have disadvantage on the attack roll. Also, if the target isn't in the location you targeted, you automatically miss. However, if the creature can't see you, you have advantage. So, the answer here is that you don't need to see the target, but there are penalties. But wait, the user is asking if seeing is required. The passage says that when you can't see the target, you have disadvantage, but you can still attack. So the answer would be that you don't need to see the target, but you have disadvantage. However, if the target is unseen, you have advantage. Wait, the passage says when a creature can't see you, you have advantage. So maybe the answer is that you don't need to see the target, but depending on the situation, you might have advantage or disadvantage. But the question is whether you need to see the target. The answer is no, you don't need to see the target, but you have disadvantage if you can't see it. However, if the target can't see you, you have advantage. So the answer is that you don't need to see the target, but you have disadvantage if you can't see it. The answer should be concise. The passages do mention that you can attack without seeing the target, but with disadvantage. So the answer is yes, you can attack without seeing the target, but with disadvantage. Wait, the question is \"Do I need to see a target to attack it?\" So the answer is no, you don't need to see the target, but you have disadvantage if you can't see it. The passages say that when you attack a target you can't see, you have disadvantage. So the answer is that you don't need to see the target, but you have disadvantage. The answer should be that you don't need to see the target, but you have disadvantage on the attack roll if you can't see it. Also, if the target is unseen, you have advantage. But the question is about attacking a target, so the answer is that you don't need to see the target, but you have disadvantage if you can't see it. The answer should be that you don't need to see the target, but you have disadvantage on attack rolls when you can't see it. The answer is yes, you can attack without seeing the target, but with disadvantage. The answer is that you don't need to see the target, but you have disadvantage if you can't see it. The answer is that you don't need to see the target, but you have disadvantage on attack rolls when you can't see it. The answer is that you don't need to see the target, but you have disadvantage on attack rolls when you can't see it. The answer is that you don't need to see the target, but you have disadvantage on attack rolls if you can't see it. The answer is that you don't need to see the target, but you have disadvantage on attack rolls when you can't see it. The answer is that you don't need to see the target, but you have disadvantage on attack rolls when you can't see it. The answer is that you don't need to see the target, but you have disadvantage on attack rolls when you can't see it. The answer is that you don't need to see the target, but you have disadvantage on attack rolls when you can't see it.",
+   "new_tokens": 825,
+   "seconds": 51.33617303217761,
+   "truncated": false
+  },
+  {
+   "embedder": "bge-small",
+   "category": "Exception / corner",
+   "query": "Can I punish an unseen enemy that runs away from me?",
+   "pipeline": "baseline",
+   "thinking": false,
+   "context_ids": [
+    282,
+    332,
+    338
+   ],
+   "gold_in_context": false,
+   "answer": "The provided context does not answer this.",
+   "think": "",
+   "new_tokens": 9,
+   "seconds": 0.7896839319728315,
+   "truncated": false
+  },
+  {
+   "embedder": "bge-small",
+   "category": "Exception / corner",
+   "query": "Can I punish an unseen enemy that runs away from me?",
+   "pipeline": "baseline",
+   "thinking": true,
+   "context_ids": [
+    282,
+    332,
+    338
+   ],
+   "gold_in_context": false,
+   "answer": "The provided context does not answer this. The rules discuss attacking unseen enemies and hidden creatures but do not address punishing an enemy that has fled or run away.",
+   "think": "Okay, let's tackle this question. The user is asking if they can punish an unseen enemy that runs away from them. I need to check the provided context passages to find the answer.\n\nLooking at Passage 1, it talks about hiding and passive Perception. It mentions that if you're hidden, you can gain advantage on attacks. But when you attack, you give away your location if you hit or miss. However, this is about attacking a creature that's unseen. \n\nPassage 3 says that if a creature can't see you, you have advantage on attack rolls. But if you're hidden and make an attack, you give away your location when you hit or miss. However, the question is about an enemy that runs away. \n\nThe passages don't mention anything about chasing or pursuing an enemy that has fled. They focus on attacking while hidden or unseen. There's no rule about punishing an enemy that has escaped. The context doesn't address scenarios where the enemy is no longer in the area or has fled. So, based on the given passages, there's no information on punishing a fleeing enemy. The answer should state that the context doesn't cover this situation.",
+   "new_tokens": 274,
+   "seconds": 17.203257734887302,
+   "truncated": false
+  },
+  {
+   "embedder": "bge-small",
+   "category": "Exception / corner",
+   "query": "Can I punish an unseen enemy that runs away from me?",
+   "pipeline": "rerank",
+   "thinking": false,
+   "context_ids": [
+    338,
+    332,
+    340
+   ],
+   "gold_in_context": true,
+   "answer": "No, you cannot make an opportunity attack against an unseen enemy. Opportunity attacks require the enemy to be seen and moving out of your reach. Unseen attackers are not considered to be \"seen\" for the purposes of opportunity attacks.",
+   "think": "",
+   "new_tokens": 47,
+   "seconds": 3.1280800711829215,
+   "truncated": false
+  },
+  {
+   "embedder": "bge-small",
+   "category": "Exception / corner",
+   "query": "Can I punish an unseen enemy that runs away from me?",
+   "pipeline": "rerank",
+   "thinking": true,
+   "context_ids": [
+    338,
+    332,
+    340
+   ],
+   "gold_in_context": true,
+   "answer": "You cannot make an opportunity attack against an unseen enemy because opportunity attacks require you to see the creature moving out of your reach. Unseen creatures are not visible, so you cannot provoke or respond to their movement.",
+   "think": "Okay, let's tackle this question. The user is asking if they can punish an unseen enemy that runs away from them in D&D 5e. I need to check the provided context passages to find the answer.\n\nLooking at Passage 1, it talks about ranged attacks and when you can attack targets. It mentions that if a creature can't see you, you have advantage on attack rolls. But the question is about an unseen enemy that's running away. \n\nPassage 3 mentions opportunity attacks. It says you can make an opportunity attack when a hostile creature moves out of your reach. The key here is whether the enemy is unseen. The passage says you can make an opportunity attack if the creature moves out of your reach. However, the enemy is unseen, so maybe they can't be targeted normally. \n\nWait, the first passage says that if a creature can't see you, you have advantage on attack rolls. But if the enemy is unseen, maybe they can't be targeted for an opportunity attack because you can't see them. But the opportunity attack requires you to see the creature moving out of your reach. If the enemy is unseen, perhaps you can't see them, so you can't make an opportunity attack. \n\nBut the question is about punishing an unseen enemy that runs away. The answer might be that you can't make an opportunity attack if the enemy is unseen because you can't see them. However, the first passage says that if you are hidden (unseen and unheard), you give away your location when you attack. But if the enemy is unseen, maybe they can't be targeted for an opportunity attack because you can't see them. \n\nAlternatively, maybe the unseen enemy is not visible, so you can't provoke an opportunity attack. The answer would be that you can't make an opportunity attack against an unseen enemy because you can't see them. Therefore, the answer is no, you can't punish them by making an opportunity attack. But I need to check the exact wording. \n\nPassage 3 says \"You can make an opportunity attack when a hostile creature that you can see moves out of your reach.\" So if the enemy is unseen, you can't see them, so you can't make the opportunity attack. Therefore, the answer is no, you can't.",
+   "new_tokens": 514,
+   "seconds": 32.12923402199522,
+   "truncated": false
+  },
+  {
+   "embedder": "bge-small",
+   "category": "Negation / constraint",
+   "query": "Can I cast a spell while a silence effect is on me?",
+   "pipeline": "baseline",
+   "thinking": false,
+   "context_ids": [
+    785,
+    635,
+    369
+   ],
+   "gold_in_context": true,
+   "answer": "No, you cannot cast a spell while a silence effect is on you. A silence spell prevents the casting of spells that require verbal components. If a spell requires a verbal component, it cannot be cast in a silenced area. The provided context does not answer this.",
+   "think": "",
+   "new_tokens": 54,
+   "seconds": 3.6053697399329394,
+   "truncated": false
+  },
+  {
+   "embedder": "bge-small",
+   "category": "Negation / constraint",
+   "query": "Can I cast a spell while a silence effect is on me?",
+   "pipeline": "baseline",
+   "thinking": true,
+   "context_ids": [
+    785,
+    635,
+    369
+   ],
+   "gold_in_context": true,
+   "answer": "You cannot cast spells that require a verbal component while under a silence effect. The silence spell prevents verbal components (V), so spells needing them are blocked. Spells without verbal components may still be cast, but the context does not confirm this.",
+   "think": "Okay, let's tackle this question. The user is asking if they can cast a spell while under a silence effect. I need to check the provided context passages to find the answer.\n\nLooking at Passage 1, page 207, it mentions the silence spell. Specifically, it says that if you're in an area of silence, like one created by the silence spell, you can't cast a spell with a verbal component. So, if the silence spell is affecting the user, they can't cast spells that require verbal components. \n\nBut the question is about casting any spell, not just those with verbal components. The passage also states that spells don't expend spell slots and don't require components unless the item's description says otherwise. However, the key point here is that the silence spell prevents verbal components. So, if a spell requires a verbal component, the user can't cast it while under silence. \n\nBut what about spells that don't require verbal components? The passage doesn't explicitly say they can be cast. It only mentions that silence affects verbal components. So, if a spell doesn't need verbal components, maybe it can be cast. However, the question is whether the user can cast any spell. Since silence specifically blocks verbal components, spells that require them are blocked. Spells without verbal components might still be cast, but the answer depends on whether the spell in question has a verbal component. \n\nBut the question is general. The answer should be that you can't cast spells that require verbal components while under silence. However, the user might be asking if they can cast any spell. The answer would be that you can't cast spells with verbal components. But the silence spell's effect is only on verbal components. So, the answer is that you can't cast spells that require verbal components, but others might be possible. However, the context doesn't mention other components being blocked. \n\nWait, the passage says that if you can't provide a component, you can't cast the spell. So, if a spell requires verbal components, and you're under silence, you can't cast it. But if the spell doesn't require verbal components, you can. But the question is whether you can cast a spell while under silence. The answer is that you can't cast spells that require verbal components. But the user might be asking if they can cast any spell. The answer would be that you can't cast spells that require verbal components. However, the silence spell's effect is only on verbal components. So, the answer is that you can't cast spells with verbal components, but others might be possible. \n\nBut the answer needs to be concise. The passage says that in a silence effect, you can't cast spells with verbal components. So, the answer is that you can't cast spells that require verbal components. However, the question is general. The answer should be that you can't cast spells that require verbal components while under silence. The passage doesn't mention other components being blocked. So, the answer is that you can't cast spells with verbal components. Therefore, the answer is that you can't cast spells that require verbal components, but others might be possible. However, the answer needs to be concise. The correct answer based on the context is that you can't cast spells with verbal components while under silence. So, the answer is that you can't cast spells that require verbal components. The answer is that you can't cast spells with verbal components while under silence. The silence spell prevents verbal components, so any spell requiring V is blocked. Therefore, the answer is that you can't cast spells that require verbal components.",
+   "new_tokens": 791,
+   "seconds": 49.303408248117194,
+   "truncated": false
+  },
+  {
+   "embedder": "bge-small",
+   "category": "Negation / constraint",
+   "query": "Can I cast a spell while a silence effect is on me?",
+   "pipeline": "rerank",
+   "thinking": false,
+   "context_ids": [
+    369,
+    785,
+    463
+   ],
+   "gold_in_context": true,
+   "answer": "No, you cannot cast a spell that requires a verbal component while under the effects of the silence spell. The silence spell prevents the casting of spells with verbal components by creating an area of silence. If a spell requires a verbal component, it cannot be cast in such an area.",
+   "think": "",
+   "new_tokens": 57,
+   "seconds": 3.788399772020057,
+   "truncated": false
+  },
+  {
+   "embedder": "bge-small",
+   "category": "Negation / constraint",
+   "query": "Can I cast a spell while a silence effect is on me?",
+   "pipeline": "rerank",
+   "thinking": true,
+   "context_ids": [
+    369,
+    785,
+    463
+   ],
+   "gold_in_context": true,
+   "answer": "No, you cannot cast spells that require a verbal component while under a silence effect. The silence spell prevents verbal components, making such spells uncastable. Spells without verbal components may still be castable, but the question implies general spellcasting. The provided context does not address non-verbal spells explicitly.",
+   "think": "Okay, let's tackle this question. The user is asking if they can cast a spell while under a silence effect. I need to check the provided context passages to find the answer.\n\nLooking at Passage 1, page 101, it mentions that if a character is gagged or in an area of silence, like one created by the silence spell, they can't cast a spell with a verbal component. So, if the silence spell is active, verbal components are impossible. But what about spells that don't require verbal components? The passage says that if a spell requires a verbal component, the caster can't cast it under silence. However, if the spell doesn't have a verbal component, maybe they can still cast it. \n\nBut the question is general: can you cast any spell under silence? The answer depends on the spell's components. If the spell requires verbal components (V), then silence would prevent it. But if the spell only needs somatic (S) or material (M) components, then maybe it's possible. However, the silence spell's description in Passage 1 says that being in a silence area prevents verbal components. But the passage doesn't explicitly say that silence affects other components. \n\nWait, the passage says that if you can't provide a component, you can't cast the spell. So if the spell requires verbal, and you're in silence, you can't. But if the spell doesn't require verbal, then maybe you can. However, the question is whether you can cast any spell. The answer would be that you can't cast spells that require verbal components while under silence. But the user is asking if they can cast a spell in general. The answer would be no, because if the spell has a verbal component, you can't. But if it doesn't, maybe you can. However, the silence effect might also affect somatic components? Wait, the passage only mentions verbal components being affected by silence. \n\nSo the answer is that you can't cast spells that require verbal components while under silence. But if the spell doesn't require verbal components, you might be able to. However, the question is whether you can cast a spell in general. The answer would be that you can't cast spells with verbal components, but others might be possible. But the question is phrased as \"Can I cast a spell while a silence effect is on me?\" So the answer is that you can't if the spell requires a verbal component. However, the silence spell's effect is specifically about preventing verbal components. So the answer is that you can't cast spells that require verbal components, but spells without verbal components might still be castable. However, the question is general, so the answer is that you can't cast spells that require verbal components, but others might be possible. But the answer needs to be concise. The passage says that being in silence prevents verbal components. Therefore, if the spell requires verbal, you can't. If not, you can. But the question is whether you can cast any spell. The answer is that you can't if the spell requires verbal components. But the user might be asking if they can cast any spell, so the answer is no, unless the spell doesn't require verbal. But the answer should be based on the context. The passage says that if you can't provide components, you can't cast the spell. So under silence, you can't provide verbal components. Therefore, you can't cast spells that require verbal components. But if the spell doesn't require verbal, you can. However, the question is general. The answer is that you can't cast spells that require verbal components while under silence. The answer should be: No, if the spell requires a verbal component. But the user might be asking if they can cast any spell. The answer is that you can't cast spells with verbal components, but others might be possible. However, the answer must be concise. The passage says that silence prevents verbal components. Therefore, the answer is that you can't cast spells that require verbal components while under silence. So the answer is: No, if the spell requires a verbal component. But the question is whether you can cast a spell in general. The answer is that you can't cast spells that require verbal components, but others might be possible. However, the answer must be based on the context. The passage says that being in silence prevents verbal components. Therefore, the answer is that you can't cast spells with verbal components. The answer should be: No, if the spell requires a verbal component. But the answer must be concise. The answer is: No, if the spell requires a verbal component. Otherwise, you can cast it. But the question is general. The answer is that you can't cast spells that require verbal components. The answer is: No, you cannot cast spells that require a verbal component while under a silence effect. But the answer must be at most four sentences. The correct answer is that you can't cast spells with verbal components. The passage says that if you can't provide components, you can't cast the spell. So under silence, you can't provide verbal components. Therefore, the answer is: No, you cannot cast spells that require a verbal component while under a silence effect. If the spell doesn't require verbal components, you can cast it. But the question is general. The answer is that you can't cast spells with verbal components. So the answer is: No, if the spell requires a verbal component. Otherwise, you can cast it. But the answer must be concise. The answer is: No, you cannot cast spells that require a verbal component while under a silence effect. The provided context does not answer this. Wait, no. The context does answer this. Passage 1 says that being in silence prevents verbal components. Therefore, the answer is that you can't cast spells with verbal components. The answer is: No, if the spell requires a verbal component. Otherwise, you can. But the answer must be concise. The answer is: No, you cannot cast spells that require a verbal component while under a silence effect. The answer is correct based on the context.",
+   "new_tokens": 1327,
+   "seconds": 82.66245847195387,
+   "truncated": false
+  },
+  {
+   "embedder": "bge-small",
+   "category": "Exception / corner",
+   "query": "Can I shove a creature much bigger than me?",
+   "pipeline": "baseline",
+   "thinking": false,
+   "context_ids": [
+    329,
+    506,
+    343
+   ],
+   "gold_in_context": true,
+   "answer": "No, you cannot shove a creature much bigger than you. According to Passage 3, you can shove a creature that is no more than one size larger than you. Shoving a creature much bigger than you would violate this rule. The target must be no more than one size larger than you.",
+   "think": "",
+   "new_tokens": 61,
+   "seconds": 3.9982745840679854,
+   "truncated": false
+  },
+  {
+   "embedder": "bge-small",
+   "category": "Exception / corner",
+   "query": "Can I shove a creature much bigger than me?",
+   "pipeline": "baseline",
+   "thinking": true,
+   "context_ids": [
+    329,
+    506,
+    343
+   ],
+   "gold_in_context": true,
+   "answer": "No, you cannot shove a creature much bigger than you. According to Passage 3, the target must be no more than one size larger than you. A creature much bigger would exceed this limit.",
+   "think": "Okay, let's see. The user is asking if they can shove a creature that's much bigger than them. I need to check the context passages provided.\n\nLooking at Passage 3, page 95, which talks about shoving a creature. The relevant part says: \"The target must be no more than one size larger than you and must be within your reach.\" So the rule is that the creature being shoved can't be more than one size larger. \n\nThe question is about a creature \"much bigger,\" which implies more than one size larger. The passage clearly states that if the target is more than one size larger, you can't shove them. Therefore, the answer should be no, because the creature is not within the allowed size difference. The answer should reference the specific rule from the passage.",
+   "new_tokens": 209,
+   "seconds": 13.18600723799318,
+   "truncated": false
+  },
+  {
+   "embedder": "bge-small",
+   "category": "Exception / corner",
+   "query": "Can I shove a creature much bigger than me?",
+   "pipeline": "rerank",
+   "thinking": false,
+   "context_ids": [
+    343,
+    329,
+    700
+   ],
+   "gold_in_context": true,
+   "answer": "No. According to Passage 1, you can only shove a creature that is no more than one size larger than you. Shoving a creature much bigger than you is not allowed.",
+   "think": "",
+   "new_tokens": 38,
+   "seconds": 2.5824201181530952,
+   "truncated": false
+  },
+  {
+   "embedder": "bge-small",
+   "category": "Exception / corner",
+   "query": "Can I shove a creature much bigger than me?",
+   "pipeline": "rerank",
+   "thinking": true,
+   "context_ids": [
+    343,
+    329,
+    700
+   ],
+   "gold_in_context": true,
+   "answer": "No, you cannot shove a creature much bigger than you. The target must be no more than one size larger than you. If the creature is significantly larger, the size restriction prevents the shove. The contest involves your Strength (Athletics) check against the target\u2019s Strength (Athletics) or Dexterity (Acrobatics) check.",
+   "think": "Okay, let's see. The user is asking if they can shove a creature that's much bigger than them. I need to check the context passages provided.\n\nLooking at Passage 1, page 95: It says that when shoving, the target must be no more than one size larger than you. So if the creature is bigger than that, like two sizes or more, you can't shove them. The passage also mentions that the target chooses between Strength (Athletics) or Dexterity (Acrobatics) for the contest. But the key point here is the size restriction. \n\nPassage 2 talks about squeezing through spaces but that's about movement, not shoving. Passage 3 is about telekinesis, which isn't relevant here. \n\nSo the answer is no, because the target has to be no more than one size larger. If it's much bigger, the size restriction isn't met. The answer should state that you can't shove a creature much bigger than you because the target must be no more than one size larger. Also, the contest is between your Strength (Athletics) and the target's ability. But since the user is asking about the size, the main point is the size limit.",
+   "new_tokens": 324,
+   "seconds": 20.321108056930825,
+   "truncated": false
+  },
+  {
+   "embedder": "bge-small",
+   "category": "Keyword trap (synonym)",
+   "query": "How many magic items can one creature bond with?",
+   "pipeline": "baseline",
+   "thinking": false,
+   "context_ids": [
+    782,
+    701,
+    781
+   ],
+   "gold_in_context": true,
+   "answer": "The provided context does not answer this.",
+   "think": "",
+   "new_tokens": 9,
+   "seconds": 0.7973156510852277,
+   "truncated": false
+  },
+  {
+   "embedder": "bge-small",
+   "category": "Keyword trap (synonym)",
+   "query": "How many magic items can one creature bond with?",
+   "pipeline": "baseline",
+   "thinking": true,
+   "context_ids": [
+    782,
+    701,
+    781
+   ],
+   "gold_in_context": true,
+   "answer": "The provided context does not answer this.",
+   "think": "Okay, let's see. The user is asking how many magic items one creature can bond with. I need to check the provided context passages to find the answer.\n\nLooking at Passage 2, which is about the Telepathic Bond spell. The description says it links up to eight willing creatures. But the question is about bonding with magic items, not the spell's effect. Wait, the Telepathic Bond spell is a 5th-level divination spell that creates a telepathic link among creatures. However, the question is about a creature bonding with magic items. \n\nPassage 1 and 3 discuss attunement to magic items. Passage 3 mentions that a creature can be attuned to no more than three magic items at a time. But the question is about \"bonding,\" which might be different from attunement. However, the user's question uses the term \"bond,\" which might refer to the Telepathic Bond spell. But the spell's description says it's a bond between creatures, not magic items. \n\nWait, the user's question is about bonding with magic items. But the context doesn't mention anything about bonding with magic items. The Telepathic Bond is a spell that bonds creatures together, not items. The answer might be in Passage 3, which talks about attunement. The passage says a creature can be attuned to no more than three magic items. But the question is about \"bonding,\" which is different. However, maybe the user is conflating \"bond\" with \"attunement.\" If that's the case, then the answer would be three. But the Telepathic Bond is a separate thing. \n\nAlternatively, if \"bond\" refers to the Telepathic Bond spell, then the answer is eight creatures. But the question is about how many magic items a creature can bond with. The answer is probably three, based on attunement rules. But the user might be mixing terms. The context doesn't explicitly state a number for bonding with items, only attunement. So if the question is about attunement, the answer is three. But the question says \"bond,\" which is different. However, the provided context doesn't mention bonding with magic items. Therefore, the answer would be that the context doesn't answer this. But wait, the Telepathic Bond is a spell that bonds creatures, not items. So the answer is that the context doesn't answer this. But maybe the user is referring to the Telepathic Bond spell's effect. However, the question is about bonding with magic items, not creatures. So the answer is that the context does not answer this.",
+   "new_tokens": 557,
+   "seconds": 34.8019706630148,
+   "truncated": false
+  },
+  {
+   "embedder": "bge-small",
+   "category": "Keyword trap (synonym)",
+   "query": "How many magic items can one creature bond with?",
+   "pipeline": "rerank",
+   "thinking": false,
+   "context_ids": [
+    781,
+    782,
+    991
+   ],
+   "gold_in_context": true,
+   "answer": "A creature can be attuned to no more than three magic items at a time. Any attempt to attune to a fourth item fails; the creature must end its attunement to an item first. Additionally, a creature can\u2019t attune to more than one copy of an item.",
+   "think": "",
+   "new_tokens": 59,
+   "seconds": 3.8889744121115655,
+   "truncated": false
+  },
+  {
+   "embedder": "bge-small",
+   "category": "Keyword trap (synonym)",
+   "query": "How many magic items can one creature bond with?",
+   "pipeline": "rerank",
+   "thinking": true,
+   "context_ids": [
+    781,
+    782,
+    991
+   ],
+   "gold_in_context": true,
+   "answer": "A creature can be attuned to no more than three magic items at a time. Attunement to a fourth item fails unless the creature ends attunement to an existing item first. The provided context does not mention bonding beyond attunement limits.",
+   "think": "Okay, let me see. The user is asking how many magic items one creature can bond with. I need to check the provided context passages to find the answer.\n\nLooking at Passage 1, page 206. The text says, \"a creature can be attuned to no more than three magic items at a time.\" So that's three. Also, it mentions that a creature can't attune to more than one copy of an item. But the question is about bonding, which I think refers to attunement here. The answer is three. The other passages talk about different aspects like item usage or item types, but not the number. So the answer should be three.",
+   "new_tokens": 196,
+   "seconds": 12.399535704869777,
+   "truncated": false
+  },
+  {
+   "embedder": "bge-small",
+   "category": "Counter-example",
+   "query": "Can I rest twice in a single day to recover everything?",
+   "pipeline": "baseline",
+   "thinking": false,
+   "context_ids": [
+    308,
+    307,
+    92
+   ],
+   "gold_in_context": true,
+   "answer": "The provided context does not answer this. The text mentions that a character can take a short rest and a long rest in a day, but it does not specify whether resting twice in a single day allows recovery of everything. Additionally, the rules mention that a long rest must be uninterrupted by strenuous activity to gain its full benefits.",
+   "think": "",
+   "new_tokens": 67,
+   "seconds": 4.350512672914192,
+   "truncated": false
+  },
+  {
+   "embedder": "bge-small",
+   "category": "Counter-example",
+   "query": "Can I rest twice in a single day to recover everything?",
+   "pipeline": "baseline",
+   "thinking": true,
+   "context_ids": [
+    308,
+    307,
+    92
+   ],
+   "gold_in_context": true,
+   "answer": "The provided context does not answer this.  \nYou can take one long rest per day, but you cannot benefit from more than one long rest in a single day. Short rests may be taken multiple times, but they do not restore all lost hit points or spent Hit Dice.",
+   "think": "Okay, let's tackle this question. The user is asking if they can rest twice in a single day to recover everything. I need to check the context passages provided.\n\nLooking at Passage 1, it mentions a long rest is at least 8 hours and that a character can regain all lost hit points and spent Hit Dice after a long rest. It also says that if a long rest is interrupted by strenuous activity, they have to start over. But there's no mention of doing multiple rests in a day.\n\nPassage 2 talks about short rests and long rests. It says adventurers can take short rests during the day and a long rest to end the day. A short rest is at least 1 hour. The key here is whether multiple rests are allowed. The text says \"a long rest to end the day,\" implying one long rest per day. But what about short rests? The user might be referring to a short rest and a long rest. However, the question is about recovering everything. \n\nPassage 1 says that after a long rest, you regain all lost hit points and spent Hit Dice. But if you take a short rest, you can spend Hit Dice, but only up to the maximum number. However, the question is about resting twice. The passages don't explicitly say you can take two long rests in a day. The text says \"a long rest to end the day,\" suggesting one per day. Short rests can be taken multiple times, but the user is asking about recovering everything. \n\nWait, the user might be thinking of taking a short rest and a long rest. But the answer depends on whether taking two rests (one short and one long) would allow recovery. However, the passages don't mention that. The answer is that you can't benefit from more than one long rest in a day, as per Passage 1. So, the answer is no, you can't rest twice in a single day to recover everything. The context says you can't benefit from more than one long rest, and short rests are separate but not mentioned in combination with long rests for full recovery.",
+   "new_tokens": 489,
+   "seconds": 30.548673235811293,
+   "truncated": false
+  },
+  {
+   "embedder": "bge-small",
+   "category": "Counter-example",
+   "query": "Can I rest twice in a single day to recover everything?",
+   "pipeline": "rerank",
+   "thinking": false,
+   "context_ids": [
+    166,
+    92,
+    73
+   ],
+   "gold_in_context": false,
+   "answer": "No. You can rest once per day (a long rest or two short rests) to recover everything. Resting twice in a single day is not allowed. The provided context does not answer this.",
+   "think": "",
+   "new_tokens": 41,
+   "seconds": 2.794929794035852,
+   "truncated": false
+  },
+  {
+   "embedder": "bge-small",
+   "category": "Counter-example",
+   "query": "Can I rest twice in a single day to recover everything?",
+   "pipeline": "rerank",
+   "thinking": true,
+   "context_ids": [
+    166,
+    92,
+    73
+   ],
+   "gold_in_context": false,
+   "answer": "The provided context does not answer this.",
+   "think": "Okay, let's tackle this question. The user is asking if they can rest twice in a single day to recover everything. I need to check the provided context passages to find the answer.\n\nLooking at Passage 1, it mentions Arcane Recovery, which is about recovering spell slots after a short rest. It says you can recover once per day when you finish a short rest. There's also something about a long rest replenishing expended uses, but that's for the Arcane Recovery feature. \n\nPassage 2 talks about Lay on Hands, which regains healing pool after a long rest. But the question is about resting twice a day. \n\nPassage 3 mentions Action Surge, which requires a short or long rest before using it again. However, the user is asking about resting twice in a day. \n\nWait, the question is about resting twice (short or long) in a day. The rules for resting in D&D 5e typically allow one short rest or one long rest per day. But the context here might have specific info. \n\nLooking again at Passage 1: Arcane Recovery says once per day when you finish a short rest. But there's no mention of multiple rests. Passage 3 says Action Surge requires a rest before using it again, but that's about taking an extra action. \n\nThe user's question is about resting twice to recover everything. The context doesn't explicitly say you can rest twice. The standard rules in D&D 5e allow one long rest or one short rest per day. However, the context here might have exceptions. \n\nLooking at Passage 2, Lay on Hands regains all expended uses after a long rest. But the user is asking about resting twice. The answer might be that you can't rest twice in a day because the rules don't allow it. The context doesn't mention anything about resting twice, so the answer would be that the provided context doesn't answer this. But wait, maybe the Arcane Recovery allows for a short rest and then a long rest? But the passages don't specify that. \n\nSince the context doesn't mention resting twice in a day, the answer should be that the provided context doesn't answer this. The user might be referring to the standard rules, but the context given here doesn't cover that. Therefore, the answer is that the context doesn't answer the question.",
+   "new_tokens": 494,
+   "seconds": 30.89409559313208,
+   "truncated": false
+  },
+  {
+   "embedder": "bge-small",
+   "category": "Counter-example",
+   "query": "Can a creature that is held by an enemy still walk away?",
+   "pipeline": "baseline",
+   "thinking": false,
+   "context_ids": [
+    445,
+    715,
+    1375
+   ],
+   "gold_in_context": false,
+   "answer": "No. If a creature is held by an enemy, it cannot walk away because being held prevents movement. The \"Flee\" action allows a creature to move away from an enemy, but being held restricts this movement. The provided context does not answer this.",
+   "think": "",
+   "new_tokens": 54,
+   "seconds": 3.5773529859725386,
+   "truncated": false
+  },
+  {
+   "embedder": "bge-small",
+   "category": "Counter-example",
+   "query": "Can a creature that is held by an enemy still walk away?",
+   "pipeline": "baseline",
+   "thinking": true,
+   "context_ids": [
+    445,
+    715,
+    1375
+   ],
+   "gold_in_context": false,
+   "answer": "The provided context does not explicitly address being held by an enemy. However, the \"Flee\" action allows a creature to move away during its turn, implying it can still walk away unless restricted by conditions like being restrained (which is not detailed here). If restrained, movement would be impossible, but this is not confirmed in the context. Thus, the answer depends on external rules not provided.",
+   "think": "Okay, let's tackle this question. The user is asking if a creature held by an enemy can still walk away. I need to check the provided context passages to find the answer.\n\nLooking at Passage 1, page 126, there's a section about actions like Flee. The Flee action says the target spends its turn moving away. But if the creature is held by an enemy, does that prevent it from fleeing? The passage mentions that when you cast a spell, you can affect multiple creatures if using a higher-level slot. However, the Flee action itself allows the target to move away. But if the creature is restrained or held, maybe that's a different condition.\n\nWait, Passage 3 talks about the Prone condition, which restricts movement. But the question is about being held, not prone. There's also the Restrained condition in Passage 3, which sets speed to 0. If a creature is restrained, it can't move. But the question is about being held by an enemy. The context doesn't explicitly mention being held, but maybe the Flee action is possible unless restrained.\n\nHowever, the answer depends on whether being held is considered a restriction. The passages don't directly address being held, but the Flee action allows movement. If the creature is held, perhaps it's restrained, making movement impossible. But the answer needs to be based only on the given context. Since the passages don't mention being held, but the Flee action allows movement, maybe the answer is yes, unless restrained. But the user's question is about being held by an enemy. The context doesn't specify that being held is a restriction, so maybe the answer is that the creature can still flee, but if restrained, it can't. However, the answer must be based on the given passages. Since the passages don't mention being held, but the Flee action allows movement, the answer is that the creature can still walk away using the Flee action. But if the enemy is holding it, maybe it's restrained. But the passages don't mention that. So the answer is that the creature can still walk away as per the Flee action, but if restrained, it can't. However, the context doesn't mention being held, so the answer is that the creature can still walk away using the Flee action. Wait, the answer should be based on the given passages. The passages don't mention being held, but the Flee action allows movement. So the answer is yes, the creature can walk away using the Flee action, unless restrained. But since the question is about being held, which isn't covered in the passages, maybe the answer is that the context doesn't answer this. Wait, but the Flee action is mentioned. If the creature is held, maybe it's restrained, but the passages don't explicitly say that. So the answer is that the creature can still walk away using the Flee action, as per the rules in the passage. However, if the enemy is holding it, maybe it's restrained. But the answer must be based on the given context. The context doesn't mention being held, so the answer is that the creature can still walk away using the Flee action, as per the rules. But the user's question is about being held by an enemy. The answer might be that the creature can still walk away, but if restrained, it can't. But the context doesn't mention being held, so the answer is that the context doesn't answer this. Wait, the answer is in the Flee action. The Flee action allows the target to move away. So even if held, the creature can Flee. But if being held is a form of restraint, then the answer is no. But the context doesn't mention being held. So the answer is that the creature can still walk away using the Flee action, as per the rules in the passage. But the answer must be based on the given context. Since the context doesn't mention being held, but the Flee action is allowed, the answer is yes. However, the answer might be that the context doesn't answer this. Wait, the user's question is whether a creature held by an enemy can walk away. The passages don't mention being held, but the Flee action allows movement. So the answer is yes, the creature can still walk away using the Flee action. Therefore, the answer is yes.",
+   "new_tokens": 993,
+   "seconds": 62.89552307012491,
+   "truncated": false
+  },
+  {
+   "embedder": "bge-small",
+   "category": "Counter-example",
+   "query": "Can a creature that is held by an enemy still walk away?",
+   "pipeline": "rerank",
+   "thinking": false,
+   "context_ids": [
+    301,
+    445,
+    327
+   ],
+   "gold_in_context": false,
+   "answer": "No. If a flying creature is being held aloft by magic, such as by the fly spell, it can still move. However, if a creature is held by an enemy and cannot move, it falls. The provided context does not explicitly address whether a creature held by an enemy can walk away, but it does mention that if a creature is held aloft by magic, it can move.",
+   "think": "",
+   "new_tokens": 81,
+   "seconds": 5.258567726938054,
+   "truncated": false
+  },
+  {
+   "embedder": "bge-small",
+   "category": "Counter-example",
+   "query": "Can a creature that is held by an enemy still walk away?",
+   "pipeline": "rerank",
+   "thinking": true,
+   "context_ids": [
+    301,
+    445,
+    327
+   ],
+   "gold_in_context": false,
+   "answer": "The provided context does not answer this.",
+   "think": "Okay, let's tackle this question. The user is asking if a creature held by an enemy can still walk away. I need to check the provided context passages to find any relevant information.\n\nLooking at Passage 1, it's about holding breath and suffocation, not about being held. Passage 2 talks about spells like Flee, Grovel, Halt, and flying movement. The Flee action allows a creature to move away. But the question is about a creature that's being held by an enemy. \n\nPassage 3 mentions flying movement and being knocked prone. If a creature is held, maybe it's restrained. The rules on movement when restrained: if a creature is restrained, it can't move freely. But the Flee action might allow it to move away if not restrained. However, if the enemy is holding it, perhaps the creature can't move. \n\nWait, the question is about a creature that is held by an enemy. The answer depends on whether being held prevents movement. The context doesn't explicitly mention being held, but in combat, being restrained would prevent movement. However, the Flee action allows movement. But if the enemy is holding it, maybe the creature can't move. But the answer needs to be based on the provided passages. \n\nPassage 2's Flee action says the target moves away. But if the creature is being held, maybe it can't. However, the passages don't mention being held. The answer might be that if the creature is not restrained, it can Flee. But if it's held, maybe it can't. Since the context doesn't mention being held, the answer might be that the passages don't answer this. Wait, but the question is about being held by an enemy. The answer is in Passage 2's Flee action. If the creature is not restrained, it can Flee. If it's held, maybe it's restrained. But the context doesn't specify. Therefore, the answer is that the provided context does not answer this.",
+   "new_tokens": 427,
+   "seconds": 26.65725861187093,
+   "truncated": false
+  },
+  {
+   "embedder": "embeddinggemma-2",
+   "category": "Keyword trap",
+   "query": "What breaks my focus on a spell?",
+   "pipeline": "baseline",
+   "thinking": false,
+   "context_ids": [
+    368,
+    371,
+    334
+   ],
+   "gold_in_context": false,
+   "answer": "The provided context does not answer this.",
+   "think": "",
+   "new_tokens": 9,
+   "seconds": 0.7863330480176955,
+   "truncated": false
+  },
+  {
+   "embedder": "embeddinggemma-2",
+   "category": "Keyword trap",
+   "query": "What breaks my focus on a spell?",
+   "pipeline": "baseline",
+   "thinking": true,
+   "context_ids": [
+    368,
+    371,
+    334
+   ],
+   "gold_in_context": false,
+   "answer": "The provided context states that concentration is broken by casting another spell that requires concentration or taking damage (requiring a Constitution saving throw). Normal activity does not interfere.",
+   "think": "Okay, let's see. The user is asking what breaks my focus on a spell. I need to check the provided context passages to find the answer.\n\nLooking at Passage 2, page 102. It mentions factors that can break concentration. The first one is casting another spell that requires concentration. You lose concentration if you cast another spell that needs it. Also, taking damage while concentrating requires a Constitution save. If you fail, concentration breaks. \n\nAdditionally, Passage 1 mentions that if concentration is broken, the spell fails. But the question is specifically about what breaks the focus. So the main points from Passage 2 are casting another concentration-required spell and taking damage. The answer should list these two factors. The user might also need to know that normal activities don't interfere, but the question is about what does break it. So the answer is casting another spell that requires concentration and taking damage. Also, maybe other things like being disrupted by something else, but according to the passages, those two are the main ones. Let me check again. The passage says: \"The following factors can break concentration: \u2022 Casting another spell that requires concentration... \u2022 Taking damage.\" So those are the two. The answer should state those two reasons.",
+   "new_tokens": 289,
+   "seconds": 18.118297663982958,
+   "truncated": false
+  },
+  {
+   "embedder": "embeddinggemma-2",
+   "category": "Keyword trap",
+   "query": "What breaks my focus on a spell?",
+   "pipeline": "rerank",
+   "thinking": false,
+   "context_ids": [
+    334,
+    372,
+    371
+   ],
+   "gold_in_context": true,
+   "answer": "Breaking concentration on a spell includes casting another spell that requires concentration, taking damage (which requires a Constitution saving throw), being incapacitated or killed, and certain environmental phenomena that might require a Constitution saving throw. Normal activity like moving and attacking does not interfere with concentration. The provided context does not answer this.",
+   "think": "",
+   "new_tokens": 62,
+   "seconds": 4.047743981005624,
+   "truncated": false
+  },
+  {
+   "embedder": "embeddinggemma-2",
+   "category": "Keyword trap",
+   "query": "What breaks my focus on a spell?",
+   "pipeline": "rerank",
+   "thinking": true,
+   "context_ids": [
+    334,
+    372,
+    371
+   ],
+   "gold_in_context": true,
+   "answer": "Factors that break concentration on a spell include taking damage (requiring a Constitution saving throw), being incapacitated or killed, casting another concentration-requiring spell, and certain environmental phenomena (as determined by the GM). Normal activity like moving or attacking does not interfere.",
+   "think": "Okay, let's see. The user is asking what breaks your focus on a spell in D&D 5e. I need to check the provided context passages to find the answer.\n\nLooking at Passage 1, it mentions that concentration is required for a spell, and if broken, the spell dissipates. It also gives an example where readying magic missile could break concentration. But the main factors are in Passage 2 and 3.\n\nPassage 2 says taking damage requires a Constitution save to maintain concentration. If you take damage from multiple sources, you make separate saves. Also, being incapacitated or killed breaks concentration. Additionally, the GM might have environmental phenomena require a save.\n\nPassage 3 adds that casting another concentration-requiring spell breaks focus. Also, normal activity like moving and attacking doesn't interfere, but factors like casting another spell, taking damage, or being incapacitated break it.\n\nSo the main points are: taking damage (with saves), being incapacitated/killed, casting another concentration spell, and possible environmental effects as per GM discretion. The answer should list these factors concisely.",
+   "new_tokens": 282,
+   "seconds": 17.694204296916723,
+   "truncated": false
+  },
+  {
+   "embedder": "embeddinggemma-2",
+   "category": "Negation / constraint",
+   "query": "Do I need to see a target to attack it?",
+   "pipeline": "baseline",
+   "thinking": false,
+   "context_ids": [
+    345,
+    1019,
+    338
+   ],
+   "gold_in_context": false,
+   "answer": "Yes, you need to see a target to attack it, unless the target is hidden. If you are hidden\u2014both unseen and unheard\u2014you give away your location when you make an attack. When a creature can\u2019t see you, you have advantage on attack rolls against it. However, if you are hidden, you give away your location when the attack hits or misses.",
+   "think": "",
+   "new_tokens": 75,
+   "seconds": 4.851188713917509,
+   "truncated": false
+  },
+  {
+   "embedder": "embeddinggemma-2",
+   "category": "Negation / constraint",
+   "query": "Do I need to see a target to attack it?",
+   "pipeline": "baseline",
+   "thinking": true,
+   "context_ids": [
+    345,
+    1019,
+    338
+   ],
+   "gold_in_context": false,
+   "answer": "You do not need to see a target to attack it. If the target cannot see you, you have advantage on attack rolls against it. However, if you are hidden (unseen and unheard), your location is revealed when you attack.",
+   "think": "Okay, let's tackle this question. The user is asking if they need to see a target to attack it. I need to check the provided context passages to find the answer.\n\nLooking at Passage 1, it talks about cover types but doesn't mention visibility. Passage 2 discusses attacks and mentions that the target can be a creature or object, but again, no info on visibility. Passage 3, however, has a section on ranged attacks and visibility. \n\nIn Passage 3, it says: \"When a creature can\u2019t see you, you have advantage on attack rolls against it.\" Wait, that's the opposite. If the creature can't see the user, the user has advantage. But the question is about needing to see the target. Also, it mentions that if you're hidden (unseen and unheard), you give away your location when you attack. \n\nBut the key part is: \"When a creature can\u2019t see you, you have advantage on attack rolls against it.\" So if the target can't see the attacker, the attacker has advantage. But does that mean you need to see the target? The question is whether you need to see the target to attack. \n\nWait, the passage says that if you are hidden (both unseen and unheard), you give away your location when you attack. So if you're hidden, you can attack, but your location is revealed. But the question is about needing to see the target. \n\nWait, maybe the answer is that you don't need to see the target. Because the passage says that if the target can't see you, you have advantage. But that doesn't mean you can't attack without seeing them. However, the passage also says that when you're hidden, you give away your location when you attack. So maybe you can attack without seeing the target, but if you're hidden, you have to be careful. \n\nBut the question is whether you need to see the target. The answer might be that you don't need to see the target. For example, if the target is hidden, you can attack them, but you have to be careful about being discovered. However, the passage says that if the creature can't see you, you have advantage. So maybe you can attack even if the target isn't visible. \n\nWait, the passage says: \"When a creature can\u2019t see you, you have advantage on attack rolls against it.\" So if the creature can't see the attacker, the attacker has advantage. That suggests that the attacker doesn't need to see the target. Because if the target can't see the attacker, the attacker can attack with advantage. So the answer is that you don't need to see the target. But wait, the question is phrased as \"Do I need to see a target to attack it?\" So the answer would be no, you don't need to see the target. But the passage also says that if you are hidden, you give away your location when you attack. So maybe you can attack without seeing the target, but if you are hidden, you have to be careful. \n\nBut the passage doesn't explicitly say that you can attack without seeing the target. It just says that if the target can't see you, you have advantage. So maybe the answer is that you don't need to see the target, but you can attack even if the target is not visible. However, the answer might be that you do need to see the target. Wait, the passage says that when you're hidden, you give away your location when you attack. So if you're hidden (unseen and unheard), you can attack, but then you reveal your position. But the question is whether you need to see the target. \n\nAlternatively, maybe the answer is that you can attack without seeing the target. For example, if the target is hidden, you can attack them. But the passage says that if the creature can't see you, you have advantage. So the answer is that you don't need to see the target. Therefore, the answer is no, you don't need to see the target to attack it. But the passage also says that if you're hidden, you give away your location when you attack. So maybe the answer is that you can attack without seeing the target, but if you're hidden, you have to be careful. \n\nBut the question is straightforward: Do I need to see a target to attack it? The answer is no, because the passage says that when the target can't see you, you have advantage. So the answer is no, you don't need to see the target. However, the passage also mentions that if you are hidden (unseen and unheard), you give away your location when you attack. So maybe the answer is that you can attack without seeing the target, but if you are hidden, you have to be careful. \n\nBut the question is about needing to see the target. The answer is that you don't need to see the target. So the answer is no, you don't need to see the target. Therefore, the answer is that you don't need to see the target to attack it. But the passage says that when you are hidden, you give away your location. So maybe the answer is that you can attack without seeing the target, but if you are hidden, you have to be careful. However, the question is about whether you need to see the target. The answer is no, you don't need to see the target. Therefore, the answer is that you don't need to see the target to attack it.",
+   "new_tokens": 1190,
+   "seconds": 73.83958725491539,
+   "truncated": false
+  },
+  {
+   "embedder": "embeddinggemma-2",
+   "category": "Negation / constraint",
+   "query": "Do I need to see a target to attack it?",
+   "pipeline": "rerank",
+   "thinking": false,
+   "context_ids": [
+    338,
+    337,
+    344
+   ],
+   "gold_in_context": true,
+   "answer": "No, you do not need to see a target to attack it. If you attack a target you can\u2019t see, you have disadvantage on the attack roll. However, if the target can\u2019t see you, you have advantage on attack rolls against it. When you are hidden\u2014both unseen and unheard\u2014you give away your location when you make an attack.",
+   "think": "",
+   "new_tokens": 72,
+   "seconds": 4.673984884051606,
+   "truncated": false
+  },
+  {
+   "embedder": "embeddinggemma-2",
+   "category": "Negation / constraint",
+   "query": "Do I need to see a target to attack it?",
+   "pipeline": "rerank",
+   "thinking": true,
+   "context_ids": [
+    338,
+    337,
+    344
+   ],
+   "gold_in_context": true,
+   "answer": "You do not need to see a target to attack it, but if you can\u2019t see it, you have disadvantage on your attack roll. If you are hidden (unseen and unheard), you have advantage against targets that can\u2019t see you. Visibility affects attack rolls but does not strictly require line of sight for the attack itself.",
+   "think": "Okay, let's tackle this question. The user is asking if they need to see a target to attack it. I need to check the provided passages to find the answer.\n\nLooking at Passage 2, page 94: It says that when you attack a target you can't see, you have disadvantage on the attack roll. Also, if the target isn't in the location you targeted, you automatically miss. However, if the creature can't see you, you have advantage. So, the answer depends on the situation. If the target is unseen, you have disadvantage, but if you're hidden and the target can't see you, you have advantage. \n\nBut the question is general: do you need to see the target? The passages mention that you can attack without seeing the target, but with penalties. So the answer is that you don't need to see the target, but you have disadvantage if you can't see it. However, if you're hidden and the target can't see you, you have advantage. So the answer should state that you don't need to see the target, but the attack roll has disadvantage if you can't see it. Also, if you're hidden and the target can't see you, you have advantage. So the answer is that you don't need to see the target, but the attack roll is affected by visibility. The key points are the disadvantage when unseen and advantage when hidden.",
+   "new_tokens": 361,
+   "seconds": 22.528782261069864,
+   "truncated": false
+  },
+  {
+   "embedder": "embeddinggemma-2",
+   "category": "Exception / corner",
+   "query": "Can I punish an unseen enemy that runs away from me?",
+   "pipeline": "baseline",
+   "thinking": false,
+   "context_ids": [
+    519,
+    510,
+    974
+   ],
+   "gold_in_context": false,
+   "answer": "The provided context does not answer this.",
+   "think": "",
+   "new_tokens": 9,
+   "seconds": 0.7989011509343982,
+   "truncated": false
+  },
+  {
+   "embedder": "embeddinggemma-2",
+   "category": "Exception / corner",
+   "query": "Can I punish an unseen enemy that runs away from me?",
+   "pipeline": "baseline",
+   "thinking": true,
+   "context_ids": [
+    519,
+    510,
+    974
+   ],
+   "gold_in_context": false,
+   "answer": "The provided context does not answer this.",
+   "think": "Okay, let's see. The user is asking if they can punish an unseen enemy that runs away from them. The context provided includes three passages about different D&D spells and items.\n\nFirst, looking at Passage 1, it's about a familiar, which can communicate telepathically and help with senses. But that's about a familiar, not directly about punishing enemies.\n\nPassage 2 is about the Expeditious Retreat spell, which allows moving quickly and maybe escaping. But the question is about punishing someone who runs away, not about moving.\n\nPassage 3 mentions a Wand of Enemy Detection, which can detect hostile creatures, including ethereal or invisible ones. The wand tells the direction of the nearest hostile creature within 60 feet. Also, there's a Wand of Fear that can command a creature to flee or grovel. \n\nThe user is asking about punishing an unseen enemy that runs away. The Wand of Enemy Detection can detect such an enemy, but does it allow punishment? The Wand of Fear's command spell can make a creature flee or grovel. However, the question is about an enemy that's already running away. If the enemy is unseen and running, maybe the wand can detect them, but the wand's command would require the enemy to be within range. But if they're already fleeing, perhaps the wand can't command them once they're out of range. Also, the Expeditious Retreat might help in moving quickly, but that's for the caster, not punishing.\n\nWait, the Wand of Fear's command is \"flee or grovel\" as with the command spell. If the enemy is already running away, maybe the wand can't command them again. Also, the wand's command would require the enemy to be within 60 feet, as per the command spell. If the enemy is running away, they might be out of range. Alternatively, if the enemy is detected by the Wand of Enemy Detection, the user could use the wand's command to make them flee, but if they're already fleeing, maybe that's not possible. \n\nBut the question is about punishing, which might involve some form of effect. The Wand of Fear's command could be a way to make them grovel, but if they're already running, maybe the command is ineffective. The passages don't explicitly mention punishing an unseen enemy that's fleeing. The Wand of Enemy Detection can detect them, but the answer depends on whether the wand's command can be used on a fleeing enemy. The passages don't specify that, so maybe the answer is that the Wand of Fear can command them, but if they're already fleeing, it's unclear. However, the user might be referring to the command spell's effect. Since the Wand of Fear's command is similar to the command spell, which can make a creature flee or grovel, but if the enemy is already fleeing, maybe the command is not applicable. Therefore, the answer would be that the Wand of Fear can command them, but if they are already fleeing, the command might not work. However, the context doesn't explicitly state this. Alternatively, the answer might be that the Wand of Enemy Detection can detect the enemy, but the punishment would require another spell or ability. Since the question is about punishing, and the Wand of Fear can command, but the enemy is already fleeing, perhaps the answer is that the wand can't punish them once they're fleeing. But the context doesn't have explicit info on this. Therefore, the answer is that the provided context doesn't answer this.",
+   "new_tokens": 733,
+   "seconds": 45.518025977071375,
+   "truncated": false
+  },
+  {
+   "embedder": "embeddinggemma-2",
+   "category": "Exception / corner",
+   "query": "Can I punish an unseen enemy that runs away from me?",
+   "pipeline": "rerank",
+   "thinking": false,
+   "context_ids": [
+    338,
+    974,
+    897
+   ],
+   "gold_in_context": false,
+   "answer": "The provided context does not answer this.",
+   "think": "",
+   "new_tokens": 9,
+   "seconds": 0.7933355229906738,
+   "truncated": false
+  },
+  {
+   "embedder": "embeddinggemma-2",
+   "category": "Exception / corner",
+   "query": "Can I punish an unseen enemy that runs away from me?",
+   "pipeline": "rerank",
+   "thinking": true,
+   "context_ids": [
+    338,
+    974,
+    897
+   ],
+   "gold_in_context": false,
+   "answer": "The provided context does not answer this.",
+   "think": "Okay, let's tackle this question. The user is asking if they can punish an unseen enemy that runs away from them. I need to check the provided context passages to find any relevant rules.\n\nLooking at Passage 1, it talks about ranged attacks and hidden creatures. If a creature is hidden, you give away your location when you attack. But the question is about an unseen enemy that's running away. Passage 2 mentions the Wand of Enemy Detection, which can detect hostile creatures hidden or invisible. However, the wand only tells the direction, not the distance. If the enemy is running away, maybe the wand can still detect them, but the user needs to use the wand's ability. \n\nPassage 3 discusses the Sworn Enemy feature, which gives advantage on attacks against the enemy. However, if the enemy is unseen and running away, maybe they're not in the line of sight. The Sworn Enemy ability might not apply if the enemy is hidden. Also, the Oil of Etherealness affects ethereal creatures, but the question is about an unseen enemy, not necessarily ethereal.\n\nWait, the user is asking about punishing an unseen enemy that's fleeing. The Wand of Enemy Detection can sense hidden enemies, but the Sworn Enemy feature requires the enemy to be a sworn enemy. If the enemy is unseen but not ethereal, maybe the wand can detect them. However, the question is about punishment, which might involve attacks. If the enemy is hidden, you can attack them, but if they run away, maybe you can't pursue. But the passages don't mention anything about chasing or punishing after fleeing. The Sworn Enemy feature only gives advantage on attacks, not necessarily punishment. \n\nSo, the answer would be that the Wand of Enemy Detection can detect the enemy, but the Sworn Enemy ability might not apply if the enemy is hidden. However, the user can attack them if they are within range. But the question is about punishing after fleeing. The passages don't specify if fleeing allows punishment. The answer might be that the Wand can detect the enemy, but the Sworn Enemy feature's advantage applies only when attacking. Since the enemy is fleeing, maybe the user can't attack them anymore. But the answer needs to be based on the provided context. The passages don't mention anything about punishing after fleeing, so the answer might be that the context doesn't answer this.",
+   "new_tokens": 499,
+   "seconds": 31.11265153088607,
+   "truncated": false
+  },
+  {
+   "embedder": "embeddinggemma-2",
+   "category": "Negation / constraint",
+   "query": "Can I cast a spell while a silence effect is on me?",
+   "pipeline": "baseline",
+   "thinking": false,
+   "context_ids": [
+    785,
+    675,
+    405
+   ],
+   "gold_in_context": false,
+   "answer": "No, you cannot cast a spell while a silence effect is on you. The silence spell prevents the creation of sound within its sphere, and casting a spell that includes a verbal component is impossible there. Spells that require concentration are also affected, as the user must concentrate if the spell requires it. The silence effect suppresses all spells and magical effects within its sphere.",
+   "think": "",
+   "new_tokens": 74,
+   "seconds": 4.814836475998163,
+   "truncated": false
+  },
+  {
+   "embedder": "embeddinggemma-2",
+   "category": "Negation / constraint",
+   "query": "Can I cast a spell while a silence effect is on me?",
+   "pipeline": "baseline",
+   "thinking": true,
+   "context_ids": [
+    785,
+    675,
+    405
+   ],
+   "gold_in_context": false,
+   "answer": "The silence spell prevents casting spells with verbal components within its sphere. If a spell requires a verbal component, it cannot be cast while under silence. Spells without verbal components may still be cast, but the silence effect explicitly prohibits verbal components. \n\nAnswer: No, you cannot cast spells that require a verbal component while under the silence effect.",
+   "think": "Okay, let's tackle this question. The user is asking if they can cast a spell while a silence effect is on them. I need to check the provided context passages to find the answer.\n\nLooking at Passage 2, which describes the silence spell. The key part here is under the \"Silence\" section. It says that casting a spell that includes a verbal component is impossible within the silence sphere. Also, the silence spell's effect is that no sound can be created within the sphere, and creatures are deafened. \n\nAdditionally, the first passage mentions that when using a magic item to cast a spell, the spell is cast at the lowest possible level and doesn't use spell slots. But if the silence effect is active, any spell that requires a verbal component can't be cast. Since silence suppresses verbal components, casting any spell that needs one would be impossible. \n\nThe user is asking specifically about casting a spell while under silence. The silence effect prevents verbal components, which are required for many spells. Therefore, the answer is no, you can't cast spells that require verbal components while under silence. However, if the spell doesn't need a verbal component, maybe? But the silence effect's description says \"no sound can be created,\" which would include verbal components. So even spells without verbal components might be affected if they require other components, but the passage specifically mentions verbal components. \n\nWait, the silence spell's description says \"Casting a spell that includes a verbal component is impossible there.\" So if the spell you're trying to cast has a verbal component, you can't. But if the spell doesn't require a verbal component, maybe you can? However, the silence effect also says \"creatures are deafened while entirely inside it.\" But the question is about casting a spell, not being deafened. \n\nThe answer should be that you can't cast spells with verbal components while under silence. The silence effect makes it impossible to cast such spells. So the answer is no, you can't cast spells that require a verbal component while in the silence sphere. The provided context directly states this in Passage 2.",
+   "new_tokens": 504,
+   "seconds": 31.42766107316129,
+   "truncated": false
+  },
+  {
+   "embedder": "embeddinggemma-2",
+   "category": "Negation / constraint",
+   "query": "Can I cast a spell while a silence effect is on me?",
+   "pipeline": "rerank",
+   "thinking": false,
+   "context_ids": [
+    369,
+    785,
+    675
+   ],
+   "gold_in_context": true,
+   "answer": "No, if you are under the effects of the silence spell, you cannot cast any spell that requires a verbal (V) or somatic (S) component. The silence spell prevents the creation of sound and the performance of gestures, which are necessary for such spells. However, spells that do not require verbal or somatic components can still be cast.",
+   "think": "",
+   "new_tokens": 72,
+   "seconds": 4.705093593103811,
+   "truncated": false
+  },
+  {
+   "embedder": "embeddinggemma-2",
+   "category": "Negation / constraint",
+   "query": "Can I cast a spell while a silence effect is on me?",
+   "pipeline": "rerank",
+   "thinking": true,
+   "context_ids": [
+    369,
+    785,
+    675
+   ],
+   "gold_in_context": true,
+   "answer": "No, if the spell requires a verbal component, you cannot cast it while under the effects of the silence spell. Spells without verbal components may still be cast.",
+   "think": "Okay, let's tackle this question. The user is asking if they can cast a spell while a silence effect is on them. I need to check the provided context passages to find the answer.\n\nLooking at Passage 1, it mentions that if a character is gagged or in an area of silence, like one created by the silence spell, they can't cast a spell with a verbal component. So, if the silence effect is active, the caster can't use verbal components. But the question is about casting any spell, not just those with verbal components. \n\nThen, Passage 2 talks about the silence spell's effect. It says that within the silence sphere, casting a spell with a verbal component is impossible. However, the passage doesn't explicitly say if other types of spells (without verbal components) can be cast. \n\nWait, the silence spell's description in Passage 3 says that casting a spell with a verbal component is impossible there. But what about spells that don't require verbal components? The answer might depend on whether the spell requires verbal components. If the spell doesn't have a verbal component, maybe it can still be cast. However, the user's question is general\u2014can they cast any spell while under silence? \n\nThe answer would be that if the spell requires a verbal component, they can't. But if the spell doesn't require one, maybe they can. However, the question is phrased as a general ability. The silence effect specifically prevents casting spells with verbal components. So the answer is that you can't cast spells that require verbal components while under silence. But the user might be asking if they can cast any spell. The answer would be no, because the silence effect prevents verbal components, which are required for many spells. However, the context doesn't explicitly state that all spells are affected, only those with verbal components. So the answer is that you can't cast spells that require verbal components, but others might still be possible. But the question is whether you can cast a spell while under silence. The answer is that you can't if the spell requires a verbal component. Since the question doesn't specify the spell, the answer should be that you can't cast spells that require verbal components, but maybe others. However, the silence spell's effect says \"casting a spell that includes a verbal component is impossible there.\" So if the spell has a verbal component, you can't. If not, you can. But the question is general. The answer would be that you can't cast spells that require verbal components, but others might be possible. But the user is asking if they can cast a spell while under silence. The answer is that you can't if the spell requires a verbal component. However, the silence effect might also affect other components? Wait, the passage says \"casting a spell that includes a verbal component is impossible there.\" So only spells with verbal components are blocked. So the answer is that you can't cast spells that require verbal components, but spells without them can be cast. But the question is whether you can cast a spell while under silence. The answer depends on the spell's components. However, the user's question is general. The answer would be that you can't cast spells that require verbal components, but others may be possible. However, the context doesn't mention other components being affected. So the answer is that you can't cast spells that require verbal components while under silence. But the user might be asking if they can cast any spell. The answer is that you can't if the spell requires a verbal component. So the answer is that you can't cast spells that require verbal components, but others may be possible. But the question is whether you can cast a spell while under silence. The answer is that you can't if the spell requires a verbal component. However, the silence effect's description in Passage 3 says \"casting a spell that includes a verbal component is impossible there.\" So the answer is that you can't cast spells that require verbal components. Therefore, the answer is that you can't cast a spell that requires a verbal component while under silence. But the question is general. The answer is that you can't cast spells that require verbal components, but others might be possible. However, the context doesn't say that other components are blocked. So the answer is that you can't cast spells that require verbal components. Therefore, the answer is that you can't cast a spell with a verbal component while under silence. But the user is asking if they can cast any spell. The answer is that you can't if the spell requires a verbal component. So the answer is that you can't cast spells that require verbal components, but others may be possible. However, the context doesn't mention that other components are blocked. So the answer is that you can't cast spells that require verbal components. Therefore, the answer is that you can't cast a spell with a verbal component while under silence. The answer should be concise. The provided context says that in a silence effect, casting a spell with a verbal component is impossible. So the answer is that you can't cast spells that require verbal components, but others may be possible. However, the question is whether you can cast a spell while under silence. The answer is that you can't if the spell requires a verbal component. So the answer is that you can't cast a spell that requires a verbal component while under silence. But the question is general. The answer is that you can't cast spells that require verbal components, but others may be possible. However, the context doesn't say that other components are blocked. So the answer is that you can't cast spells that require verbal components. Therefore, the answer is that you can't cast a spell with a verbal component while under silence. The answer should be: \"No, if the spell requires a verbal component, you cannot cast it while under the effects of the silence spell. Spells without verbal components may still be cast.\"",
+   "new_tokens": 1252,
+   "seconds": 77.70390030299313,
+   "truncated": false
+  },
+  {
+   "embedder": "embeddinggemma-2",
+   "category": "Exception / corner",
+   "query": "Can I shove a creature much bigger than me?",
+   "pipeline": "baseline",
+   "thinking": false,
+   "context_ids": [
+    327,
+    328,
+    799
+   ],
+   "gold_in_context": false,
+   "answer": "No, you cannot shove a creature much bigger than you. A creature can shove another creature only if the target is at least one size category smaller. Shoving a larger creature is not allowed.",
+   "think": "",
+   "new_tokens": 40,
+   "seconds": 2.71220762305893,
+   "truncated": false
+  },
+  {
+   "embedder": "embeddinggemma-2",
+   "category": "Exception / corner",
+   "query": "Can I shove a creature much bigger than me?",
+   "pipeline": "baseline",
+   "thinking": true,
+   "context_ids": [
+    327,
+    328,
+    799
+   ],
+   "gold_in_context": false,
+   "answer": "The provided context does not answer this.",
+   "think": "Okay, let's tackle this question. The user is asking if they can shove a creature that's much bigger than them. I need to check the provided context passages to find the answer.\n\nLooking at Passage 1, it talks about movement and opportunity attacks, but not shoving. Passage 2 discusses creature sizes and squeezing through spaces. It mentions that a creature can squeeze through a space one size smaller than theirs. However, shoving isn't mentioned here. \n\nPassage 3 is about the Bag of Holding, which isn't relevant here. The key point is whether shoving is possible against a larger creature. The rules on shoving in D&D 5e usually depend on size. A creature can shove another if it's at least one size smaller. Since the question is about a creature much bigger than the user, the answer would be no. The context doesn't explicitly mention shoving, but based on general rules, a larger creature can't be shoved by a smaller one. The provided passages don't have specific info on shoving, so the answer should state that the context doesn't answer it. Wait, but the user is asking if they can shove a bigger creature. The context mentions that a creature can squeeze through a space one size smaller, but shoving is different. Since the passages don't discuss shoving, the correct response is that the context doesn't answer this.",
+   "new_tokens": 296,
+   "seconds": 18.58906227000989,
+   "truncated": false
+  },
+  {
+   "embedder": "embeddinggemma-2",
+   "category": "Exception / corner",
+   "query": "Can I shove a creature much bigger than me?",
+   "pipeline": "rerank",
+   "thinking": false,
+   "context_ids": [
+    329,
+    401,
+    326
+   ],
+   "gold_in_context": false,
+   "answer": "The provided context does not answer this. Shoving a creature is not explicitly mentioned in the passages, but the rules about moving through spaces and the effects of squeezing through narrow passages may relate. However, the specific action of shoving a larger creature is not covered.",
+   "think": "",
+   "new_tokens": 54,
+   "seconds": 3.5454965219832957,
+   "truncated": false
+  },
+  {
+   "embedder": "embeddinggemma-2",
+   "category": "Exception / corner",
+   "query": "Can I shove a creature much bigger than me?",
+   "pipeline": "rerank",
+   "thinking": true,
+   "context_ids": [
+    329,
+    401,
+    326
+   ],
+   "gold_in_context": false,
+   "answer": "The provided context does not answer this.  \nShoving a creature is not explicitly addressed in the passages, which focus on squeezing through spaces, moving through creatures' spaces, and animated object rules. General rules about pushing or shoving are not detailed here.",
+   "think": "Okay, let's tackle this question. The user is asking if they can shove a creature that's much bigger than them in D&D 5e. I need to check the provided context passages to find the answer.\n\nLooking at Passage 1, page 92: It talks about squeezing through spaces and the effects of doing so. It mentions that when squeezing, you spend 1 extra foot per foot moved and have disadvantage on attacks. But this is about moving through tight spaces, not shoving. \n\nPassage 2 is about the Animated Object spell, which doesn't seem relevant here. \n\nPassage 3 lists actions like throwing a lever, pulling a torch, etc. Shoving isn't listed here, but maybe there's a general rule about pushing. \n\nWait, the question is about shoving a bigger creature. The rules mention that you can move through a nonhostile creature's space, but if it's hostile, you need to be at least two sizes larger or smaller. But shoving might involve pushing into a creature's space. However, the provided passages don't explicitly mention shoving. The only related part is about moving through spaces, but shoving could be considered an action. \n\nThe answer might be that the context doesn't specify shoving, so the answer is that the provided context doesn't answer this. Alternatively, if there's a rule in the general rules about pushing, but since the user is restricted to the given passages, and none of them mention shoving specifically, the answer would be that the context doesn't answer it.",
+   "new_tokens": 375,
+   "seconds": 23.43333659111522,
+   "truncated": false
+  },
+  {
+   "embedder": "embeddinggemma-2",
+   "category": "Keyword trap (synonym)",
+   "query": "How many magic items can one creature bond with?",
+   "pipeline": "baseline",
+   "thinking": false,
+   "context_ids": [
+    781,
+    701,
+    779
+   ],
+   "gold_in_context": true,
+   "answer": "A creature can be attuned to no more than three magic items at a time. Any attempt to attune to a fourth item fails; the creature must end its attunement to an item first. Additionally, a creature can\u2019t attune to more than one copy of an item.",
+   "think": "",
+   "new_tokens": 59,
+   "seconds": 3.88459578785114,
+   "truncated": false
+  },
+  {
+   "embedder": "embeddinggemma-2",
+   "category": "Keyword trap (synonym)",
+   "query": "How many magic items can one creature bond with?",
+   "pipeline": "baseline",
+   "thinking": true,
+   "context_ids": [
+    781,
+    701,
+    779
+   ],
+   "gold_in_context": true,
+   "answer": "A creature can be attuned to no more than three magic items at a time. This limit applies unless the item is cursed, in which case the restriction does not apply. The provided context does not mention exceptions beyond this limit.",
+   "think": "Okay, let's see. The user is asking how many magic items one creature can bond with. I need to check the provided context passages to find the answer.\n\nLooking at Passage 1, page 206: It says, \"a creature can be attuned to no more than three magic items at a time.\" The term \"attuned\" here is equivalent to \"bonded\" in the question. So that's three. Also, it mentions that a creature can't attune to more than one copy of an item. But the question is about the number of items, not copies. So the answer should be three. The other passages don't mention this limit. Passage 3 talks about attunement prerequisites but doesn't specify the number. Passage 2 is about telepathic bond and doesn't relate to magic items. So the answer is three.",
+   "new_tokens": 228,
+   "seconds": 14.323372935177758,
+   "truncated": false
+  },
+  {
+   "embedder": "embeddinggemma-2",
+   "category": "Keyword trap (synonym)",
+   "query": "How many magic items can one creature bond with?",
+   "pipeline": "rerank",
+   "thinking": false,
+   "context_ids": [
+    781,
+    779,
+    782
+   ],
+   "gold_in_context": true,
+   "answer": "A creature can be attuned to no more than three magic items at a time. Any attempt to attune to a fourth item fails; the creature must end its attunement to an item first. Additionally, a creature can\u2019t attune to more than one copy of an item.",
+   "think": "",
+   "new_tokens": 59,
+   "seconds": 3.87321714987047,
+   "truncated": false
+  },
+  {
+   "embedder": "embeddinggemma-2",
+   "category": "Keyword trap (synonym)",
+   "query": "How many magic items can one creature bond with?",
+   "pipeline": "rerank",
+   "thinking": true,
+   "context_ids": [
+    781,
+    779,
+    782
+   ],
+   "gold_in_context": true,
+   "answer": "A creature can be attuned to no more than three magic items at a time. This limit applies unless the item is cursed, in which case voluntary detachment is not allowed. The provided context does not mention exceptions to this rule.",
+   "think": "Okay, let's see. The user is asking how many magic items one creature can bond with. I need to check the provided context passages to find the answer.\n\nLooking at Passage 1, page 206: It says, \"a creature can be attuned to no more than three magic items at a time.\" Also, there's a mention that \"a creature can\u2019t attune to more than one copy of an item.\" So, the key point here is the limit of three items. \n\nPassage 2 doesn't mention the number, so I can ignore that. Passage 3 talks about attunement ending under certain conditions but doesn't specify the number. \n\nSo the answer should be three. The passages clearly state that a creature can be attuned to no more than three magic items. The answer is three, and there's no exception mentioned here. The user's question is straightforward, so the answer is directly from Passage 1.",
+   "new_tokens": 246,
+   "seconds": 15.449565774993971,
+   "truncated": false
+  },
+  {
+   "embedder": "embeddinggemma-2",
+   "category": "Counter-example",
+   "query": "Can I rest twice in a single day to recover everything?",
+   "pipeline": "baseline",
+   "thinking": false,
+   "context_ids": [
+    313,
+    308,
+    307
+   ],
+   "gold_in_context": true,
+   "answer": "No. A character can take a short rest and a long rest in a single day, but they cannot benefit from more than one long rest. A long rest provides full hit point recovery and regained Hit Dice, while a short rest allows for partial hit point recovery and spending Hit Dice.",
+   "think": "",
+   "new_tokens": 58,
+   "seconds": 3.7879526899196208,
+   "truncated": false
+  },
+  {
+   "embedder": "embeddinggemma-2",
+   "category": "Counter-example",
+   "query": "Can I rest twice in a single day to recover everything?",
+   "pipeline": "baseline",
+   "thinking": true,
+   "context_ids": [
+    313,
+    308,
+    307
+   ],
+   "gold_in_context": true,
+   "answer": "You can take a long rest once and a short rest during the day, but you cannot benefit from more than one long rest in a single day. Short rests can be taken multiple times, but a long rest is limited to once.",
+   "think": "Okay, let's tackle this question. The user is asking if they can rest twice in a single day to recover everything. I need to check the context passages provided.\n\nLooking at Passage 2, it mentions a long rest which is at least 8 hours and allows regaining all lost hit points and spent Hit Dice. Then Passage 3 talks about short rests, which are at least 1 hour. The key point here is whether multiple rests can be done in a day.\n\nPassage 2 says a character can't benefit from more than one long rest in a single day. But short rests can be taken during the day. However, the user is asking about resting twice to recover everything. The answer depends on whether taking two short rests or one long rest and one short rest is allowed.\n\nWait, the question is about recovering everything. A long rest recovers all lost hit points and spent Hit Dice. But if you take two short rests, you can spend Hit Dice each time. However, the passages don't explicitly say you can take two short rests in a day. The text says \"short rests in the midst of an adventuring day\" and \"a long rest to end the day.\" So maybe you can take a short rest during the day and then a long rest at the end. But the answer needs to be based strictly on the context.\n\nPassage 2 says \"a character can\u2019t benefit from more than one long rest in a single day.\" So you can't have two long rests. But short rests can be taken multiple times. However, the user is asking if resting twice (could be two short rests or one short and one long) allows recovery of everything. The answer would be that you can take a long rest and a short rest, but the long rest is only once. However, the exact answer needs to be derived from the text.\n\nThe key is that a long rest is at least 8 hours, and short rests are 1 hour. If you take a long rest and then a short rest, you can recover everything from the long rest and then maybe some more from the short rest. But the question is whether you can rest twice in a day to recover everything. The answer is that you can take a long rest and a short rest, but the long rest is only once. However, the text doesn't explicitly say that taking two short rests is allowed. The answer should be based on the provided passages. The answer would be that you can take a long rest and a short rest, but the long rest is only once. However, the user might be asking if two short rests would allow full recovery. The answer is that you can take multiple short rests, but each short rest allows spending Hit Dice. However, the passages don't specify that you can take two short rests in a day. The answer should be that you can take a long rest once and a short rest, but the long rest is only once. However, the exact answer from the context is that a character can't benefit from more than one long rest. So the answer is that you can't take two long rests, but you can take a long rest and a short rest. But the user is asking if resting twice (any two rests) allows recovery. The answer would be that you can take a long rest once and a short rest, but the long rest is only once. However, the answer needs to be concise. The correct answer based on the context is that you can't take two long rests, but you can take a long rest and a short rest. However, the question is whether resting twice in a day to recover everything. The answer is that you can take a long rest once and a short rest, but the long rest is only once. The answer is that you can't take two long rests, but you can take a long rest and a short rest. However, the exact answer from the context is that a character can't benefit from more than one long rest in a single day. Therefore, the answer is that you can take a long rest once and a short rest, but the long rest is only once. However, the user is asking if resting twice (any two rests) allows recovery. The answer is that you can take a long rest once and a short rest, but the long rest is only once. The answer should be that you can't take two long rests, but you can take a long rest and a short rest. However, the answer must be concise. The correct answer is that you can take a long rest once and a short rest, but the long rest is only once. Therefore, the answer is that you can take a long rest once and a short rest, but the long rest is only once. However, the exact answer from the context is that a character can't benefit from more than one long rest in a single day. Therefore, the answer is that you can't take two long rests, but you can take a long rest and a short rest. However, the user is asking if resting twice (any two rests) allows recovery. The answer is that you can take a long rest once and a short rest, but the long rest is only once. Therefore, the answer is that you can take a long rest once and a short rest, but the long rest is only once. So the answer is that you can take a long rest once and a short rest, but the long rest is only once. Therefore, the answer is that you can't take two long rests, but you can take a long rest and a short rest. However, the answer must be concise. The correct answer is: No, you can't take two long rests in a single day. However, you can take a long rest and a short rest. But the question is about resting twice to recover everything. The answer is that you can take a long rest once and a short rest, but the long rest is only once. Therefore, the answer is that you can take a long rest once and a short rest, but the long rest is only once. So the answer is that you can't take two long rests, but you can take a long rest and a short rest. However, the answer should be concise. The correct answer based on the context is: \"No, you can't benefit from more than one long rest in a single day. You can take a short rest during the day and a long rest at the end, but the long rest is only once.\"",
+   "new_tokens": 1373,
+   "seconds": 85.00246910005808,
+   "truncated": false
+  },
+  {
+   "embedder": "embeddinggemma-2",
+   "category": "Counter-example",
+   "query": "Can I rest twice in a single day to recover everything?",
+   "pipeline": "rerank",
+   "thinking": false,
+   "context_ids": [
+    65,
+    309,
+    308
+   ],
+   "gold_in_context": true,
+   "answer": "No. A character can\u2019t benefit from more than one long rest in a 24-hour period. A long rest must be at least 8 hours long. Resting twice in a single day would not allow recovery of everything. The provided context does not answer this.",
+   "think": "",
+   "new_tokens": 56,
+   "seconds": 3.69105785805732,
+   "truncated": false
+  },
+  {
+   "embedder": "embeddinggemma-2",
+   "category": "Counter-example",
+   "query": "Can I rest twice in a single day to recover everything?",
+   "pipeline": "rerank",
+   "thinking": true,
+   "context_ids": [
+    65,
+    309,
+    308
+   ],
+   "gold_in_context": true,
+   "answer": "The provided context states that a character can\u2019t benefit from more than one long rest in a 24-hour period. You must finish a long rest before gaining its benefits again. Thus, resting twice in a single day is not allowed.",
+   "think": "Okay, let's tackle this question. The user is asking if they can rest twice in a single day to recover everything. I need to check the context passages provided.\n\nLooking at Passage 2, it mentions that a character can't benefit from more than one long rest in a 24-hour period. So that's a clear restriction. Also, Passage 3 says that a long rest is at least 8 hours and that you can't have more than one in 24 hours. The user is asking about resting twice, which would violate that rule. The answer should state that you can't do that because of the 24-hour limit. Also, even if you tried, the benefits from the long rest are only available once. So the answer should mention the restriction about only one long rest per day and that you can't recover more than that.",
+   "new_tokens": 228,
+   "seconds": 14.355722761945799,
+   "truncated": false
+  },
+  {
+   "embedder": "embeddinggemma-2",
+   "category": "Counter-example",
+   "query": "Can a creature that is held by an enemy still walk away?",
+   "pipeline": "baseline",
+   "thinking": false,
+   "context_ids": [
+    326,
+    328,
+    472
+   ],
+   "gold_in_context": false,
+   "answer": "No, a creature that is held by an enemy cannot willingly end its move in the enemy's space. If you leave a hostile creature's reach during your move, you provoke an opportunity attack. Whether a creature is a friend or an enemy, you can\u2019t willingly end your move in its space. This applies to creatures that are hostile and holding you.",
+   "think": "",
+   "new_tokens": 72,
+   "seconds": 4.6636825310997665,
+   "truncated": false
+  },
+  {
+   "embedder": "embeddinggemma-2",
+   "category": "Counter-example",
+   "query": "Can a creature that is held by an enemy still walk away?",
+   "pipeline": "baseline",
+   "thinking": true,
+   "context_ids": [
+    326,
+    328,
+    472
+   ],
+   "gold_in_context": false,
+   "answer": "The provided context does not answer this.",
+   "think": "Okay, let's tackle this question. The user is asking if a creature held by an enemy can still walk away. I need to check the provided context passages to find the answer.\n\nLooking at Passage 1, it mentions moving through non-hostile and hostile creatures' spaces. It says you can't willingly end your move in a hostile creature's space. Also, leaving a hostile creature's reach during a move provokes an opportunity attack. But this is about moving through spaces, not about being held.\n\nPassage 2 talks about creature spaces and squeezing through. Not directly relevant to being held.\n\nPassage 3 is about controlling creatures with a spell, but the question isn't about controlling creatures, but about being held by an enemy. \n\nWait, the question is about a creature that's held by an enemy. The context doesn't mention anything about being held or restrained. The passages discuss movement through spaces, squeezing, and controlling creatures, but not being held. So, the answer would be that the context doesn't cover this scenario. The user's question isn't addressed in the provided passages. Therefore, the answer should be that the context doesn't answer this.",
+   "new_tokens": 250,
+   "seconds": 15.820331799099222,
+   "truncated": false
+  },
+  {
+   "embedder": "embeddinggemma-2",
+   "category": "Counter-example",
+   "query": "Can a creature that is held by an enemy still walk away?",
+   "pipeline": "rerank",
+   "thinking": false,
+   "context_ids": [
+    974,
+    1374,
+    326
+   ],
+   "gold_in_context": false,
+   "answer": "No, a creature that is held by an enemy cannot willingly end its move in the enemy's space. If you leave a hostile creature's reach during your move, you provoke an opportunity attack. Whether a creature is a friend or an enemy, you can\u2019t willingly end your move in its space.",
+   "think": "",
+   "new_tokens": 61,
+   "seconds": 3.9876277819275856,
+   "truncated": false
+  },
+  {
+   "embedder": "embeddinggemma-2",
+   "category": "Counter-example",
+   "query": "Can a creature that is held by an enemy still walk away?",
+   "pipeline": "rerank",
+   "thinking": true,
+   "context_ids": [
+    974,
+    1374,
+    326
+   ],
+   "gold_in_context": false,
+   "answer": "The provided context does not answer this.  \n**Exception:** The grappled condition (Passage 2) restricts movement, but if the creature breaks the grapple, it can move. However, the context does not explicitly address whether a creature held by an enemy can walk away while being grappled.",
+   "think": "Okay, let's tackle this question. The user is asking if a creature that is held by an enemy can still walk away. I need to check the provided context passages to find the answer.\n\nLooking at Passage 1, it's about wands like Enemy Detection and Fear. The grapple ability is mentioned in Passage 2. Specifically, Passage 2 talks about the \"grapple\" condition. The relevant part says that if a creature is grappled, the grappler can make a contest to overcome the creature's Strength or Dexterity. Also, if the grappler is holding the creature, they can attempt to escape. The text mentions that if the creature is hurled away by a spell like thunderwave, the grappled condition ends. But the question is about a creature being held by an enemy and trying to walk away.\n\nWait, the question is about a creature that's being held by an enemy. The answer might be in the grappling rules. The passage says that if a creature is grappled, the grappler can make a contest to overcome the creature's Strength or Dexterity. If the grappler succeeds, the creature is restrained. But the question is whether the creature can walk away. If the creature is restrained, they can't move freely. However, if the enemy is holding them, maybe the creature can try to escape. But the passage also says that if the creature is hurled away, the grappled condition ends. But the question is about walking away, not being thrown. \n\nWait, the user is asking if a creature held by an enemy can walk away. The answer might be that if the creature is being held (grappled), they can't move freely. But the passage says that if the creature is in a grappled condition, they can't move. However, the passage also says that if the creature is in a grappled condition, the grappler can attempt to overcome the creature's Strength or Dexterity. If the creature is able to escape, then they can walk away. But the question is whether they can. The answer would depend on the rules of grappling. \n\nIn the context, the grappled condition is mentioned in Passage 2. The specific text says: \"The condition also ends if an effect removes the grappled creature from the reach of the grappler or grappling effect, such as when a creature is hurled away by the thunderwave spell.\" But that's about being hurled away. If the creature is being held, they can try to escape. However, the passage doesn't explicitly state that a creature can walk away while being held. The answer might be that if the creature is being held (grappled), they can't move, but if they manage to escape the grapple, they can. However, the question is phrased as \"can a creature that is held by an enemy still walk away?\" So, if the creature is being held (grappled), they can't walk away unless they break the grapple. But the answer needs to be based on the context provided. \n\nThe answer is in Passage 2, which says that if a creature is grappled, the grappler can make a contest to overcome the creature's Strength or Dexterity. If the creature is able to escape the grapple, they can move. However, the question is whether they can walk away while being held. The answer would be that if the creature is being held (grappled), they can't move freely, but if they break the grapple, they can. But the context doesn't mention that the creature can walk away while being held. The answer is that the creature can't walk away while being held, but if they break the grapple, they can. But the question is about being held by an enemy. The answer is that the creature can't walk away while being held, as the grappled condition restricts movement. However, the passage says that if the creature is in a grapple, they can't move through the space of a hostile creature unless they are at least two sizes larger or smaller. But the question is about walking away. The answer is that the creature can't walk away while being held, but if they escape the grapple, they can. But the context doesn't explicitly state this. Wait, the passage says that if the creature is grappled, the grappler can attempt to overcome the creature's Strength or Dexterity. If the creature is able to escape, then they can move. So the answer is that a creature held by an enemy can walk away if they break the grapple. But the question is whether they can still walk away while being held. The answer is that they can't, because being grappled restricts movement. However, the passage doesn't explicitly say that. The answer is based on the grappled condition. The passage says that if the creature is in a grappled condition, they can't move through the space of a hostile creature unless they are at least two sizes larger or smaller. So, if the creature is being held by an enemy, they can't move through the enemy's space, so they can't walk away. Therefore, the answer is that a creature held by an enemy cannot walk away while being grappled, as the grappled condition restricts movement.",
+   "new_tokens": 1166,
+   "seconds": 73.15776496496983,
+   "truncated": false
+  }
+ ],
+ "retrieval": {
+  "bge-small": {
+   "What breaks my focus on a spell?": {
+    "base_ids": [
+     334,
+     371,
+     368,
+     222,
+     372,
+     448,
+     483,
+     578,
+     692,
+     574
+    ],
+    "rerank_ids": [
+     334,
+     372,
+     371,
+     368,
+     483,
+     222,
+     578,
+     448,
+     692,
+     574
+    ],
+    "gold_rank_base": 5,
+    "gold_rank_rerank": 2,
+    "gold_chunk": 372,
+    "ce": {
+     "334": 3.0395705699920654,
+     "371": -0.5814067721366882,
+     "368": -0.6716208457946777,
+     "222": -3.352548837661743,
+     "372": -0.3240088224411011,
+     "448": -6.818684101104736,
+     "483": -1.9965074062347412,
+     "578": -3.9348673820495605,
+     "692": -8.043371200561523,
+     "574": -8.180453300476074
+    }
+   },
+   "Do I need to see a target to attack it?": {
+    "base_ids": [
+     340,
+     334,
+     341,
+     338,
+     1019,
+     332,
+     344,
+     337,
+     416,
+     342
+    ],
+    "rerank_ids": [
+     338,
+     342,
+     337,
+     344,
+     1019,
+     332,
+     340,
+     416,
+     341,
+     334
+    ],
+    "gold_rank_base": 8,
+    "gold_rank_rerank": 3,
+    "gold_chunk": 337,
+    "ce": {
+     "340": -0.23188316822052002,
+     "334": -6.1020917892456055,
+     "341": -4.037967681884766,
+     "338": 2.4764394760131836,
+     "1019": 0.2995302975177765,
+     "332": 0.16133703291416168,
+     "344": 0.47843214869499207,
+     "337": 1.1393673419952393,
+     "416": -3.489525318145752,
+     "342": 1.6539052724838257
+    }
+   },
+   "Can I punish an unseen enemy that runs away from me?": {
+    "base_ids": [
+     282,
+     332,
+     338,
+     340,
+     1466,
+     1464,
+     744,
+     1022,
+     1137,
+     742
+    ],
+    "rerank_ids": [
+     338,
+     332,
+     340,
+     282,
+     742,
+     1022,
+     744,
+     1137,
+     1464,
+     1466
+    ],
+    "gold_rank_base": 4,
+    "gold_rank_rerank": 3,
+    "gold_chunk": 340,
+    "ce": {
+     "282": -9.110045433044434,
+     "332": -5.375498294830322,
+     "338": -2.106006622314453,
+     "340": -7.12627649307251,
+     "1466": -10.824084281921387,
+     "1464": -10.771005630493164,
+     "744": -10.427929878234863,
+     "1022": -10.426082611083984,
+     "1137": -10.53739070892334,
+     "742": -10.257015228271484
+    }
+   },
+   "Can I cast a spell while a silence effect is on me?": {
+    "base_ids": [
+     785,
+     635,
+     369,
+     463,
+     151,
+     38,
+     560,
+     393,
+     649,
+     612
+    ],
+    "rerank_ids": [
+     369,
+     785,
+     463,
+     393,
+     560,
+     635,
+     38,
+     612,
+     151,
+     649
+    ],
+    "gold_rank_base": 3,
+    "gold_rank_rerank": 1,
+    "gold_chunk": 369,
+    "ce": {
+     "785": 3.327324390411377,
+     "635": -2.8601675033569336,
+     "369": 3.532867670059204,
+     "463": -0.09438744187355042,
+     "151": -6.080720901489258,
+     "38": -3.858729600906372,
+     "560": -1.2187706232070923,
+     "393": -0.2806280255317688,
+     "649": -7.585693359375,
+     "612": -3.911409854888916
+    }
+   },
+   "Can I shove a creature much bigger than me?": {
+    "base_ids": [
+     329,
+     506,
+     343,
+     700,
+     277,
+     328,
+     1376,
+     412,
+     559,
+     715
+    ],
+    "rerank_ids": [
+     343,
+     329,
+     700,
+     506,
+     715,
+     328,
+     412,
+     277,
+     1376,
+     559
+    ],
+    "gold_rank_base": 3,
+    "gold_rank_rerank": 1,
+    "gold_chunk": 343,
+    "ce": {
+     "329": 1.6765469312667847,
+     "506": -1.6829535961151123,
+     "343": 4.175233840942383,
+     "700": 0.6280685067176819,
+     "277": -4.396707057952881,
+     "328": -2.6843631267547607,
+     "1376": -7.845869064331055,
+     "412": -3.7671186923980713,
+     "559": -8.532963752746582,
+     "715": -1.7880303859710693
+    }
+   },
+   "How many magic items can one creature bond with?": {
+    "base_ids": [
+     782,
+     701,
+     781,
+     990,
+     991,
+     886,
+     783,
+     972,
+     401,
+     231
+    ],
+    "rerank_ids": [
+     781,
+     782,
+     991,
+     886,
+     701,
+     783,
+     401,
+     972,
+     231,
+     990
+    ],
+    "gold_rank_base": 3,
+    "gold_rank_rerank": 1,
+    "gold_chunk": 781,
+    "ce": {
+     "782": 0.05661528930068016,
+     "701": -2.8439884185791016,
+     "781": 3.5768442153930664,
+     "990": -7.388916015625,
+     "991": -2.558986186981201,
+     "886": -2.7134718894958496,
+     "783": -3.5373477935791016,
+     "972": -4.5840840339660645,
+     "401": -4.4132771492004395,
+     "231": -5.031010150909424
+    }
+   },
+   "Can I rest twice in a single day to recover everything?": {
+    "base_ids": [
+     308,
+     307,
+     92,
+     351,
+     356,
+     313,
+     737,
+     73,
+     658,
+     166
+    ],
+    "rerank_ids": [
+     166,
+     92,
+     73,
+     308,
+     307,
+     737,
+     351,
+     313,
+     658,
+     356
+    ],
+    "gold_rank_base": 1,
+    "gold_rank_rerank": 4,
+    "gold_chunk": 308,
+    "ce": {
+     "308": -4.807443141937256,
+     "307": -4.993744373321533,
+     "92": -3.0389795303344727,
+     "351": -7.072098731994629,
+     "356": -9.313573837280273,
+     "313": -7.178480625152588,
+     "737": -6.064216613769531,
+     "73": -4.56404972076416,
+     "658": -8.422828674316406,
+     "166": -2.491610050201416
+    }
+   },
+   "Can a creature that is held by an enemy still walk away?": {
+    "base_ids": [
+     445,
+     715,
+     1375,
+     326,
+     1317,
+     1007,
+     327,
+     472,
+     1044,
+     301
+    ],
+    "rerank_ids": [
+     301,
+     445,
+     327,
+     326,
+     1317,
+     1044,
+     472,
+     1375,
+     1007,
+     715
+    ],
+    "gold_rank_base": null,
+    "gold_rank_rerank": null,
+    "gold_chunk": null,
+    "ce": {
+     "445": -0.6432999968528748,
+     "715": -6.005100250244141,
+     "1375": -4.494840621948242,
+     "326": -2.306267738342285,
+     "1317": -3.0324466228485107,
+     "1007": -5.304821014404297,
+     "327": -1.4295880794525146,
+     "472": -3.850334644317627,
+     "1044": -3.334434747695923,
+     "301": 2.3465847969055176
+    }
+   }
+  },
+  "embeddinggemma-2": {
+   "What breaks my focus on a spell?": {
+    "base_ids": [
+     368,
+     371,
+     334,
+     373,
+     663,
+     372,
+     944,
+     431,
+     482,
+     649
+    ],
+    "rerank_ids": [
+     334,
+     372,
+     371,
+     368,
+     944,
+     373,
+     482,
+     663,
+     431,
+     649
+    ],
+    "gold_rank_base": 6,
+    "gold_rank_rerank": 2,
+    "gold_chunk": 372,
+    "ce": {
+     "368": -0.6716208457946777,
+     "371": -0.5814067721366882,
+     "334": 3.0395705699920654,
+     "373": -6.396420955657959,
+     "663": -6.633622646331787,
+     "372": -0.3240088224411011,
+     "944": -4.680156707763672,
+     "431": -6.746250629425049,
+     "482": -6.568324089050293,
+     "649": -7.601495265960693
+    }
+   },
+   "Do I need to see a target to attack it?": {
+    "base_ids": [
+     345,
+     1019,
+     338,
+     340,
+     337,
+     401,
+     344,
+     506,
+     117,
+     373
+    ],
+    "rerank_ids": [
+     338,
+     337,
+     344,
+     1019,
+     340,
+     373,
+     345,
+     506,
+     117,
+     401
+    ],
+    "gold_rank_base": 5,
+    "gold_rank_rerank": 2,
+    "gold_chunk": 337,
+    "ce": {
+     "345": -0.8950567245483398,
+     "1019": 0.2995302975177765,
+     "338": 2.4764394760131836,
+     "340": -0.23188316822052002,
+     "337": 1.1393673419952393,
+     "401": -4.162466526031494,
+     "344": 0.47843214869499207,
+     "506": -1.1308766603469849,
+     "117": -1.5096303224563599,
+     "373": -0.29679378867149353
+    }
+   },
+   "Can I punish an unseen enemy that runs away from me?": {
+    "base_ids": [
+     519,
+     510,
+     974,
+     338,
+     340,
+     472,
+     445,
+     897,
+     341,
+     769
+    ],
+    "rerank_ids": [
+     338,
+     974,
+     897,
+     341,
+     340,
+     769,
+     445,
+     519,
+     472,
+     510
+    ],
+    "gold_rank_base": 5,
+    "gold_rank_rerank": 5,
+    "gold_chunk": 340,
+    "ce": {
+     "519": -10.056117057800293,
+     "510": -11.005390167236328,
+     "974": -4.629488945007324,
+     "338": -2.1060056686401367,
+     "340": -7.126279830932617,
+     "472": -10.708017349243164,
+     "445": -9.98936653137207,
+     "897": -4.724822044372559,
+     "341": -6.158195495605469,
+     "769": -9.422123908996582
+    }
+   },
+   "Can I cast a spell while a silence effect is on me?": {
+    "base_ids": [
+     785,
+     675,
+     405,
+     649,
+     663,
+     369,
+     678,
+     599,
+     469,
+     574
+    ],
+    "rerank_ids": [
+     369,
+     785,
+     675,
+     405,
+     599,
+     469,
+     678,
+     574,
+     663,
+     649
+    ],
+    "gold_rank_base": 6,
+    "gold_rank_rerank": 1,
+    "gold_chunk": 369,
+    "ce": {
+     "785": 3.3273251056671143,
+     "675": -0.7854273915290833,
+     "405": -1.6983222961425781,
+     "649": -7.585691452026367,
+     "663": -6.890263557434082,
+     "369": 3.532867670059204,
+     "678": -6.692319869995117,
+     "599": -3.9144368171691895,
+     "469": -4.463484287261963,
+     "574": -6.7733540534973145
+    }
+   },
+   "Can I shove a creature much bigger than me?": {
+    "base_ids": [
+     327,
+     328,
+     799,
+     329,
+     506,
+     997,
+     1302,
+     277,
+     401,
+     326
+    ],
+    "rerank_ids": [
+     329,
+     401,
+     326,
+     506,
+     327,
+     328,
+     277,
+     1302,
+     997,
+     799
+    ],
+    "gold_rank_base": null,
+    "gold_rank_rerank": null,
+    "gold_chunk": null,
+    "ce": {
+     "327": -2.6828083992004395,
+     "328": -2.6843631267547607,
+     "799": -7.257232189178467,
+     "329": 1.6765469312667847,
+     "506": -1.6829535961151123,
+     "997": -4.537563800811768,
+     "1302": -4.4013261795043945,
+     "277": -4.396707057952881,
+     "401": 0.08207915723323822,
+     "326": 0.08058322966098785
+    }
+   },
+   "How many magic items can one creature bond with?": {
+    "base_ids": [
+     781,
+     701,
+     779,
+     629,
+     782,
+     886,
+     973,
+     786,
+     401,
+     802
+    ],
+    "rerank_ids": [
+     781,
+     779,
+     782,
+     786,
+     886,
+     701,
+     401,
+     802,
+     973,
+     629
+    ],
+    "gold_rank_base": 1,
+    "gold_rank_rerank": 1,
+    "gold_chunk": 781,
+    "ce": {
+     "781": 3.5768425464630127,
+     "701": -2.8439888954162598,
+     "779": 2.4385135173797607,
+     "629": -9.512933731079102,
+     "782": 0.056615810841321945,
+     "886": -2.7134718894958496,
+     "973": -6.880212306976318,
+     "786": -0.2701801061630249,
+     "401": -4.413278579711914,
+     "802": -5.718485355377197
+    }
+   },
+   "Can I rest twice in a single day to recover everything?": {
+    "base_ids": [
+     313,
+     308,
+     307,
+     51,
+     309,
+     762,
+     65,
+     737,
+     312,
+     351
+    ],
+    "rerank_ids": [
+     65,
+     309,
+     308,
+     307,
+     51,
+     737,
+     351,
+     762,
+     313,
+     312
+    ],
+    "gold_rank_base": 2,
+    "gold_rank_rerank": 2,
+    "gold_chunk": 308,
+    "ce": {
+     "313": -7.178481578826904,
+     "308": -4.807446479797363,
+     "307": -4.993745803833008,
+     "51": -5.723564624786377,
+     "309": -3.59698224067688,
+     "762": -7.16405725479126,
+     "65": -2.415327548980713,
+     "737": -6.064216136932373,
+     "312": -10.08946418762207,
+     "351": -7.072096824645996
+    }
+   },
+   "Can a creature that is held by an enemy still walk away?": {
+    "base_ids": [
+     326,
+     328,
+     472,
+     1374,
+     799,
+     596,
+     974,
+     700,
+     837,
+     519
+    ],
+    "rerank_ids": [
+     974,
+     1374,
+     326,
+     700,
+     472,
+     328,
+     837,
+     596,
+     799,
+     519
+    ],
+    "gold_rank_base": null,
+    "gold_rank_rerank": null,
+    "gold_chunk": null,
+    "ce": {
+     "326": -2.306267738342285,
+     "328": -4.628664493560791,
+     "472": -3.8503329753875732,
+     "1374": -2.2220299243927,
+     "799": -5.303863525390625,
+     "596": -5.198109149932861,
+     "974": 0.43636754155158997,
+     "700": -3.1342196464538574,
+     "837": -4.90648889541626,
+     "519": -9.963698387145996
+    }
+   }
+  }
+ },
+ "emb_info": {
+  "bge-small": {
+   "dim": 384,
+   "index_seconds": 4.281103405868635,
+   "stage1_ms": 10.393493219453376,
+   "stage2_ms": 18.751800271274988
+  },
+  "embeddinggemma-2": {
+   "dim": 768,
+   "index_seconds": 25.188630213029683,
+   "stage1_ms": 56.97263278707396,
+   "stage2_ms": 18.78164296358591
+  }
+ },
+ "llm": "Qwen/Qwen3-4B"
+}

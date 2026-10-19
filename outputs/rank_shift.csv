@@ -1,0 +1,9 @@
+category,query,gold_chunk,gold_rank_baseline,gold_rank_reranked,in_top3_baseline,in_top3_reranked
+Keyword trap,What breaks my focus on a spell?,372,5,2,False,True
+Negation / constraint,Do I need to see a target to attack it?,338,4,1,False,True
+Exception / corner,Can I punish an unseen enemy that runs away from me?,340,4,3,False,True
+Negation / constraint,Can I cast a spell while a silence effect is on me?,369,3,1,True,True
+Exception / corner,Can I shove a creature much bigger than me?,343,3,1,True,True
+Keyword trap (synonym),How many magic items can one creature bond with?,781,3,1,True,True
+Counter-example,Can I rest twice in a single day to recover everything?,308,1,4,True,False
+Counter-example,Can a creature that is held by an enemy still walk away?,1375,3,8,True,False
