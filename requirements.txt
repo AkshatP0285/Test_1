@@ -1,10 +1,13 @@
 torch
+transformers
 sentence-transformers
+accelerate
 faiss-cpu
 pymupdf
-google-genai
 pandas
 numpy
+pillow
+torchvision
 jupyter
 nbconvert
 ipykernel

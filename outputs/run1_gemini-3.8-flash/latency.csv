@@ -1,5 +1,0 @@
-step,mean_ms,std_ms
-Stage 1: bi-encoder embed query + FAISS top-10,11.5,1.3
-Stage 2: cross-encoder on 10 pairs,18.8,0.6
-"LLM generation (Gemini API, per answer)",72183.0,
-Cross-encoder on ALL 1504 chunks (1 query),1778.0,10.6

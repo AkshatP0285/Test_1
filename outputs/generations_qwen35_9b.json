@@ -5,7 +5,6 @@
    "category": "Keyword trap",
    "query": "What breaks my focus on a spell?",
    "pipeline": "baseline",
-   "thinking": false,
    "context_ids": [
     334,
     371,
@@ -13,10 +12,8 @@
    ],
    "gold_in_context": false,
    "answer": "Taking damage while concentrating on a spell breaks your focus unless you succeed on a Constitution saving throw. Additionally, casting another spell that requires concentration immediately ends your current concentration. You can also voluntarily end concentration at any time without using an action. Normal activities, such as moving or attacking, do not interfere with concentration.",
-   "think": "",
    "new_tokens": 65,
-   "seconds": 8.12582676508464,
-   "truncated": false,
+   "seconds": 6.581980379996821,
    "prompt_tokens": 850,
    "cached": false
   },
@@ -25,7 +22,6 @@
    "category": "Keyword trap",
    "query": "What breaks my focus on a spell?",
    "pipeline": "rerank",
-   "thinking": false,
    "context_ids": [
     334,
     372,
@@ -33,10 +29,8 @@
    ],
    "gold_in_context": true,
    "answer": "You lose concentration on a spell if you cast another spell that requires concentration, become incapacitated, or die. Additionally, taking damage forces you to make a Constitution saving throw (DC 10 or half the damage, whichever is higher); failing this breaks your concentration. Normal activity, such as moving or attacking, does not interfere with concentration. You can also end concentration at any time without using an action.",
-   "think": "",
    "new_tokens": 85,
-   "seconds": 9.99123941687867,
-   "truncated": false,
+   "seconds": 8.20205650292337,
    "prompt_tokens": 851,
    "cached": false
   },
@@ -45,7 +39,6 @@
    "category": "Negation / constraint",
    "query": "Do I need to see a target to attack it?",
    "pipeline": "baseline",
-   "thinking": false,
    "context_ids": [
     340,
     334,
@@ -53,10 +46,8 @@
    ],
    "gold_in_context": false,
    "answer": "Yes, you must be able to see a hostile creature to make an opportunity attack against it, as the rules specify you can only attack a \"hostile creature that you can see.\" However, the general structure for making an attack simply requires you to \"choose a target\" within your attack's range, without explicitly stating that sight is required for all types of attacks in the provided text. Therefore, while sight is mandatory for opportunity attacks, the context does not confirm if it is a universal requirement for every single attack type.",
-   "think": "",
    "new_tokens": 108,
-   "seconds": 12.447360661113635,
-   "truncated": false,
+   "seconds": 10.593584164977074,
    "prompt_tokens": 846,
    "cached": false
   },
@@ -65,7 +56,6 @@
    "category": "Negation / constraint",
    "query": "Do I need to see a target to attack it?",
    "pipeline": "rerank",
-   "thinking": false,
    "context_ids": [
     338,
     342,
@@ -73,10 +63,8 @@
    ],
    "gold_in_context": true,
    "answer": "No, you do not need to see a target to attack it, but you have disadvantage on the attack roll if you cannot see the target. If you are guessing the target's location and it is not there, you automatically miss. Conversely, if a creature cannot see you, you have advantage on attack rolls against it.",
-   "think": "",
    "new_tokens": 68,
-   "seconds": 8.160210785921663,
-   "truncated": false,
+   "seconds": 6.818184915930033,
    "prompt_tokens": 890,
    "cached": false
   },
@@ -85,7 +73,6 @@
    "category": "Exception / corner",
    "query": "Can I punish an unseen enemy that runs away from me?",
    "pipeline": "baseline",
-   "thinking": false,
    "context_ids": [
     282,
     332,
@@ -93,10 +80,8 @@
    ],
    "gold_in_context": false,
    "answer": "The provided context does not answer this.",
-   "think": "",
    "new_tokens": 11,
-   "seconds": 1.9787994250655174,
-   "truncated": false,
+   "seconds": 1.73280397686176,
    "prompt_tokens": 869,
    "cached": false
   },
@@ -105,7 +90,6 @@
    "category": "Exception / corner",
    "query": "Can I punish an unseen enemy that runs away from me?",
    "pipeline": "rerank",
-   "thinking": false,
    "context_ids": [
     338,
     332,
@@ -113,10 +97,8 @@
    ],
    "gold_in_context": true,
    "answer": "Yes, you can make an opportunity attack against an unseen enemy if you can see them as they move out of your reach. However, if the enemy is completely hidden (both unseen and unheard), they do not provoke an opportunity attack when moving away. Additionally, if the enemy is hidden, you have advantage on your attack roll against them. You must use your reaction to make this melee attack, which occurs right before the creature leaves your reach.",
-   "think": "",
    "new_tokens": 92,
-   "seconds": 10.664270933018997,
-   "truncated": false,
+   "seconds": 8.768050716025755,
    "prompt_tokens": 847,
    "cached": false
   },
@@ -125,7 +107,6 @@
    "category": "Negation / constraint",
    "query": "Can I cast a spell while a silence effect is on me?",
    "pipeline": "baseline",
-   "thinking": false,
    "context_ids": [
     785,
     635,
@@ -133,10 +114,8 @@
    ],
    "gold_in_context": true,
    "answer": "No, you cannot cast a spell with a verbal component while under the effect of silence. The silence spell creates an area where no sound can be made, preventing the chanting of mystic words required for verbal components. If a spell requires only somatic or material components, it can still be cast.",
-   "think": "",
    "new_tokens": 63,
-   "seconds": 7.645664099836722,
-   "truncated": false,
+   "seconds": 6.345953895943239,
    "prompt_tokens": 920,
    "cached": false
   },
@@ -145,7 +124,6 @@
    "category": "Negation / constraint",
    "query": "Can I cast a spell while a silence effect is on me?",
    "pipeline": "rerank",
-   "thinking": false,
    "context_ids": [
     369,
     785,
@@ -153,10 +131,8 @@
    ],
    "gold_in_context": true,
    "answer": "No, you cannot cast a spell with a verbal component while under the effect of silence, as the spell prevents the chanting of mystic words required for such components. You can still cast spells that rely solely on somatic or material components, provided you have free use of at least one hand and the necessary objects. Additionally, magic items that allow spellcasting without components can be used even in a silence area.",
-   "think": "",
    "new_tokens": 85,
-   "seconds": 10.021312169963494,
-   "truncated": false,
+   "seconds": 8.23919374588877,
    "prompt_tokens": 905,
    "cached": false
   },
@@ -165,7 +141,6 @@
    "category": "Exception / corner",
    "query": "Can I shove a creature much bigger than me?",
    "pipeline": "baseline",
-   "thinking": false,
    "context_ids": [
     329,
     506,
@@ -173,10 +148,8 @@
    ],
    "gold_in_context": true,
    "answer": "No, you cannot shove a creature much bigger than you. According to the rules, the target of a shove must be no more than one size larger than you. Additionally, if you are moving while dragging a grappled creature, your speed is halved unless that creature is two or more sizes smaller than you.",
-   "think": "",
    "new_tokens": 67,
-   "seconds": 8.05151128792204,
-   "truncated": false,
+   "seconds": 6.661974719027057,
    "prompt_tokens": 856,
    "cached": false
   },
@@ -185,7 +158,6 @@
    "category": "Exception / corner",
    "query": "Can I shove a creature much bigger than me?",
    "pipeline": "rerank",
-   "thinking": false,
    "context_ids": [
     343,
     329,
@@ -193,10 +165,8 @@
    ],
    "gold_in_context": true,
    "answer": "No, you cannot shove a creature much bigger than you. The rules state that the target of a shove must be no more than one size larger than you. Additionally, if you successfully shove a creature, you can only push it 5 feet away or knock it prone.",
-   "think": "",
    "new_tokens": 58,
-   "seconds": 6.6599538929294795,
-   "truncated": false,
+   "seconds": 5.441480950219557,
    "prompt_tokens": 856,
    "cached": false
   },
@@ -205,7 +175,6 @@
    "category": "Keyword trap (synonym)",
    "query": "How many magic items can one creature bond with?",
    "pipeline": "baseline",
-   "thinking": false,
    "context_ids": [
     782,
     701,
@@ -213,10 +182,8 @@
    ],
    "gold_in_context": true,
    "answer": "A creature can be attuned to no more than three magic items at a time. Any attempt to attune to a fourth item fails until the creature ends its attunement to an existing item. Additionally, a creature cannot attune to more than one copy of the same item simultaneously. This limit applies to all magic items, with no specific exceptions mentioned in the provided text.",
-   "think": "",
    "new_tokens": 79,
-   "seconds": 9.38881793199107,
-   "truncated": false,
+   "seconds": 7.731472981860861,
    "prompt_tokens": 897,
    "cached": false
   },
@@ -225,7 +192,6 @@
    "category": "Keyword trap (synonym)",
    "query": "How many magic items can one creature bond with?",
    "pipeline": "rerank",
-   "thinking": false,
    "context_ids": [
     781,
     782,
@@ -233,10 +199,8 @@
    ],
    "gold_in_context": true,
    "answer": "A creature can be attuned to no more than three magic items at a time. Any attempt to attune to a fourth item fails until the creature ends its attunement to an existing item. Additionally, a creature cannot attune to more than one copy of the same item. This limit applies to all magic items, with no exceptions mentioned in the provided text.",
-   "think": "",
    "new_tokens": 77,
-   "seconds": 9.201123906997964,
-   "truncated": false,
+   "seconds": 7.54895912995562,
    "prompt_tokens": 898,
    "cached": false
   },
@@ -245,7 +209,6 @@
    "category": "Counter-example",
    "query": "Can I rest twice in a single day to recover everything?",
    "pipeline": "baseline",
-   "thinking": false,
    "context_ids": [
     308,
     307,
@@ -253,10 +216,8 @@
    ],
    "gold_in_context": false,
    "answer": "No, you cannot recover everything from two rests in a single day because a character cannot benefit from more than one long rest. While a long rest restores all lost hit points and some Hit Dice, a short rest only allows you to spend Hit Dice to regain hit points and does not restore all lost hit points or all Hit Dice. Additionally, if a long rest is interrupted by strenuous activity, the character must begin the rest again to gain any benefit.",
-   "think": "",
    "new_tokens": 94,
-   "seconds": 10.957004854921252,
-   "truncated": false,
+   "seconds": 8.989284449024126,
    "prompt_tokens": 845,
    "cached": false
   },
@@ -265,7 +226,6 @@
    "category": "Counter-example",
    "query": "Can I rest twice in a single day to recover everything?",
    "pipeline": "rerank",
-   "thinking": false,
    "context_ids": [
     166,
     92,
@@ -273,10 +233,8 @@
    ],
    "gold_in_context": false,
    "answer": "The provided context does not answer this.",
-   "think": "",
    "new_tokens": 11,
-   "seconds": 2.010185034945607,
-   "truncated": false,
+   "seconds": 1.7698481229599565,
    "prompt_tokens": 923,
    "cached": false
   },
@@ -285,7 +243,6 @@
    "category": "Counter-example",
    "query": "Can a creature that is held by an enemy still walk away?",
    "pipeline": "baseline",
-   "thinking": false,
    "context_ids": [
     445,
     715,
@@ -293,10 +250,8 @@
    ],
    "gold_in_context": false,
    "answer": "The provided context does not answer this.",
-   "think": "",
    "new_tokens": 11,
-   "seconds": 1.9461240689270198,
-   "truncated": false,
+   "seconds": 1.682173534994945,
    "prompt_tokens": 877,
    "cached": false
   },
@@ -305,7 +260,6 @@
    "category": "Counter-example",
    "query": "Can a creature that is held by an enemy still walk away?",
    "pipeline": "rerank",
-   "thinking": false,
    "context_ids": [
     301,
     445,
@@ -313,10 +267,8 @@
    ],
    "gold_in_context": false,
    "answer": "No, a creature held by an enemy cannot walk away if the holding effect prevents it from moving. According to the context, if a flying creature is deprived of the ability to move, it falls unless it has the ability to hover or is being held aloft by magic, implying that being held restricts movement. Additionally, the \"Halt\" action explicitly states that a target \"doesn't move and takes no actions,\" which would apply if the creature is restrained or held. The provided context does not specify the exact mechanics of being held by an enemy for non-flying creatures, but general movement restrictions apply when a creature is deprived of the ability to move.",
-   "think": "",
    "new_tokens": 136,
-   "seconds": 15.50806861394085,
-   "truncated": false,
+   "seconds": 12.639752933057025,
    "prompt_tokens": 901,
    "cached": false
   },
@@ -325,7 +277,6 @@
    "category": "Exception / corner",
    "query": "Does teleporting away from an enemy provoke an attack?",
    "pipeline": "baseline",
-   "thinking": false,
    "context_ids": [
     341,
     702,
@@ -333,10 +284,8 @@
    ],
    "gold_in_context": true,
    "answer": "No, teleporting away from an enemy does not provoke an opportunity attack. The rules explicitly state that you do not provoke an opportunity attack when you teleport, regardless of whether you are moving out of an enemy's reach. This exception applies even if the teleportation is the result of a spell like *Teleport*.",
-   "think": "",
    "new_tokens": 66,
-   "seconds": 7.9422847791574895,
-   "truncated": false,
+   "seconds": 6.552185282111168,
    "prompt_tokens": 891,
    "cached": false
   },
@@ -345,7 +294,6 @@
    "category": "Exception / corner",
    "query": "Does teleporting away from an enemy provoke an attack?",
    "pipeline": "rerank",
-   "thinking": false,
    "context_ids": [
     341,
     704,
@@ -353,10 +301,8 @@
    ],
    "gold_in_context": true,
    "answer": "No, teleporting away from an enemy does not provoke an opportunity attack. The rules explicitly state that you do not provoke an opportunity attack when you teleport, regardless of whether you are moving out of an enemy's reach. This exception applies even if the teleportation is the result of a spell or ability rather than your own movement.",
-   "think": "",
    "new_tokens": 69,
-   "seconds": 8.21317238197662,
-   "truncated": false,
+   "seconds": 6.8224567929282784,
    "prompt_tokens": 873,
    "cached": false
   },
@@ -365,7 +311,6 @@
    "category": "Negation / constraint",
    "query": "Can a surprised character act in the first round?",
    "pipeline": "baseline",
-   "thinking": false,
    "context_ids": [
     317,
     333,
@@ -373,10 +318,8 @@
    ],
    "gold_in_context": true,
    "answer": "No, a surprised character cannot act in the first round of combat. According to the rules, if you are surprised, you can't move or take an action on your first turn, and you also cannot take a reaction until that turn ends. This restriction applies individually, meaning a member of a group can be surprised even if other members are not.",
-   "think": "",
    "new_tokens": 73,
-   "seconds": 8.660404240945354,
-   "truncated": false,
+   "seconds": 7.15870274300687,
    "prompt_tokens": 854,
    "cached": false
   },
@@ -385,7 +328,6 @@
    "category": "Negation / constraint",
    "query": "Can a surprised character act in the first round?",
    "pipeline": "rerank",
-   "thinking": false,
    "context_ids": [
     317,
     26,
@@ -393,10 +335,8 @@
    ],
    "gold_in_context": true,
    "answer": "No, a surprised character cannot act on their first turn of combat because they cannot move or take an action until that turn ends. However, a character with the Feral Instinct feature (Rogue, 7th level) can act normally on their first turn if they enter their rage before doing anything else, provided they are not incapacitated. This exception allows them to bypass the standard restriction that prevents actions and reactions until the first turn concludes.",
-   "think": "",
    "new_tokens": 93,
-   "seconds": 10.824511206010357,
-   "truncated": false,
+   "seconds": 12.001051249913871,
    "prompt_tokens": 868,
    "cached": false
   },
@@ -405,7 +345,6 @@
    "category": "Neutral rule",
    "query": "What happens if a character plunges off a cliff?",
    "pipeline": "baseline",
-   "thinking": false,
    "context_ids": [
     503,
     502,
@@ -413,10 +352,8 @@
    ],
    "gold_in_context": false,
    "answer": "The provided context does not answer this.",
-   "think": "",
    "new_tokens": 11,
-   "seconds": 1.9957478761207312,
-   "truncated": false,
+   "seconds": 2.008709487039596,
    "prompt_tokens": 962,
    "cached": false
   },
@@ -425,7 +362,6 @@
    "category": "Neutral rule",
    "query": "What happens if a character plunges off a cliff?",
    "pipeline": "rerank",
-   "thinking": false,
    "context_ids": [
     766,
     276,
@@ -433,10 +369,8 @@
    ],
    "gold_in_context": false,
    "answer": "If a character attempts to climb a sheer or slippery cliff, the Game Master may call for a Strength check to avoid hazards or prevent being knocked off. The provided context does not specify the exact consequences if a character fails this check and plunges off a cliff, nor does it detail the result of such a fall.",
-   "think": "",
    "new_tokens": 66,
-   "seconds": 7.924533121986315,
-   "truncated": false,
+   "seconds": 6.532949720975012,
    "prompt_tokens": 945,
    "cached": false
   },
@@ -445,7 +379,6 @@
    "category": "Neutral rule",
    "query": "When does a character die outright instead of falling unconscious?",
    "pipeline": "baseline",
-   "thinking": false,
    "context_ids": [
     352,
     767,
@@ -453,10 +386,8 @@
    ],
    "gold_in_context": true,
    "answer": "A character dies outright if damage reduces them to 0 hit points and the remaining damage equals or exceeds their hit point maximum. If the remaining damage is less than the hit point maximum, the character falls unconscious instead. This rule applies to both player characters and monsters, though some GMs may rule that monsters die instantly upon reaching 0 hit points regardless of remaining damage.",
-   "think": "",
    "new_tokens": 77,
-   "seconds": 9.149375224020332,
-   "truncated": false,
+   "seconds": 7.537579359021038,
    "prompt_tokens": 914,
    "cached": false
   },
@@ -465,7 +396,6 @@
    "category": "Neutral rule",
    "query": "When does a character die outright instead of falling unconscious?",
    "pipeline": "rerank",
-   "thinking": false,
    "context_ids": [
     352,
     355,
@@ -473,10 +403,8 @@
    ],
    "gold_in_context": true,
    "answer": "A character dies outright if damage reduces them to 0 hit points and the remaining damage equals or exceeds their hit point maximum. If the remaining damage is less than the hit point maximum, the character falls unconscious instead. This rule applies unless a specific exception, such as a Mighty villain or special NPC, dictates otherwise. Additionally, a character with 0 hit points must make death saving throws at the start of their turn if they do not die outright.",
-   "think": "",
    "new_tokens": 93,
-   "seconds": 10.452774081146345,
-   "truncated": false,
+   "seconds": 8.549564783927053,
    "prompt_tokens": 914,
    "cached": false
   },
@@ -485,7 +413,6 @@
    "category": "Exception / corner",
    "query": "Can I cast a second leveled spell after a bonus action spell?",
    "pipeline": "baseline",
-   "thinking": false,
    "context_ids": [
     367,
     111,
@@ -493,10 +420,8 @@
    ],
    "gold_in_context": true,
    "answer": "No, you cannot cast another spell during the same turn after casting a spell with a bonus action, except for a cantrip with a casting time of 1 action. This restriction applies regardless of the level of the second spell you attempt to cast. You must use your bonus action on your turn to cast the spell, provided you haven't already taken a bonus action this turn.",
-   "think": "",
    "new_tokens": 79,
-   "seconds": 9.32194572291337,
-   "truncated": false,
+   "seconds": 7.706768817966804,
    "prompt_tokens": 887,
    "cached": false
   },
@@ -505,7 +430,6 @@
    "category": "Exception / corner",
    "query": "Can I cast a second leveled spell after a bonus action spell?",
    "pipeline": "rerank",
-   "thinking": false,
    "context_ids": [
     367,
     136,
@@ -513,10 +437,8 @@
    ],
    "gold_in_context": true,
    "answer": "No, you cannot cast another leveled spell during the same turn if you cast a spell with a bonus action. The rules state that if you cast a bonus action spell, you can only cast a cantrip with a casting time of 1 action for the remainder of that turn. This restriction applies regardless of whether the bonus action spell is a leveled spell or a cantrip.",
-   "think": "",
    "new_tokens": 78,
-   "seconds": 9.228528524050489,
-   "truncated": false,
+   "seconds": 7.566742738010362,
    "prompt_tokens": 894,
    "cached": false
   },
@@ -525,7 +447,6 @@
    "category": "Negation / constraint",
    "query": "Can I concentrate on two spells at once?",
    "pipeline": "baseline",
-   "thinking": false,
    "context_ids": [
     372,
     380,
@@ -533,10 +454,8 @@
    ],
    "gold_in_context": true,
    "answer": "No, you cannot concentrate on two spells at once. If you cast another spell that requires concentration, you immediately lose concentration on the first spell. This restriction applies regardless of the specific spells involved.",
-   "think": "",
    "new_tokens": 42,
-   "seconds": 5.351399546954781,
-   "truncated": false,
+   "seconds": 4.462010170100257,
    "prompt_tokens": 882,
    "cached": false
   },
@@ -545,7 +464,6 @@
    "category": "Negation / constraint",
    "query": "Can I concentrate on two spells at once?",
    "pipeline": "rerank",
-   "thinking": false,
    "context_ids": [
     372,
     371,
@@ -553,10 +471,8 @@
    ],
    "gold_in_context": true,
    "answer": "No, you cannot concentrate on two spells at once. If you cast another spell that requires concentration, you lose concentration on the first spell. You can end concentration on a spell at any time without using an action, but normal activity like moving or attacking does not break it.",
-   "think": "",
    "new_tokens": 58,
-   "seconds": 7.043164575006813,
-   "truncated": false,
+   "seconds": 5.834400431020185,
    "prompt_tokens": 852,
    "cached": false
   },
@@ -565,7 +481,6 @@
    "category": "Neutral rule",
    "query": "Can I recover from exhaustion by resting?",
    "pipeline": "baseline",
-   "thinking": false,
    "context_ids": [
     308,
     1373,
@@ -573,10 +488,8 @@
    ],
    "gold_in_context": true,
    "answer": "Yes, finishing a long rest reduces a creature's exhaustion level by 1, provided the creature has also ingested some food and drink. This reduction continues until the exhaustion level is reduced below 1, at which point all exhaustion effects end. However, a creature cannot benefit from more than one long rest in a row. Additionally, if the rest is interrupted by at least 1 hour of strenuous activity, the character must begin the rest again to gain any benefit.",
-   "think": "",
    "new_tokens": 98,
-   "seconds": 10.954522872110829,
-   "truncated": false,
+   "seconds": 8.931703384965658,
    "prompt_tokens": 852,
    "cached": false
   },
@@ -585,7 +498,6 @@
    "category": "Neutral rule",
    "query": "Can I recover from exhaustion by resting?",
    "pipeline": "rerank",
-   "thinking": false,
    "context_ids": [
     1373,
     92,
@@ -593,10 +505,8 @@
    ],
    "gold_in_context": true,
    "answer": "Yes, finishing a long rest reduces a creature's exhaustion level by 1, provided the creature has also ingested some food and drink. This process continues until the exhaustion level is reduced below 1, at which point all exhaustion effects end. There is no mention of recovering exhaustion through a short rest or other means in the provided text.",
-   "think": "",
    "new_tokens": 71,
-   "seconds": 8.473209250951186,
-   "truncated": false,
+   "seconds": 6.974373047007248,
    "prompt_tokens": 895,
    "cached": false
   },
@@ -605,7 +515,6 @@
    "category": "Neutral rule",
    "query": "How long can a creature hold its breath?",
    "pipeline": "baseline",
-   "thinking": false,
    "context_ids": [
     301,
     1427,
@@ -613,10 +522,8 @@
    ],
    "gold_in_context": true,
    "answer": "A creature can hold its breath for a number of minutes equal to 1 + its Constitution modifier, with a minimum of 30 seconds. For example, a creature with a Constitution of 14 can hold its breath for 3 minutes. Specific monsters, such as the octopus and hydra, have special traits allowing them to hold their breath for 1 hour.",
-   "think": "",
    "new_tokens": 79,
-   "seconds": 9.389080364024267,
-   "truncated": false,
+   "seconds": 7.722230423009023,
    "prompt_tokens": 1011,
    "cached": false
   },
@@ -625,7 +532,6 @@
    "category": "Neutral rule",
    "query": "How long can a creature hold its breath?",
    "pipeline": "rerank",
-   "thinking": false,
    "context_ids": [
     301,
     1427,
@@ -633,10 +539,8 @@
    ],
    "gold_in_context": true,
    "answer": "A creature can hold its breath for a number of minutes equal to 1 + its Constitution modifier, with a minimum of 30 seconds. For example, a creature with a Constitution of 14 can hold its breath for 3 minutes. However, the octopus is a specific exception that can hold its breath for 1 hour while out of water.",
-   "think": "",
    "new_tokens": 76,
-   "seconds": 9.075228475034237,
-   "truncated": false,
+   "seconds": 7.493765374878421,
    "prompt_tokens": 974,
    "cached": false
   },
@@ -645,7 +549,6 @@
    "category": "Exception / corner",
    "query": "Can two clerics cast the same blessing on one ally to stack it?",
    "pipeline": "baseline",
-   "thinking": false,
    "context_ids": [
     46,
     380,
@@ -653,10 +556,8 @@
    ],
    "gold_in_context": true,
    "answer": "No, two clerics cannot stack the effects of the same spell, such as *bless*, on one ally. According to the rules on combining magical effects, the effects of the same spell cast multiple times do not combine; instead, only the most potent effect applies while their durations overlap. Therefore, if two clerics cast *bless* on the same target, the character gains the spell's benefit only once.",
-   "think": "",
    "new_tokens": 88,
-   "seconds": 9.874936047941446,
-   "truncated": false,
+   "seconds": 8.139280366012827,
    "prompt_tokens": 890,
    "cached": false
   },
@@ -665,7 +566,6 @@
    "category": "Exception / corner",
    "query": "Can two clerics cast the same blessing on one ally to stack it?",
    "pipeline": "rerank",
-   "thinking": false,
    "context_ids": [
     380,
     45,
@@ -673,10 +573,8 @@
    ],
    "gold_in_context": true,
    "answer": "No, two clerics cannot stack the effects of the same spell, such as *bless*, on one ally. According to the rules on combining magical effects, the effects of the same spell cast multiple times do not combine; instead, only the most potent effect applies while their durations overlap. For example, if two clerics cast *bless* on the same target, the character gains the spell's benefit only once and does not roll multiple bonus dice.",
-   "think": "",
    "new_tokens": 96,
-   "seconds": 11.191837632097304,
-   "truncated": false,
+   "seconds": 9.214268098119646,
    "prompt_tokens": 951,
    "cached": false
   },
@@ -685,7 +583,6 @@
    "category": "Exception / corner",
    "query": "Can I disengage and still be hit as I leave?",
    "pipeline": "baseline",
-   "thinking": false,
    "context_ids": [
     341,
     331,
@@ -693,10 +590,8 @@
    ],
    "gold_in_context": true,
    "answer": "Yes, you can take the Disengage action to avoid provoking opportunity attacks when you leave a creature's reach. However, you will still be hit if you are forced to move by an external force, such as an explosion or gravity, rather than using your own movement. Additionally, if you teleport, you do not provoke an opportunity attack regardless of whether you took the Disengage action.",
-   "think": "",
    "new_tokens": 81,
-   "seconds": 9.536852742079645,
-   "truncated": false,
+   "seconds": 7.8531111921183765,
    "prompt_tokens": 881,
    "cached": false
   },
@@ -705,7 +600,6 @@
    "category": "Exception / corner",
    "query": "Can I disengage and still be hit as I leave?",
    "pipeline": "rerank",
-   "thinking": false,
    "context_ids": [
     341,
     356,
@@ -713,10 +607,8 @@
    ],
    "gold_in_context": true,
    "answer": "Yes, you can take the Disengage action and still be hit, but you will not provoke an opportunity attack from any creature within your reach as you leave. The Disengage action specifically prevents your movement from triggering opportunity attacks for the rest of your turn. However, you can still be targeted by other types of attacks, such as ranged attacks or spells, regardless of whether you have disengaged. Additionally, if you teleport or are moved without using your movement, action, or reaction, you do not provoke an opportunity attack even without taking the Disengage action.",
-   "think": "",
    "new_tokens": 116,
-   "seconds": 12.902150813024491,
-   "truncated": false,
+   "seconds": 10.527832143008709,
    "prompt_tokens": 854,
    "cached": false
   },
@@ -725,7 +617,6 @@
    "category": "Negation / constraint",
    "query": "Can I take two reactions before my next turn?",
    "pipeline": "baseline",
-   "thinking": false,
    "context_ids": [
     333,
     321,
@@ -733,10 +624,8 @@
    ],
    "gold_in_context": true,
    "answer": "No, you cannot take two reactions before your next turn. The rules state that when you take a reaction, you cannot take another one until the start of your next turn. This limit applies regardless of whether the reaction is an opportunity attack, a readied action, or a special ability.",
-   "think": "",
    "new_tokens": 61,
-   "seconds": 7.362582854926586,
-   "truncated": false,
+   "seconds": 6.10486456612125,
    "prompt_tokens": 825,
    "cached": false
   },
@@ -745,7 +634,6 @@
    "category": "Negation / constraint",
    "query": "Can I take two reactions before my next turn?",
    "pipeline": "rerank",
-   "thinking": false,
    "context_ids": [
     333,
     321,
@@ -753,10 +641,8 @@
    ],
    "gold_in_context": true,
    "answer": "No, you cannot take two reactions before your next turn. The rules state that when you take a reaction, you cannot take another one until the start of your next turn. Additionally, you can take only one reaction per round. This restriction applies regardless of the specific trigger or action being readied.",
-   "think": "",
    "new_tokens": 63,
-   "seconds": 7.581600823905319,
-   "truncated": false,
+   "seconds": 6.2716911372262985,
    "prompt_tokens": 828,
    "cached": false
   },
@@ -765,7 +651,6 @@
    "category": "Neutral rule",
    "query": "Is a paralyzed creature able to act?",
    "pipeline": "baseline",
-   "thinking": false,
    "context_ids": [
     1374,
     715,
@@ -773,10 +658,8 @@
    ],
    "gold_in_context": true,
    "answer": "No, a paralyzed creature cannot act because the condition explicitly states that a paralyzed creature is incapacitated. An incapacitated creature can't take actions or reactions. Additionally, a paralyzed creature can't move or speak.",
-   "think": "",
    "new_tokens": 45,
-   "seconds": 5.667318447958678,
-   "truncated": false,
+   "seconds": 4.713117172010243,
    "prompt_tokens": 872,
    "cached": false
   },
@@ -785,7 +668,6 @@
    "category": "Neutral rule",
    "query": "Is a paralyzed creature able to act?",
    "pipeline": "rerank",
-   "thinking": false,
    "context_ids": [
     1374,
     1176,
@@ -793,10 +675,8 @@
    ],
    "gold_in_context": true,
    "answer": "No, a paralyzed creature cannot act because the condition explicitly states that a paralyzed creature is incapacitated, and an incapacitated creature can't take actions or reactions. Additionally, a paralyzed creature can't move or speak. The creature also automatically fails Strength and Dexterity saving throws, and any attack that hits it is a critical hit if the attacker is within 5 feet.",
-   "think": "",
    "new_tokens": 77,
-   "seconds": 9.12142996583134,
-   "truncated": false,
+   "seconds": 7.498841629130766,
    "prompt_tokens": 874,
    "cached": false
   },
@@ -805,7 +685,6 @@
    "category": "Negation / constraint",
    "query": "Can I double my proficiency bonus twice on the same roll?",
    "pipeline": "baseline",
-   "thinking": false,
    "context_ids": [
     265,
     264,
@@ -813,10 +692,8 @@
    ],
    "gold_in_context": true,
    "answer": "No, you cannot double your proficiency bonus twice on the same roll. The rules state that your proficiency bonus can't be added to a single die roll more than once, and even if a circumstance suggests it applies multiple times, you add it only once. While features like the rogue's Expertise can multiply the bonus, this multiplication still applies only once per roll. Additionally, if a feature attempts to multiply a bonus that is already 0 (because you lack proficiency), the result remains 0.",
-   "think": "",
    "new_tokens": 103,
-   "seconds": 11.505627394886687,
-   "truncated": false,
+   "seconds": 9.39443581388332,
    "prompt_tokens": 850,
    "cached": false
   },
@@ -825,7 +702,6 @@
    "category": "Negation / constraint",
    "query": "Can I double my proficiency bonus twice on the same roll?",
    "pipeline": "rerank",
-   "thinking": false,
    "context_ids": [
     265,
     266,
@@ -833,10 +709,8 @@
    ],
    "gold_in_context": true,
    "answer": "No, you cannot add your proficiency bonus to a single die roll more than once, even if multiple rules suggest it. While some features like the rogue's Expertise can double your proficiency bonus for specific ability checks, the bonus is still applied only once per roll. If a circumstance suggests the bonus applies more than once to the same roll, you add it only once and multiply or divide it only once. Additionally, you generally do not multiply your proficiency bonus for attack rolls or saving throws unless a specific feature allows it, in which case the same \"add only once\" rule applies.",
-   "think": "",
    "new_tokens": 120,
-   "seconds": 13.377272498095408,
-   "truncated": false,
+   "seconds": 10.913925199070945,
    "prompt_tokens": 846,
    "cached": false
   },
@@ -845,7 +719,6 @@
    "category": "Neutral rule",
    "query": "Can advantage and disadvantage cancel each other out?",
    "pipeline": "baseline",
-   "thinking": false,
    "context_ids": [
     263,
     264,
@@ -853,10 +726,8 @@
    ],
    "gold_in_context": true,
    "answer": "Yes, advantage and disadvantage cancel each other out, resulting in neither condition applying. This occurs even if multiple circumstances impose disadvantage while only one grants advantage, or vice versa. In such a situation, you simply roll one d20.",
-   "think": "",
    "new_tokens": 50,
-   "seconds": 6.190716122975573,
-   "truncated": false,
+   "seconds": 5.171112008858472,
    "prompt_tokens": 867,
    "cached": false
   },
@@ -865,7 +736,6 @@
    "category": "Neutral rule",
    "query": "Can advantage and disadvantage cancel each other out?",
    "pipeline": "rerank",
-   "thinking": false,
    "context_ids": [
     263,
     264,
@@ -873,10 +743,8 @@
    ],
    "gold_in_context": true,
    "answer": "Yes, advantage and disadvantage cancel each other out, resulting in neither condition applying. This occurs even if multiple circumstances impose disadvantage while only one grants advantage, or vice versa. In such a situation, you simply roll one d20. However, if you have advantage or disadvantage and use a feature like the halfling's Lucky trait to reroll, you can only reroll one of the dice.",
-   "think": "",
    "new_tokens": 84,
-   "seconds": 9.466792138060555,
-   "truncated": false,
+   "seconds": 7.753638533875346,
    "prompt_tokens": 845,
    "cached": false
   },
@@ -885,7 +753,6 @@
    "category": "Exception / corner",
    "query": "Can the Dash action be used as a bonus action?",
    "pipeline": "baseline",
-   "thinking": false,
    "context_ids": [
     320,
     319,
@@ -893,10 +760,8 @@
    ],
    "gold_in_context": false,
    "answer": "No, the Dash action cannot be used as a bonus action. The provided context states that you can take only one bonus action on your turn, and this option is available only when a specific special ability, spell, or game feature explicitly states that you can do something as a bonus action. The Dash action is listed as a standard action that increases your movement for the current turn, with no mention of it being a bonus action.",
-   "think": "",
    "new_tokens": 89,
-   "seconds": 10.387416745070368,
-   "truncated": false,
+   "seconds": 11.933323709992692,
    "prompt_tokens": 830,
    "cached": false
   },
@@ -905,7 +770,6 @@
    "category": "Exception / corner",
    "query": "Can the Dash action be used as a bonus action?",
    "pipeline": "rerank",
-   "thinking": false,
    "context_ids": [
     81,
     320,
@@ -913,10 +777,8 @@
    ],
    "gold_in_context": false,
    "answer": "Yes, the Dash action can be used as a bonus action through the Step of the Wind feature, which allows a monk to spend 1 ki point to take the Dash action as a bonus action on their turn. However, a character can take only one bonus action on their turn, so they must choose between Step of the Wind and other available bonus actions if multiple options exist.",
-   "think": "",
    "new_tokens": 79,
-   "seconds": 9.312452208949253,
-   "truncated": false,
+   "seconds": 7.741924026049674,
    "prompt_tokens": 834,
    "cached": false
   },
@@ -925,7 +787,6 @@
    "category": "Neutral rule",
    "query": "Can a prone creature stand up for free?",
    "pipeline": "baseline",
-   "thinking": false,
    "context_ids": [
     325,
     358,
@@ -933,10 +794,8 @@
    ],
    "gold_in_context": true,
    "answer": "No, a prone creature cannot stand up for free; doing so costs movement equal to half the creature's speed. A creature cannot stand up if it does not have enough movement left or if its speed is 0. Additionally, a creature that is unconscious, stunned, or restrained cannot move and therefore cannot spend the movement required to stand.",
-   "think": "",
    "new_tokens": 71,
-   "seconds": 8.456011896021664,
-   "truncated": false,
+   "seconds": 8.719614072004333,
    "prompt_tokens": 857,
    "cached": false
   },
@@ -945,7 +804,6 @@
    "category": "Neutral rule",
    "query": "Can a prone creature stand up for free?",
    "pipeline": "rerank",
-   "thinking": false,
    "context_ids": [
     1375,
     325,
@@ -953,10 +811,8 @@
    ],
    "gold_in_context": true,
    "answer": "No, a prone creature cannot stand up for free. Standing up costs an amount of movement equal to half the creature's speed. Additionally, a creature cannot stand up if its speed is 0 or if it lacks sufficient remaining movement.",
-   "think": "",
    "new_tokens": 50,
-   "seconds": 6.178059186087921,
-   "truncated": false,
+   "seconds": 5.164173807017505,
    "prompt_tokens": 880,
    "cached": false
   },
@@ -965,7 +821,6 @@
    "category": "Exception / corner",
    "query": "Can a monster use a legendary action in the middle of its own turn?",
    "pipeline": "baseline",
-   "thinking": false,
    "context_ids": [
     1023,
     1024,
@@ -973,10 +828,8 @@
    ],
    "gold_in_context": true,
    "answer": "No, a monster cannot use a legendary action in the middle of its own turn. Legendary actions can only be used at the end of another creature's turn. Additionally, a creature cannot use legendary actions while it is incapacitated or surprised until after its first turn in combat.",
-   "think": "",
    "new_tokens": 58,
-   "seconds": 7.075843717902899,
-   "truncated": false,
+   "seconds": 5.894777602050453,
    "prompt_tokens": 943,
    "cached": false
   },
@@ -985,7 +838,6 @@
    "category": "Exception / corner",
    "query": "Can a monster use a legendary action in the middle of its own turn?",
    "pipeline": "rerank",
-   "thinking": false,
    "context_ids": [
     1159,
     1023,
@@ -993,10 +845,8 @@
    ],
    "gold_in_context": true,
    "answer": "No, a monster cannot use a legendary action in the middle of its own turn. According to the rules, only one legendary action option can be used at a time, and this must occur only at the end of another creature's turn. Additionally, a creature regains its spent legendary actions at the start of its own turn, not during it.",
-   "think": "",
    "new_tokens": 73,
-   "seconds": 8.292339691892266,
-   "truncated": false,
+   "seconds": 6.808242661878467,
    "prompt_tokens": 943,
    "cached": false
   },
@@ -1005,7 +855,6 @@
    "category": "Keyword trap",
    "query": "What breaks my focus on a spell?",
    "pipeline": "baseline",
-   "thinking": false,
    "context_ids": [
     368,
     371,
@@ -1013,10 +862,8 @@
    ],
    "gold_in_context": false,
    "answer": "Taking damage breaks your concentration on a spell, requiring you to make a Constitution saving throw to maintain it. Casting another spell that also requires concentration immediately breaks your current concentration. Additionally, if your concentration is broken, the spell fails or dissipates without taking effect. You can also voluntarily end concentration at any time without using an action.",
-   "think": "",
    "new_tokens": 69,
-   "seconds": 7.832199413795024,
-   "truncated": false,
+   "seconds": 6.421650811098516,
    "prompt_tokens": 850,
    "cached": false
   },
@@ -1025,7 +872,6 @@
    "category": "Keyword trap",
    "query": "What breaks my focus on a spell?",
    "pipeline": "rerank",
-   "thinking": false,
    "context_ids": [
     334,
     372,
@@ -1033,10 +879,8 @@
    ],
    "gold_in_context": true,
    "answer": "You lose concentration on a spell if you cast another spell that requires concentration, become incapacitated, or die. Additionally, taking damage forces you to make a Constitution saving throw (DC 10 or half the damage, whichever is higher); failing this breaks your concentration. Normal activity, such as moving or attacking, does not interfere with concentration. You can also end concentration at any time without using an action.",
-   "think": "",
    "new_tokens": 85,
-   "seconds": 9.99123941687867,
-   "truncated": false,
+   "seconds": 8.20205650292337,
    "prompt_tokens": 851,
    "cached": true
   },
@@ -1045,7 +889,6 @@
    "category": "Negation / constraint",
    "query": "Do I need to see a target to attack it?",
    "pipeline": "baseline",
-   "thinking": false,
    "context_ids": [
     345,
     1019,
@@ -1053,10 +896,8 @@
    ],
    "gold_in_context": false,
    "answer": "No, you do not need to see a target to attack it; in fact, if a creature cannot see you, you have advantage on attack rolls against it. However, if you are hidden (both unseen and unheard) when you make an attack, you give away your location when the attack hits or misses. Additionally, you cannot make ranged attacks against targets beyond their specified long range, regardless of visibility.",
-   "think": "",
    "new_tokens": 85,
-   "seconds": 9.584055654937401,
-   "truncated": false,
+   "seconds": 7.823814101982862,
    "prompt_tokens": 868,
    "cached": false
   },
@@ -1065,7 +906,6 @@
    "category": "Negation / constraint",
    "query": "Do I need to see a target to attack it?",
    "pipeline": "rerank",
-   "thinking": false,
    "context_ids": [
     338,
     337,
@@ -1073,10 +913,8 @@
    ],
    "gold_in_context": true,
    "answer": "No, you do not need to see a target to attack it, but doing so imposes disadvantage on your attack roll. You can still attack a creature you can hear but not see, or one whose location you are guessing. However, if you are hidden (both unseen and unheard) when you make the attack, you give away your location when the attack hits or misses. Additionally, if you attack a target you cannot see and it is not in the location you targeted, you automatically miss.",
-   "think": "",
    "new_tokens": 102,
-   "seconds": 11.823727894807234,
-   "truncated": false,
+   "seconds": 9.714785440824926,
    "prompt_tokens": 876,
    "cached": false
   },
@@ -1085,7 +923,6 @@
    "category": "Exception / corner",
    "query": "Can I punish an unseen enemy that runs away from me?",
    "pipeline": "baseline",
-   "thinking": false,
    "context_ids": [
     519,
     510,
@@ -1093,10 +930,8 @@
    ],
    "gold_in_context": false,
    "answer": "The provided context does not answer this.",
-   "think": "",
    "new_tokens": 11,
-   "seconds": 1.5876035541296005,
-   "truncated": false,
+   "seconds": 1.3926193870138377,
    "prompt_tokens": 897,
    "cached": false
   },
@@ -1105,7 +940,6 @@
    "category": "Exception / corner",
    "query": "Can I punish an unseen enemy that runs away from me?",
    "pipeline": "rerank",
-   "thinking": false,
    "context_ids": [
     338,
     974,
@@ -1113,10 +947,8 @@
    ],
    "gold_in_context": false,
    "answer": "The provided context does not answer this.",
-   "think": "",
    "new_tokens": 11,
-   "seconds": 1.9119322418700904,
-   "truncated": false,
+   "seconds": 1.6913481480441988,
    "prompt_tokens": 888,
    "cached": false
   },
@@ -1125,7 +957,6 @@
    "category": "Negation / constraint",
    "query": "Can I cast a spell while a silence effect is on me?",
    "pipeline": "baseline",
-   "thinking": false,
    "context_ids": [
     785,
     675,
@@ -1133,10 +964,8 @@
    ],
    "gold_in_context": false,
    "answer": "No, you cannot cast a spell that includes a verbal component while entirely inside a *silence* effect. The *silence* spell explicitly states that \"Casting a spell that includes a verbal component is impossible\" within its area. Additionally, the spell suppresses any active spell or magical effect on a creature inside the sphere, meaning you cannot concentrate on an ongoing spell. If you attempt to cast a spell from a magic item, you must still adhere to the verbal component restriction unless the item's description says otherwise.",
-   "think": "",
    "new_tokens": 108,
-   "seconds": 12.465820431010798,
-   "truncated": false,
+   "seconds": 10.203314837999642,
    "prompt_tokens": 925,
    "cached": false
   },
@@ -1145,7 +974,6 @@
    "category": "Negation / constraint",
    "query": "Can I cast a spell while a silence effect is on me?",
    "pipeline": "rerank",
-   "thinking": false,
    "context_ids": [
     369,
     785,
@@ -1153,10 +981,8 @@
    ],
    "gold_in_context": true,
    "answer": "No, you cannot cast a spell that includes a verbal component while inside the area of the *silence* spell. The *silence* spell explicitly states that \"Casting a spell that includes a verbal component is impossible there.\" However, spells that do not require verbal components can still be cast within the silence effect.",
-   "think": "",
    "new_tokens": 68,
-   "seconds": 8.176536035956815,
-   "truncated": false,
+   "seconds": 6.758930870098993,
    "prompt_tokens": 946,
    "cached": false
   },
@@ -1165,7 +991,6 @@
    "category": "Exception / corner",
    "query": "Can I shove a creature much bigger than me?",
    "pipeline": "baseline",
-   "thinking": false,
    "context_ids": [
     327,
     328,
@@ -1173,10 +998,8 @@
    ],
    "gold_in_context": false,
    "answer": "The provided context does not answer this.",
-   "think": "",
    "new_tokens": 11,
-   "seconds": 1.5524846869520843,
-   "truncated": false,
+   "seconds": 1.3656342960894108,
    "prompt_tokens": 890,
    "cached": false
   },
@@ -1185,7 +1008,6 @@
    "category": "Exception / corner",
    "query": "Can I shove a creature much bigger than me?",
    "pipeline": "rerank",
-   "thinking": false,
    "context_ids": [
     329,
     401,
@@ -1193,10 +1015,8 @@
    ],
    "gold_in_context": false,
    "answer": "The provided context does not answer this.",
-   "think": "",
    "new_tokens": 11,
-   "seconds": 1.906528607942164,
-   "truncated": false,
+   "seconds": 1.6865521990694106,
    "prompt_tokens": 836,
    "cached": false
   },
@@ -1205,7 +1025,6 @@
    "category": "Keyword trap (synonym)",
    "query": "How many magic items can one creature bond with?",
    "pipeline": "baseline",
-   "thinking": false,
    "context_ids": [
     781,
     701,
@@ -1213,10 +1032,8 @@
    ],
    "gold_in_context": true,
    "answer": "A creature can be attuned to no more than three magic items at a time. Any attempt to attune to a fourth item fails until the creature ends its attunement to an existing item. Additionally, a creature cannot attune to more than one copy of the same item simultaneously.",
-   "think": "",
    "new_tokens": 61,
-   "seconds": 6.899902832927182,
-   "truncated": false,
+   "seconds": 5.676142221083865,
    "prompt_tokens": 895,
    "cached": false
   },
@@ -1225,7 +1042,6 @@
    "category": "Keyword trap (synonym)",
    "query": "How many magic items can one creature bond with?",
    "pipeline": "rerank",
-   "thinking": false,
    "context_ids": [
     781,
     779,
@@ -1233,10 +1049,8 @@
    ],
    "gold_in_context": true,
    "answer": "A creature can be attuned to no more than three magic items at a time. Any attempt to attune to a fourth item fails until the creature ends its attunement to an existing item. Additionally, a creature cannot attune to more than one copy of the same item. This limit applies regardless of whether the items are worn, wielded, or otherwise used.",
-   "think": "",
    "new_tokens": 78,
-   "seconds": 8.796435116091743,
-   "truncated": false,
+   "seconds": 7.206131058977917,
    "prompt_tokens": 894,
    "cached": false
   },
@@ -1245,7 +1059,6 @@
    "category": "Counter-example",
    "query": "Can I rest twice in a single day to recover everything?",
    "pipeline": "baseline",
-   "thinking": false,
    "context_ids": [
     313,
     308,
@@ -1253,10 +1066,8 @@
    ],
    "gold_in_context": false,
    "answer": "No, a character cannot recover everything from a single long rest because they can only benefit from one long rest per day. While a long rest restores all lost hit points, it only regains spent Hit Dice up to half the character's total number of them (minimum of one). A second long rest within the same day provides no benefit, though a character may take a short rest to spend Hit Dice for partial healing.",
-   "think": "",
    "new_tokens": 87,
-   "seconds": 10.227618354838341,
-   "truncated": false,
+   "seconds": 8.416007369058207,
    "prompt_tokens": 848,
    "cached": false
   },
@@ -1265,7 +1076,6 @@
    "category": "Counter-example",
    "query": "Can I rest twice in a single day to recover everything?",
    "pipeline": "rerank",
-   "thinking": false,
    "context_ids": [
     65,
     309,
@@ -1273,10 +1083,8 @@
    ],
    "gold_in_context": true,
    "answer": "No, a character cannot benefit from more than one long rest in a 24-hour period. While a long rest restores all lost hit points and some Hit Dice, you are restricted to only one such rest per day. Additionally, a short rest can be taken separately, but it only recovers a limited amount of spell slots based on your class level, not all resources.",
-   "think": "",
    "new_tokens": 79,
-   "seconds": 9.339008905924857,
-   "truncated": false,
+   "seconds": 7.68971372814849,
    "prompt_tokens": 883,
    "cached": false
   },
@@ -1285,7 +1093,6 @@
    "category": "Counter-example",
    "query": "Can a creature that is held by an enemy still walk away?",
    "pipeline": "baseline",
-   "thinking": false,
    "context_ids": [
     326,
     328,
@@ -1293,10 +1100,8 @@
    ],
    "gold_in_context": false,
    "answer": "The provided context does not answer this.",
-   "think": "",
    "new_tokens": 11,
-   "seconds": 1.5392145961523056,
-   "truncated": false,
+   "seconds": 1.343430469976738,
    "prompt_tokens": 877,
    "cached": false
   },
@@ -1305,7 +1110,6 @@
    "category": "Counter-example",
    "query": "Can a creature that is held by an enemy still walk away?",
    "pipeline": "rerank",
-   "thinking": false,
    "context_ids": [
     974,
     1374,
@@ -1313,10 +1117,8 @@
    ],
    "gold_in_context": false,
    "answer": "No, a creature held by an enemy cannot simply walk away because moving through a hostile creature's space is generally restricted unless the hostile creature is at least two sizes larger or smaller than the moving creature. Additionally, if the creature leaves the enemy's reach during its move, it provokes an opportunity attack. The provided context does not contain specific rules for being \"held\" (such as the grappled condition), but it does define the movement restrictions relative to hostile creatures.",
-   "think": "",
    "new_tokens": 98,
-   "seconds": 10.904747168067843,
-   "truncated": false,
+   "seconds": 8.923377346014604,
    "prompt_tokens": 882,
    "cached": false
   },
@@ -1325,7 +1127,6 @@
    "category": "Exception / corner",
    "query": "Does teleporting away from an enemy provoke an attack?",
    "pipeline": "baseline",
-   "thinking": false,
    "context_ids": [
     705,
     341,
@@ -1333,10 +1134,8 @@
    ],
    "gold_in_context": true,
    "answer": "No, teleporting away from an enemy does not provoke an opportunity attack. The rules state that you do not provoke an opportunity attack when you teleport, regardless of whether you are moving out of a foe's reach. This exception applies even if the teleportation is caused by an external force rather than your own action.",
-   "think": "",
    "new_tokens": 66,
-   "seconds": 7.95692594605498,
-   "truncated": false,
+   "seconds": 6.590767045039684,
    "prompt_tokens": 906,
    "cached": false
   },
@@ -1345,7 +1144,6 @@
    "category": "Exception / corner",
    "query": "Does teleporting away from an enemy provoke an attack?",
    "pipeline": "rerank",
-   "thinking": false,
    "context_ids": [
     341,
     704,
@@ -1353,10 +1151,8 @@
    ],
    "gold_in_context": true,
    "answer": "No, teleporting away from an enemy does not provoke an opportunity attack. The rules explicitly state that you do not provoke an opportunity attack when you teleport, regardless of whether you are moving out of an enemy's reach. This exception applies even if the teleportation is the result of a spell or ability rather than your own movement.",
-   "think": "",
    "new_tokens": 69,
-   "seconds": 8.21317238197662,
-   "truncated": false,
+   "seconds": 6.8224567929282784,
    "prompt_tokens": 873,
    "cached": true
   },
@@ -1365,7 +1161,6 @@
    "category": "Negation / constraint",
    "query": "Can a surprised character act in the first round?",
    "pipeline": "baseline",
-   "thinking": false,
    "context_ids": [
     317,
     333,
@@ -1373,10 +1168,8 @@
    ],
    "gold_in_context": true,
    "answer": "No, a surprised character cannot act in the first round of combat. According to the rules, if you are surprised, you can't move or take an action on your first turn, and you also cannot take a reaction until that turn ends. This restriction applies individually, meaning a member of a group can be surprised even if other members are not.",
-   "think": "",
    "new_tokens": 73,
-   "seconds": 8.703135208925232,
-   "truncated": false,
+   "seconds": 7.181140318978578,
    "prompt_tokens": 833,
    "cached": false
   },
@@ -1385,7 +1178,6 @@
    "category": "Negation / constraint",
    "query": "Can a surprised character act in the first round?",
    "pipeline": "rerank",
-   "thinking": false,
    "context_ids": [
     317,
     127,
@@ -1393,10 +1185,8 @@
    ],
    "gold_in_context": true,
    "answer": "No, a surprised character cannot act in the first round. According to the rules, if you are surprised, you can't move or take an action on your first turn of combat, and you can't take a reaction until that turn ends. This restriction applies even if other members of your group are not surprised. However, a Sorcerer can take two turns during the first round of combat, but they explicitly cannot use this feature when they are surprised.",
-   "think": "",
    "new_tokens": 94,
-   "seconds": 10.984496117103845,
-   "truncated": false,
+   "seconds": 9.06079807318747,
    "prompt_tokens": 976,
    "cached": false
   },
@@ -1405,7 +1195,6 @@
    "category": "Neutral rule",
    "query": "What happens if a character plunges off a cliff?",
    "pipeline": "baseline",
-   "thinking": false,
    "context_ids": [
     300,
     352,
@@ -1413,10 +1202,8 @@
    ],
    "gold_in_context": true,
    "answer": "If a character plunges off a cliff, they are taking a fall from a great height. At the end of the fall, the creature takes 1d6 bludgeoning damage for every 10 feet it fell, up to a maximum of 20d6. The creature lands prone unless it avoids taking damage from the fall.",
-   "think": "",
    "new_tokens": 73,
-   "seconds": 8.685487427050248,
-   "truncated": false,
+   "seconds": 7.167249707970768,
    "prompt_tokens": 865,
    "cached": false
   },
@@ -1425,7 +1212,6 @@
    "category": "Neutral rule",
    "query": "What happens if a character plunges off a cliff?",
    "pipeline": "rerank",
-   "thinking": false,
    "context_ids": [
     275,
     752,
@@ -1433,10 +1219,8 @@
    ],
    "gold_in_context": false,
    "answer": "The provided context does not answer this.",
-   "think": "",
    "new_tokens": 11,
-   "seconds": 1.5502266918774694,
-   "truncated": false,
+   "seconds": 1.3494970279280096,
    "prompt_tokens": 872,
    "cached": false
   },
@@ -1445,7 +1229,6 @@
    "category": "Neutral rule",
    "query": "When does a character die outright instead of falling unconscious?",
    "pipeline": "baseline",
-   "thinking": false,
    "context_ids": [
     352,
     354,
@@ -1453,10 +1236,8 @@
    ],
    "gold_in_context": true,
    "answer": "A character dies outright if damage reduces them to 0 hit points and the remaining damage equals or exceeds their hit point maximum. This is known as \"Instant Death.\" An exception exists for monsters, as most Game Masters rule that they die instantly upon reaching 0 hit points rather than falling unconscious, though mighty villains and special NPCs may be exceptions to this rule.",
-   "think": "",
    "new_tokens": 75,
-   "seconds": 8.414804079104215,
-   "truncated": false,
+   "seconds": 6.882294591050595,
    "prompt_tokens": 848,
    "cached": false
   },
@@ -1465,7 +1246,6 @@
    "category": "Neutral rule",
    "query": "When does a character die outright instead of falling unconscious?",
    "pipeline": "rerank",
-   "thinking": false,
    "context_ids": [
     352,
     27,
@@ -1473,10 +1253,8 @@
    ],
    "gold_in_context": true,
    "answer": "A character dies outright if damage reduces them to 0 hit points and the remaining damage equals or exceeds their hit point maximum. In this scenario, the character does not fall unconscious or make death saving throws. Most monsters also die instantly when they drop to 0 hit points, though mighty villains or special NPCs are common exceptions that may fall unconscious instead.",
-   "think": "",
    "new_tokens": 73,
-   "seconds": 8.698421638924628,
-   "truncated": false,
+   "seconds": 7.178694697096944,
    "prompt_tokens": 875,
    "cached": false
   },
@@ -1485,7 +1263,6 @@
    "category": "Exception / corner",
    "query": "Can I cast a second leveled spell after a bonus action spell?",
    "pipeline": "baseline",
-   "thinking": false,
    "context_ids": [
     367,
     365,
@@ -1493,10 +1270,8 @@
    ],
    "gold_in_context": true,
    "answer": "No, you cannot cast another spell during the same turn after casting a bonus action spell, with the specific exception of a cantrip that has a casting time of 1 action. This restriction applies regardless of the level of the bonus action spell or the second spell you attempt to cast.",
-   "think": "",
    "new_tokens": 60,
-   "seconds": 7.287198452977464,
-   "truncated": false,
+   "seconds": 6.074298735009506,
    "prompt_tokens": 924,
    "cached": false
   },
@@ -1505,7 +1280,6 @@
    "category": "Exception / corner",
    "query": "Can I cast a second leveled spell after a bonus action spell?",
    "pipeline": "rerank",
-   "thinking": false,
    "context_ids": [
     367,
     599,
@@ -1513,10 +1287,8 @@
    ],
    "gold_in_context": true,
    "answer": "No, you cannot cast another leveled spell during the same turn after casting a spell with a bonus action. The rules state that if you cast a bonus action spell, you can only cast a cantrip with a casting time of 1 action for the remainder of that turn. This restriction applies regardless of whether the bonus action spell has a duration or specific effects.",
-   "think": "",
    "new_tokens": 75,
-   "seconds": 8.911422472912818,
-   "truncated": false,
+   "seconds": 7.371504109119996,
    "prompt_tokens": 922,
    "cached": false
   },
@@ -1525,7 +1297,6 @@
    "category": "Negation / constraint",
    "query": "Can I concentrate on two spells at once?",
    "pipeline": "baseline",
-   "thinking": false,
    "context_ids": [
     372,
     371,
@@ -1533,10 +1304,8 @@
    ],
    "gold_in_context": true,
    "answer": "No, you cannot concentrate on two spells at once. If you cast another spell that requires concentration, you immediately lose concentration on the first spell. This restriction applies regardless of the situation, as the rules explicitly state you can only maintain concentration on a single spell at a time.",
-   "think": "",
    "new_tokens": 58,
-   "seconds": 6.652394996024668,
-   "truncated": false,
+   "seconds": 5.501100614899769,
    "prompt_tokens": 852,
    "cached": false
   },
@@ -1545,7 +1314,6 @@
    "category": "Negation / constraint",
    "query": "Can I concentrate on two spells at once?",
    "pipeline": "rerank",
-   "thinking": false,
    "context_ids": [
     372,
     371,
@@ -1553,10 +1321,8 @@
    ],
    "gold_in_context": true,
    "answer": "No, you cannot concentrate on two spells at once. If you cast another spell that requires concentration, you immediately lose concentration on the first spell. This restriction applies regardless of the situation, as the rules explicitly state you can only maintain concentration on a single spell at a time.",
-   "think": "",
    "new_tokens": 58,
-   "seconds": 6.652394996024668,
-   "truncated": false,
+   "seconds": 5.501100614899769,
    "prompt_tokens": 852,
    "cached": true
   },
@@ -1565,7 +1331,6 @@
    "category": "Neutral rule",
    "query": "Can I recover from exhaustion by resting?",
    "pipeline": "baseline",
-   "thinking": false,
    "context_ids": [
     308,
     762,
@@ -1573,10 +1338,8 @@
    ],
    "gold_in_context": false,
    "answer": "Yes, a character can recover from exhaustion by resting, but the method depends on the cause. If exhaustion is caused by the Sight Rot disease, a creature must succeed on a Constitution saving throw at the end of each long rest to reduce the exhaustion level by one. However, the provided context does not specify the rules for recovering from general exhaustion caused by other factors, such as spending Hit Dice or finishing a standard long rest.",
-   "think": "",
    "new_tokens": 88,
-   "seconds": 9.91436493396759,
-   "truncated": false,
+   "seconds": 8.089579375926405,
    "prompt_tokens": 846,
    "cached": false
   },
@@ -1585,7 +1348,6 @@
    "category": "Neutral rule",
    "query": "Can I recover from exhaustion by resting?",
    "pipeline": "rerank",
-   "thinking": false,
    "context_ids": [
     762,
     65,
@@ -1593,10 +1355,8 @@
    ],
    "gold_in_context": true,
    "answer": "Yes, finishing a long rest reduces a creature's exhaustion level by 1, provided the creature has also ingested some food and drink. If a successful saving throw (such as against Sight Rot) reduces the exhaustion level below 1, the creature recovers from the disease or condition causing it. However, if a creature has no hit points from finishing a long rest, they do not recover hit points, though the text does not explicitly state this prevents exhaustion reduction. Additionally, certain conditions like Sight Rot may require specific saving throws to decrease exhaustion levels.",
-   "think": "",
    "new_tokens": 114,
-   "seconds": 13.091292092809454,
-   "truncated": false,
+   "seconds": 10.759423265932128,
    "prompt_tokens": 893,
    "cached": false
   },
@@ -1605,7 +1365,6 @@
    "category": "Neutral rule",
    "query": "How long can a creature hold its breath?",
    "pipeline": "baseline",
-   "thinking": false,
    "context_ids": [
     301,
     1154,
@@ -1613,10 +1372,8 @@
    ],
    "gold_in_context": true,
    "answer": "A creature can hold its breath for a number of minutes equal to 1 + its Constitution modifier, with a minimum duration of 30 seconds. For example, a creature with a Constitution of 14 can hold its breath for 3 minutes. If a creature runs out of breath, it can survive for a number of rounds equal to its Constitution modifier (minimum of 1 round) before dropping to 0 hit points.",
-   "think": "",
    "new_tokens": 90,
-   "seconds": 10.116381409112364,
-   "truncated": false,
+   "seconds": 8.304722233908251,
    "prompt_tokens": 914,
    "cached": false
   },
@@ -1625,7 +1382,6 @@
    "category": "Neutral rule",
    "query": "How long can a creature hold its breath?",
    "pipeline": "rerank",
-   "thinking": false,
    "context_ids": [
     301,
     1427,
@@ -1633,10 +1389,8 @@
    ],
    "gold_in_context": true,
    "answer": "A creature can hold its breath for a number of minutes equal to 1 + its Constitution modifier, with a minimum of 30 seconds. For example, a creature with a Constitution of 14 can hold its breath for 3 minutes. However, the octopus is a specific exception that can hold its breath for 1 hour while out of water.",
-   "think": "",
    "new_tokens": 76,
-   "seconds": 9.075228475034237,
-   "truncated": false,
+   "seconds": 7.493765374878421,
    "prompt_tokens": 974,
    "cached": true
   },
@@ -1645,7 +1399,6 @@
    "category": "Exception / corner",
    "query": "Can two clerics cast the same blessing on one ally to stack it?",
    "pipeline": "baseline",
-   "thinking": false,
    "context_ids": [
     380,
     1497,
@@ -1653,10 +1406,8 @@
    ],
    "gold_in_context": true,
    "answer": "No, two clerics cannot stack the effects of the same spell, such as *bless*, on one ally. According to the rules on combining magical effects, the effects of the same spell cast multiple times do not combine; instead, only the most potent effect applies while their durations overlap. For example, if two clerics cast *bless* on the same target, the character gains the spell's benefit only once and does not roll two bonus dice.",
-   "think": "",
    "new_tokens": 96,
-   "seconds": 11.294100589118898,
-   "truncated": false,
+   "seconds": 9.284697635099292,
    "prompt_tokens": 1058,
    "cached": false
   },
@@ -1665,7 +1416,6 @@
    "category": "Exception / corner",
    "query": "Can two clerics cast the same blessing on one ally to stack it?",
    "pipeline": "rerank",
-   "thinking": false,
    "context_ids": [
     380,
     45,
@@ -1673,10 +1423,8 @@
    ],
    "gold_in_context": true,
    "answer": "No, two clerics cannot stack the *bless* spell on one ally. According to the rules on combining magical effects, the effects of the same spell cast multiple times do not combine; instead, only the most potent effect applies. Therefore, if two clerics cast *bless* on the same target, the character gains the spell's benefit only once.",
-   "think": "",
    "new_tokens": 77,
-   "seconds": 9.221930094994605,
-   "truncated": false,
+   "seconds": 7.597856559092179,
    "prompt_tokens": 1038,
    "cached": false
   },
@@ -1685,7 +1433,6 @@
    "category": "Exception / corner",
    "query": "Can I disengage and still be hit as I leave?",
    "pipeline": "baseline",
-   "thinking": false,
    "context_ids": [
     341,
     340,
@@ -1693,10 +1440,8 @@
    ],
    "gold_in_context": true,
    "answer": "Yes, you can take the Disengage action to avoid provoking an opportunity attack when you leave a creature's reach. However, you will still be hit if you are moved by something other than your own movement, action, or reaction, such as being teleported, hurled by an explosion, or falling past an enemy. Additionally, certain creatures with reach greater than 5 feet can still attack you even if you have disengaged, provided you are within their extended melee range.",
-   "think": "",
    "new_tokens": 101,
-   "seconds": 11.310520377010107,
-   "truncated": false,
+   "seconds": 9.247009366983548,
    "prompt_tokens": 846,
    "cached": false
   },
@@ -1705,7 +1450,6 @@
    "category": "Exception / corner",
    "query": "Can I disengage and still be hit as I leave?",
    "pipeline": "rerank",
-   "thinking": false,
    "context_ids": [
     341,
     356,
@@ -1713,10 +1457,8 @@
    ],
    "gold_in_context": true,
    "answer": "Yes, you can take the Disengage action to avoid provoking an opportunity attack when you leave a creature's reach. However, you will still be hit if you are teleported, moved by someone or something without using your movement, action, or reaction, or if you are hurled by an explosion or fall due to gravity. Additionally, if you are grappled, you may still provoke an opportunity attack when leaving reach unless the grapple is broken first.",
-   "think": "",
    "new_tokens": 97,
-   "seconds": 10.850923476973549,
-   "truncated": false,
+   "seconds": 8.887565349927172,
    "prompt_tokens": 850,
    "cached": false
   },
@@ -1725,7 +1467,6 @@
    "category": "Negation / constraint",
    "query": "Can I take two reactions before my next turn?",
    "pipeline": "baseline",
-   "thinking": false,
    "context_ids": [
     333,
     320,
@@ -1733,10 +1474,8 @@
    ],
    "gold_in_context": true,
    "answer": "No, you cannot take two reactions before your next turn. The rules state that you can take only one reaction per round, and when you take a reaction, you cannot take another one until the start of your next turn. This restriction applies regardless of whether the reaction occurs on your own turn or someone else's. There are no exceptions mentioned in the provided context that allow for multiple reactions within a single round.",
-   "think": "",
    "new_tokens": 85,
-   "seconds": 9.970859467051923,
-   "truncated": false,
+   "seconds": 8.206191732082516,
    "prompt_tokens": 815,
    "cached": false
   },
@@ -1745,7 +1484,6 @@
    "category": "Negation / constraint",
    "query": "Can I take two reactions before my next turn?",
    "pipeline": "rerank",
-   "thinking": false,
    "context_ids": [
     333,
     321,
@@ -1753,10 +1491,8 @@
    ],
    "gold_in_context": true,
    "answer": "No, you cannot take two reactions before your next turn. The rules state that when you take a reaction, you cannot take another one until the start of your next turn. Additionally, you can take only one reaction per round. This restriction applies regardless of the specific trigger or action being readied.",
-   "think": "",
    "new_tokens": 63,
-   "seconds": 7.581600823905319,
-   "truncated": false,
+   "seconds": 6.2716911372262985,
    "prompt_tokens": 828,
    "cached": true
   },
@@ -1765,7 +1501,6 @@
    "category": "Neutral rule",
    "query": "Is a paralyzed creature able to act?",
    "pipeline": "baseline",
-   "thinking": false,
    "context_ids": [
     1374,
     1375,
@@ -1773,10 +1508,8 @@
    ],
    "gold_in_context": true,
    "answer": "No, a paralyzed creature cannot act. According to the rules, a paralyzed creature is incapacitated, and an incapacitated creature can't take actions or reactions. Additionally, a paralyzed creature specifically can't move or speak.",
-   "think": "",
    "new_tokens": 47,
-   "seconds": 5.4599180340301245,
-   "truncated": false,
+   "seconds": 4.513279437087476,
    "prompt_tokens": 882,
    "cached": false
   },
@@ -1785,7 +1518,6 @@
    "category": "Neutral rule",
    "query": "Is a paralyzed creature able to act?",
    "pipeline": "rerank",
-   "thinking": false,
    "context_ids": [
     1374,
     715,
@@ -1793,10 +1525,8 @@
    ],
    "gold_in_context": true,
    "answer": "No, a paralyzed creature cannot act because the condition explicitly states that a paralyzed creature is incapacitated. An incapacitated creature can't take actions or reactions. Additionally, a paralyzed creature can't move or speak.",
-   "think": "",
    "new_tokens": 45,
-   "seconds": 5.667318447958678,
-   "truncated": false,
+   "seconds": 4.713117172010243,
    "prompt_tokens": 872,
    "cached": true
   },
@@ -1805,7 +1535,6 @@
    "category": "Negation / constraint",
    "query": "Can I double my proficiency bonus twice on the same roll?",
    "pipeline": "baseline",
-   "thinking": false,
    "context_ids": [
     265,
     264,
@@ -1813,10 +1542,8 @@
    ],
    "gold_in_context": true,
    "answer": "No, you cannot add your proficiency bonus to a single die roll more than once, even if multiple rules suggest it. While some features like the rogue's Expertise can double your proficiency bonus for specific ability checks, the bonus is still applied only once per roll. If a circumstance suggests the bonus applies more than once to the same roll, you add it only once and multiply or divide it only once. Additionally, if you lack proficiency in the relevant skill, your proficiency bonus is 0, so doubling it yields no benefit.",
-   "think": "",
    "new_tokens": 109,
-   "seconds": 12.221109496895224,
-   "truncated": false,
+   "seconds": 9.950527887092903,
    "prompt_tokens": 846,
    "cached": false
   },
@@ -1825,7 +1552,6 @@
    "category": "Negation / constraint",
    "query": "Can I double my proficiency bonus twice on the same roll?",
    "pipeline": "rerank",
-   "thinking": false,
    "context_ids": [
     265,
     266,
@@ -1833,10 +1559,8 @@
    ],
    "gold_in_context": true,
    "answer": "No, you cannot add your proficiency bonus to a single die roll more than once, even if multiple rules suggest it. While certain features like Expertise or Favored Terrain can double your proficiency bonus, the bonus itself is applied only once per roll. If a circumstance suggests the bonus applies more than once to the same roll, you add it only once and multiply or divide it only once. Additionally, if you lack proficiency in a skill, your proficiency bonus is 0, so doubling it yields no benefit.",
-   "think": "",
    "new_tokens": 105,
-   "seconds": 11.725698987022042,
-   "truncated": false,
+   "seconds": 9.563596727093682,
    "prompt_tokens": 857,
    "cached": false
   },
@@ -1845,7 +1569,6 @@
    "category": "Neutral rule",
    "query": "Can advantage and disadvantage cancel each other out?",
    "pipeline": "baseline",
-   "thinking": false,
    "context_ids": [
     263,
     264,
@@ -1853,10 +1576,8 @@
    ],
    "gold_in_context": true,
    "answer": "Yes, advantage and disadvantage cancel each other out, resulting in neither condition applying. This occurs even if multiple circumstances impose disadvantage while only one grants advantage, or vice versa. In such a situation, you roll only one d20. However, if you have advantage or disadvantage and use a feature like the halfling's Lucky trait to reroll, you can only reroll one of the dice.",
-   "think": "",
    "new_tokens": 84,
-   "seconds": 9.438961209962144,
-   "truncated": false,
+   "seconds": 7.7509091820102185,
    "prompt_tokens": 834,
    "cached": false
   },
@@ -1865,7 +1586,6 @@
    "category": "Neutral rule",
    "query": "Can advantage and disadvantage cancel each other out?",
    "pipeline": "rerank",
-   "thinking": false,
    "context_ids": [
     263,
     264,
@@ -1873,10 +1593,8 @@
    ],
    "gold_in_context": true,
    "answer": "Yes, advantage and disadvantage cancel each other out, resulting in neither condition applying. This occurs even if multiple circumstances impose disadvantage while only one grants advantage, or vice versa. In such a situation, you roll only one d20. However, if you have advantage or disadvantage and use a feature like the halfling's Lucky trait to reroll, you can only reroll one of the dice.",
-   "think": "",
    "new_tokens": 84,
-   "seconds": 9.871843700995669,
-   "truncated": false,
+   "seconds": 8.151636174181476,
    "prompt_tokens": 840,
    "cached": false
   },
@@ -1885,7 +1603,6 @@
    "category": "Exception / corner",
    "query": "Can the Dash action be used as a bonus action?",
    "pipeline": "baseline",
-   "thinking": false,
    "context_ids": [
     331,
     320,
@@ -1893,10 +1610,8 @@
    ],
    "gold_in_context": false,
    "answer": "No, the Dash action cannot be used as a bonus action based on the provided context. The text describes Dash as a specific action that increases movement by your speed, while bonus actions are reserved for abilities, spells, or features that explicitly state they can be taken as a bonus action. Since the context does not list Dash among these specific options, it must be taken as a standard action.",
-   "think": "",
    "new_tokens": 81,
-   "seconds": 9.132792124990374,
-   "truncated": false,
+   "seconds": 7.4605439798906446,
    "prompt_tokens": 830,
    "cached": false
   },
@@ -1905,7 +1620,6 @@
    "category": "Exception / corner",
    "query": "Can the Dash action be used as a bonus action?",
    "pipeline": "rerank",
-   "thinking": false,
    "context_ids": [
     81,
     122,
@@ -1913,10 +1627,8 @@
    ],
    "gold_in_context": true,
    "answer": "Yes, the Dash action can be used as a bonus action. A Monk can spend 1 ki point to take the Dash action as a bonus action via the Step of the Wind feature. Additionally, a Rogue can use the Cunning Action feature to take the Dash action as a bonus action starting at 2nd level. However, a character can take only one bonus action on their turn, so they must choose which bonus action to use if multiple are available.",
-   "think": "",
    "new_tokens": 95,
-   "seconds": 11.066622907994315,
-   "truncated": false,
+   "seconds": 9.085660217097029,
    "prompt_tokens": 864,
    "cached": false
   },
@@ -1925,7 +1637,6 @@
    "category": "Neutral rule",
    "query": "Can a prone creature stand up for free?",
    "pipeline": "baseline",
-   "thinking": false,
    "context_ids": [
     325,
     1375,
@@ -1933,10 +1644,8 @@
    ],
    "gold_in_context": true,
    "answer": "No, a prone creature cannot stand up for free. Standing up costs movement equal to half the creature's speed. A creature cannot stand up if it does not have enough movement left or if its speed is 0. Additionally, a petrified creature is incapacitated and cannot move, preventing it from standing up.",
-   "think": "",
    "new_tokens": 66,
-   "seconds": 7.488616446964443,
-   "truncated": false,
+   "seconds": 6.155809656018391,
    "prompt_tokens": 856,
    "cached": false
   },
@@ -1945,7 +1654,6 @@
    "category": "Neutral rule",
    "query": "Can a prone creature stand up for free?",
    "pipeline": "rerank",
-   "thinking": false,
    "context_ids": [
     1375,
     325,
@@ -1953,10 +1661,8 @@
    ],
    "gold_in_context": true,
    "answer": "No, a prone creature cannot stand up for free. Standing up costs an amount of movement equal to half the creature's speed. Additionally, a creature cannot stand up if its speed is 0 or if it does not have enough remaining movement.",
-   "think": "",
    "new_tokens": 52,
-   "seconds": 5.997457478893921,
-   "truncated": false,
+   "seconds": 4.93189904699102,
    "prompt_tokens": 875,
    "cached": false
   },
@@ -1965,7 +1671,6 @@
    "category": "Exception / corner",
    "query": "Can a monster use a legendary action in the middle of its own turn?",
    "pipeline": "baseline",
-   "thinking": false,
    "context_ids": [
     1023,
     1024,
@@ -1973,10 +1678,8 @@
    ],
    "gold_in_context": true,
    "answer": "No, a monster cannot use a legendary action in the middle of its own turn. Legendary actions can only be used at the end of another creature's turn. Additionally, a creature cannot use legendary actions while it is incapacitated or surprised until after its first turn in combat.",
-   "think": "",
    "new_tokens": 58,
-   "seconds": 7.075843717902899,
-   "truncated": false,
+   "seconds": 5.894777602050453,
    "prompt_tokens": 943,
    "cached": true
   },
@@ -1985,7 +1688,6 @@
    "category": "Exception / corner",
    "query": "Can a monster use a legendary action in the middle of its own turn?",
    "pipeline": "rerank",
-   "thinking": false,
    "context_ids": [
     1159,
     1023,
@@ -1993,15 +1695,11 @@
    ],
    "gold_in_context": true,
    "answer": "No, a monster cannot use a legendary action in the middle of its own turn. According to the rules, only one legendary action option can be used at a time, and this must occur only at the end of another creature's turn. Additionally, a creature regains its spent legendary actions at the start of its own turn, not during it.",
-   "think": "",
    "new_tokens": 73,
-   "seconds": 8.292339691892266,
-   "truncated": false,
+   "seconds": 6.808242661878467,
    "prompt_tokens": 943,
    "cached": true
   }
  ],
- "llm": "/scratch/akshat.pandey/qwen35_9b",
- "budget_seconds": 6600,
- "elapsed": 781.4365403819829
+ "llm": "/scratch/akshat.pandey/qwen35_9b"
 }

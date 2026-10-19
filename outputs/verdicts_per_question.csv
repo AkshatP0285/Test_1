@@ -1,0 +1,26 @@
+q,question,gold key facts,bge-small B,bge-small R,embeddinggemma-2 B,embeddinggemma-2 R
+1,What breaks my focus on a spell?,"Another concentration spell; damage (Con save, DC 10 or half the damage); incapacitated or killed; GM-called DC 10 save for environmental effects; you can end it at will; normal activity is fine.",P,C,P,C
+2,Do I need to see a target to attack it?,"No. You can attack a target you cannot see, but with disadvantage; if it is not where you aimed, the attack misses.",W,C,P,C
+3,Can I punish an unseen enemy that runs away from me?,No. An opportunity attack needs a hostile creature that you can see moving out of your reach.,A,P,A,A
+4,Can I cast a spell while a silence effect is on me?,Not a spell with a verbal component. Spells without V can still be cast.,C,C,P,C
+5,Can I shove a creature much bigger than me?,No. The target of a shove must be no more than one size larger than you.,C,C,A,A
+6,How many magic items can one creature bond with?,Three at a time; a fourth attunement fails until you end one; no two copies of the same item.,C,C,C,C
+7,Can I rest twice in a single day to recover everything?,No. A character cannot benefit from more than one long rest in a 24-hour period.,C,A,P,C
+8,Can a creature that is held by an enemy still walk away?,No. A grappled creature's speed becomes 0 (it can try to escape the grapple instead).,A,P,A,P
+9,Does teleporting away from an enemy provoke an attack?,No. Teleporting does not provoke an opportunity attack.,C,C,C,C
+10,Can a surprised character act in the first round?,No. A surprised creature cannot move or take an action on its first turn and cannot take a reaction until that turn ends.,C,P,C,P
+11,What happens if a character plunges off a cliff?,"1d6 bludgeoning damage per 10 feet fallen, maximum 20d6, and you land prone.",A,A,C,A
+12,When does a character die outright instead of falling unconscious?,When damage takes you to 0 HP and the remaining damage is at least your hit point maximum (massive damage).,C,C,C,C
+13,Can I cast a second leveled spell after a bonus action spell?,No. After casting a spell with a bonus action you can only cast a cantrip with a casting time of 1 action that turn.,C,C,C,C
+14,Can I concentrate on two spells at once?,No. You cannot concentrate on two spells at once.,C,C,C,C
+15,Can I recover from exhaustion by resting?,Yes. Finishing a long rest reduces exhaustion by 1 (with some food and drink).,C,C,A,P
+16,How long can a creature hold its breath?,1 + Constitution modifier minutes (minimum 30 seconds).,C,C,C,C
+17,Can two clerics cast the same blessing on one ally to stack it?,No. The same spell cast several times does not combine; the most potent effect applies.,C,C,C,C
+18,Can I disengage and still be hit as I leave?,No. Taking the Disengage action means your movement does not provoke opportunity attacks.,P,P,P,P
+19,Can I take two reactions before my next turn?,No. You cannot take another reaction until the start of your next turn.,C,C,C,C
+20,Is a paralyzed creature able to act?,No. Paralyzed means incapacitated and unable to move or speak.,C,C,C,C
+21,Can I double my proficiency bonus twice on the same roll?,No. Your proficiency bonus cannot be added to a single roll more than once.,C,C,C,P
+22,Can advantage and disadvantage cancel each other out?,"Yes. If you have both, they cancel and you roll one d20, however many sources of each there are.",C,C,C,C
+23,Can the Dash action be used as a bonus action?,"Only through a specific feature, such as the rogue's Cunning Action; otherwise Dash is an action.",P,C,P,C
+24,Can a prone creature stand up for free?,No. Standing up costs movement equal to half your speed.,C,C,C,C
+25,Can a monster use a legendary action in the middle of its own turn?,"No. Legendary actions are used only at the end of another creature's turn, one at a time.",C,C,C,C

@@ -1,51 +1,74 @@
-# RAG: Baseline Retrieval vs Cross-Encoder Re-Ranking (D&D 5e SRD)
+# RAG: baseline retrieval vs cross-encoder re-ranking (D&D 5e SRD, Qwen3.5-9B, 25 questions)
 
-Two-stage retrieval over the D&D 5e System Reference Document 5.1:
+Everything is in one notebook, `rag_assignment.ipynb` (executed, outputs included).
 
-1. **Pipeline 1 (baseline):** bi-encoder (BAAI/bge-small-en-v1.5) + FAISS, top 10, the first 3 chunks go to the LLM.
-2. **Pipeline 2 (re-ranking):** the same 10 candidates re-scored by a cross-encoder (cross-encoder/ms-marco-MiniLM-L-6-v2), the top 3 go to the LLM.
+## What it does
+Two retrieval workflows over the **same chunked document** (the D&D 5e System Reference Document 5.1, `data/SRD_CC_v5.1.pdf`):
 
-Both pipelines use the same chunks and the same prompt.
+1. **Pipeline 1, baseline:** a bi-encoder embeds every chunk into a FAISS inner-product index; for each question the top 10 chunks are retrieved and the first 3 go to the LLM, which gives **Answer 1**.
+2. **Pipeline 2, re-ranking:** the same 10 candidates are scored by a cross-encoder, re-sorted, and the first 3 go to the LLM with the identical prompt, which gives **Answer 2**.
 
-## Main notebook
-`rag_assignment.ipynb` (executed, outputs included) contains the whole assignment: PDF loading and chunking, both pipelines,
-8 failure-mode queries with rank shifts and the two LLM answers side by side, and a latency profile.
-The LLM is Gemini (`gemini-3.5-flash-lite`). Answers are cached, so a re-run costs no API quota.
+It is run for 25 questions and for two bi-encoders, and the answers come from a local Qwen3.5-9B model.
 
-## Data
-The document used is the D&D 5e System Reference Document 5.1, included as `data/SRD_CC_v5.1.pdf` (403 pages, two columns).
-The chunks retrieved for every question are saved in readable form in `outputs_25q/retrieved_chunks.md`: for each of the 25 questions
-and both embedders, the ten bi-encoder results, their order after the cross-encoder, scores, page numbers and the chunk text.
-`outputs_25q/retrieval.json` holds the same ids plus all 1,504 chunks.
+## Flow of the notebook
+| Section | Content |
+|---|---|
+| 1 | Load the PDF (two columns, read one column at a time) and cut it into 1,504 chunks of 200 words with a 40-word overlap |
+| 2 | The 25 questions and a gold phrase for each; the passage each phrase matches is printed so every label can be checked |
+| 3 | Stage 1 (bi-encoder + FAISS, top 10) and stage 2 (cross-encoder re-sort) for both embedders, with stage timings |
+| 4 | The retrieved chunks written to `outputs/retrieved_chunks.md` |
+| 5-6 | Retrieval metrics, rank shift per question, results by question type, cost of running the cross-encoder on every chunk |
+| 7-8 | Qwen3.5-9B split over two GPUs; 100 answers (25 questions x 2 embedders x 2 pipelines) |
+| 9 | All answers side by side |
+| 10 | Answers graded by hand against gold key facts |
+| 11 | Latency table, baseline vs re-ranking pipeline |
+| 12 | Failure-mode analysis: the failure queries, the failure types the assignment lists, and Answer 1 vs Answer 2 in detail |
+| 13-14 | Architecture comparison and the scaling question; checklist mapping every assignment item to a section |
 
-## Where the models are
-| Role | Model | Notebook / code |
+## Models
+| Role | Model |
+|---|---|
+| Bi-encoder | `BAAI/bge-small-en-v1.5` and `google/embeddinggemma-2` (float32) |
+| Cross-encoder | `cross-encoder/ms-marco-MiniLM-L-6-v2` |
+| LLM | `Qwen/Qwen3.5-9B`, fp16, thinking off, `device_map="auto"` over two 11 GB GPUs |
+
+## Results (details in the notebook and in `outputs/`)
+Retrieval over the 25 questions (gold chunk = the passage that answers the question):
+
+| | bge-small | EmbeddingGemma 2 |
 |---|---|---|
-| Bi-encoder | `BAAI/bge-small-en-v1.5` | `rag_assignment.ipynb` (section 2, `retrieve_top10`), also `rag_retrieval_25q.ipynb` |
-| Bi-encoder | `google/embeddinggemma-2` | `rag_retrieval_25q.ipynb` and `rag_experiments.ipynb` only (`EMBEDDERS` dictionary) |
-| Cross-encoder | `cross-encoder/ms-marco-MiniLM-L-6-v2` | `rag_assignment.ipynb` (section 2, `rerank`), and the two notebooks above |
-| LLM | Gemini `gemini-3.5-flash-lite` | `rag_assignment.ipynb` (`ask_llm`) |
-| LLM | `Qwen/Qwen3-4B`, `Qwen/Qwen3.5-9B` | `rag_experiments.ipynb`, `rag_generation_qwen35_9b.ipynb` |
+| Gold chunk in top 3, baseline | 18 | 16 |
+| Gold chunk in top 3, re-ranked | 21 | 21 |
+| Gold chunk anywhere in the 10 candidates | 22 | 23 |
+| MRR, baseline -> re-ranked | 0.613 -> 0.711 | 0.645 -> 0.685 |
+
+Hand-graded answers (25 per row): `bge-small` baseline 18 correct, 3 partly, 1 wrong rule, 3 abstain; re-ranked 19 / 4 / 0 / 2.
+`embeddinggemma-2` baseline 15 / 6 / 0 / 4; re-ranked 17 / 5 / 0 / 3. The benefit is concentrated in the first 8 questions, which were picked
+because retrieval struggles on them; on the other 17 ordinary questions re-ranking changed little.
+
+The cross-encoder adds about 17 ms per question. Running it over all 1,504 chunks instead of 10 takes about 1.9 s.
+
+## Files
+* `rag_assignment.ipynb`: the notebook.
+* `data/SRD_CC_v5.1.pdf`: the document used.
+* `outputs/retrieved_chunks.md` and `retrieval.json`: the retrieved chunks, ranks and scores for every question and embedder.
+* `outputs/generations_qwen35_9b.json`, `answers_graded.csv`, `verdicts_per_question.csv`: the 100 answers and their verdicts.
+* `outputs/metrics.csv`, `per_question_ranks.csv`, `by_question_type.csv`, `failure_analysis.csv`, `latency.csv`, `cross_encoder_scaling.csv`: tables from the notebook.
+* `outputs/thinking_attempt_partial.json`: an attempt with Qwen's thinking mode on, which ran out of tokens (15 of 16 tries) and was therefore not evaluated.
 
 ## Run it
 ```
 pip install -r requirements.txt
-export GEMINI_API_KEY=...      # never commit this
-# the PDF is in data/; set the PDF / OUT paths in the first code cell (the notebooks were run with cluster paths), then run the notebook
+# needs two GPUs of about 11 GB; the 9B model is about 18 GB in fp16
+# optional environment variables: RAG_PDF (path of the PDF), RAG_OUT (output folder), MODEL_DIR (local copy of Qwen/Qwen3.5-9B)
+jupyter nbconvert --to notebook --execute rag_assignment.ipynb
 ```
+Tested with torch 2.11 (CUDA 12.8), transformers 5.20, sentence-transformers 6.1 on RTX 2080 Ti cards. EmbeddingGemma 2 also needs `pillow` and
+`torchvision` because its processor is multimodal. On these cards use float16 for Qwen and float32 for EmbeddingGemma 2 (no native bfloat16).
 
-## Optional extra notebooks
-* `rag_experiments.ipynb`: two embedders (bge-small, EmbeddingGemma 2 in float32) with a local Qwen3-4B generator, on the 8 queries.
-  EmbeddingGemma 2 also needs `pillow` and `torchvision` because its processor is multimodal.
-* `rag_retrieval_25q.ipynb`: recall@3, recall@10 and MRR on 25 questions for both embedders, with and without the cross-encoder.
-* `rag_generation_qwen35_9b.ipynb`: answers from a local Qwen3.5-9B split over two 11 GB GPUs (fp16, thinking off).
-
-## Results
-* `outputs/`: results of the main notebook (`rank_shift.csv`, `latency.csv`, `results.json`) and `run1_gemini-3.8-flash/`, an earlier run on another Gemini model.
-* `outputs_exp/`: the Qwen3-4B experiment.
-* `outputs_25q/`: the 25-question study. `retrieval.json` holds the retrieved chunk ids used by the generation notebook,
-  `generations_with_thinking_partial.json` is a thinking-on attempt that ran out of tokens, and `gold_phrase_check.txt` shows
-  the passage each gold phrase matches.
+## Limits
+25 questions on one rulebook is small, and 8 of them were chosen because retrieval fails on them. The gold phrases, gold key facts and answer
+verdicts were written and judged by hand. The cross-encoder is a general web-search model, not trained on rules text.
 
 ## Attribution
 This work includes material taken from the System Reference Document 5.1 ("SRD 5.1") by Wizards of the Coast LLC and available at

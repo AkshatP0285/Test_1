@@ -1,12 +1,12 @@
 # Retrieved chunks for the 25 test questions
 
-For every question and both embedders (bge-small-en-v1.5 and embeddinggemma-2): the ten chunks returned by the bi-encoder, their order after the cross-encoder (ms-marco-MiniLM-L-6-v2), and the chunk text.
-Pipeline 1 gives the LLM the first 3 chunks of the bi-encoder order, Pipeline 2 gives it the first 3 of the cross-encoder order. `Gold` marks a chunk that contains the passage answering the question. Chunk ids and page numbers refer to the SRD PDF in `data/`; all 1,504 chunks are in `retrieval.json`.
-The cross-encoder score is a raw logit (higher is more relevant, it can be negative).
+For each question and embedder: the ten chunks returned by the bi-encoder, their order after the cross-encoder, and the chunk text.
+Pipeline 1 gives the LLM the first 3 of the bi-encoder order, Pipeline 2 the first 3 of the cross-encoder order.
+`GOLD` marks a chunk that contains the passage answering the question. The cross-encoder score is a raw logit (higher is more relevant, it can be negative).
 
 ## Q1. What breaks my focus on a spell?
 
-### bge-small  |  gold chunk(s): c372  |  gold rank 5 → 2
+### bge-small | gold chunk(s): c372 | gold rank 5 -> 2
 
 | Re-ranked # | Bi-encoder # | Chunk | Page | Cross-encoder score | In baseline top-3 | In re-ranked top-3 | Gold |
 |---|---|---|---|---|---|---|---|
@@ -14,7 +14,7 @@ The cross-encoder score is a raw logit (higher is more relevant, it can be negat
 | 2 | 5 | c372 | 102 | -0.32 | no | yes | GOLD |
 | 3 | 2 | c371 | 102 | -0.58 | yes | yes |  |
 | 4 | 3 | c368 | 101 | -0.67 | yes | no |  |
-| 5 | 7 | c483 | 135 | -2 | no | no |  |
+| 5 | 7 | c483 | 135 | -2.00 | no | no |  |
 | 6 | 4 | c222 | 66 | -3.35 | no | no |  |
 | 7 | 8 | c578 | 156 | -3.93 | no | no |  |
 | 8 | 6 | c448 | 126 | -6.82 | no | no |  |
@@ -55,7 +55,7 @@ assail the area under the cloud. The area becomes difficult terrain and is heavi
 
 </details>
 
-### embeddinggemma-2  |  gold chunk(s): c372  |  gold rank 6 → 2
+### embeddinggemma-2 | gold chunk(s): c372 | gold rank 6 -> 2
 
 | Re-ranked # | Bi-encoder # | Chunk | Page | Cross-encoder score | In baseline top-3 | In re-ranked top-3 | Gold |
 |---|---|---|---|---|---|---|---|
@@ -64,11 +64,11 @@ assail the area under the cloud. The area becomes difficult terrain and is heavi
 | 3 | 2 | c371 | 102 | -0.58 | yes | yes |  |
 | 4 | 1 | c368 | 101 | -0.67 | yes | no |  |
 | 5 | 7 | c944 | 242 | -4.68 | no | no |  |
-| 6 | 4 | c373 | 102 | -6.4 | no | no |  |
+| 6 | 4 | c373 | 102 | -6.40 | no | no |  |
 | 7 | 9 | c482 | 134 | -6.57 | no | no |  |
 | 8 | 5 | c663 | 176 | -6.63 | no | no |  |
 | 9 | 8 | c431 | 122 | -6.75 | no | no |  |
-| 10 | 10 | c649 | 173 | -7.6 | no | no |  |
+| 10 | 10 | c649 | 173 | -7.60 | no | no |  |
 
 <details><summary>Chunk texts</summary>
 
@@ -106,7 +106,7 @@ of the glue can cover a 1-­‐‑foot square surface. The glue takes 1 minute t
 
 ## Q2. Do I need to see a target to attack it?
 
-### bge-small  |  gold chunk(s): c337  |  gold rank 8 → 3
+### bge-small | gold chunk(s): c337 | gold rank 8 -> 3
 
 | Re-ranked # | Bi-encoder # | Chunk | Page | Cross-encoder score | In baseline top-3 | In re-ranked top-3 | Gold |
 |---|---|---|---|---|---|---|---|
@@ -114,12 +114,12 @@ of the glue can cover a 1-­‐‑foot square surface. The glue takes 1 minute t
 | 2 | 10 | c342 | 95 | 1.65 | no | yes |  |
 | 3 | 8 | c337 | 94 | 1.14 | no | yes | GOLD |
 | 4 | 7 | c344 | 96 | 0.48 | no | no |  |
-| 5 | 5 | c1019 | 259 | 0.3 | no | no |  |
+| 5 | 5 | c1019 | 259 | 0.30 | no | no |  |
 | 6 | 6 | c332 | 93 | 0.16 | no | no |  |
 | 7 | 1 | c340 | 95 | -0.23 | yes | no |  |
 | 8 | 9 | c416 | 119 | -3.49 | no | no |  |
 | 9 | 3 | c341 | 95 | -4.04 | yes | no |  |
-| 10 | 2 | c334 | 94 | -6.1 | yes | no |  |
+| 10 | 2 | c334 | 94 | -6.10 | yes | no |  |
 
 <details><summary>Chunk texts</summary>
 
@@ -155,17 +155,17 @@ attacks, where the “weapon” might be a manufactured item or a natural weapon
 
 </details>
 
-### embeddinggemma-2  |  gold chunk(s): c337  |  gold rank 5 → 2
+### embeddinggemma-2 | gold chunk(s): c337 | gold rank 5 -> 2
 
 | Re-ranked # | Bi-encoder # | Chunk | Page | Cross-encoder score | In baseline top-3 | In re-ranked top-3 | Gold |
 |---|---|---|---|---|---|---|---|
 | 1 | 3 | c338 | 94 | 2.48 | yes | yes |  |
 | 2 | 5 | c337 | 94 | 1.14 | no | yes | GOLD |
 | 3 | 7 | c344 | 96 | 0.48 | no | yes |  |
-| 4 | 2 | c1019 | 259 | 0.3 | yes | no |  |
+| 4 | 2 | c1019 | 259 | 0.30 | yes | no |  |
 | 5 | 4 | c340 | 95 | -0.23 | no | no |  |
-| 6 | 10 | c373 | 102 | -0.3 | no | no |  |
-| 7 | 1 | c345 | 96 | -0.9 | yes | no |  |
+| 6 | 10 | c373 | 102 | -0.30 | no | no |  |
+| 7 | 1 | c345 | 96 | -0.90 | yes | no |  |
 | 8 | 8 | c506 | 140 | -1.13 | no | no |  |
 | 9 | 9 | c117 | 38 | -1.51 | no | no |  |
 | 10 | 6 | c401 | 116 | -4.16 | no | no |  |
@@ -206,7 +206,7 @@ attacks, where the “weapon” might be a manufactured item or a natural weapon
 
 ## Q3. Can I punish an unseen enemy that runs away from me?
 
-### bge-small  |  gold chunk(s): c340  |  gold rank 4 → 3
+### bge-small | gold chunk(s): c340 | gold rank 4 -> 3
 
 | Re-ranked # | Bi-encoder # | Chunk | Page | Cross-encoder score | In baseline top-3 | In re-ranked top-3 | Gold |
 |---|---|---|---|---|---|---|---|
@@ -255,7 +255,7 @@ slashing Condition Immunities charmed, frightened, grappled, paralyzed, petrifie
 
 </details>
 
-### embeddinggemma-2  |  gold chunk(s): c340  |  gold rank 5 → 5
+### embeddinggemma-2 | gold chunk(s): c340 | gold rank 5 -> 5
 
 | Re-ranked # | Bi-encoder # | Chunk | Page | Cross-encoder score | In baseline top-3 | In re-ranked top-3 | Gold |
 |---|---|---|---|---|---|---|---|
@@ -306,7 +306,7 @@ grapple. Wand of Enemy Detection Wand, rare (requires attunement) This wand has 
 
 ## Q4. Can I cast a spell while a silence effect is on me?
 
-### bge-small  |  gold chunk(s): c369  |  gold rank 3 → 1
+### bge-small | gold chunk(s): c369 | gold rank 3 -> 1
 
 | Re-ranked # | Bi-encoder # | Chunk | Page | Cross-encoder score | In baseline top-3 | In re-ranked top-3 | Gold |
 |---|---|---|---|---|---|---|---|
@@ -355,14 +355,14 @@ of the silence spell. Consumables Some items are used up when they are activated
 
 </details>
 
-### embeddinggemma-2  |  gold chunk(s): c369  |  gold rank 6 → 1
+### embeddinggemma-2 | gold chunk(s): c369 | gold rank 6 -> 1
 
 | Re-ranked # | Bi-encoder # | Chunk | Page | Cross-encoder score | In baseline top-3 | In re-ranked top-3 | Gold |
 |---|---|---|---|---|---|---|---|
 | 1 | 6 | c369 | 101 | 3.53 | no | yes | GOLD |
 | 2 | 1 | c785 | 207 | 3.33 | yes | yes |  |
 | 3 | 2 | c675 | 179 | -0.79 | yes | yes |  |
-| 4 | 3 | c405 | 117 | -1.7 | yes | no |  |
+| 4 | 3 | c405 | 117 | -1.70 | yes | no |  |
 | 5 | 8 | c599 | 161 | -3.91 | no | no |  |
 | 6 | 9 | c469 | 131 | -4.46 | no | no |  |
 | 7 | 7 | c678 | 180 | -6.69 | no | no |  |
@@ -406,7 +406,7 @@ of the silence spell. Consumables Some items are used up when they are activated
 
 ## Q5. Can I shove a creature much bigger than me?
 
-### bge-small  |  gold chunk(s): c343  |  gold rank 3 → 1
+### bge-small | gold chunk(s): c343 | gold rank 3 -> 1
 
 | Re-ranked # | Bi-encoder # | Chunk | Page | Cross-encoder score | In baseline top-3 | In re-ranked top-3 | Gold |
 |---|---|---|---|---|---|---|---|
@@ -417,7 +417,7 @@ of the silence spell. Consumables Some items are used up when they are activated
 | 5 | 10 | c715 | 188 | -1.79 | no | no |  |
 | 6 | 6 | c328 | 92 | -2.68 | no | no |  |
 | 7 | 8 | c412 | 118 | -3.77 | no | no |  |
-| 8 | 5 | c277 | 79 | -4.4 | no | no |  |
+| 8 | 5 | c277 | 79 | -4.40 | no | no |  |
 | 9 | 7 | c1376 | 359 | -7.85 | no | no |  |
 | 10 | 9 | c559 | 152 | -8.53 | no | no |  |
 
@@ -455,7 +455,7 @@ the attack roll has disadvantage. Restrained • A restrained creature’s speed
 
 </details>
 
-### embeddinggemma-2  |  gold chunk(s): c343  |  gold rank  → 
+### embeddinggemma-2 | gold chunk(s): c343 | gold rank None -> None
 
 | Re-ranked # | Bi-encoder # | Chunk | Page | Cross-encoder score | In baseline top-3 | In re-ranked top-3 | Gold |
 |---|---|---|---|---|---|---|---|
@@ -465,8 +465,8 @@ the attack roll has disadvantage. Restrained • A restrained creature’s speed
 | 4 | 5 | c506 | 140 | -1.68 | no | no |  |
 | 5 | 1 | c327 | 92 | -2.68 | yes | no |  |
 | 6 | 2 | c328 | 92 | -2.68 | yes | no |  |
-| 7 | 8 | c277 | 79 | -4.4 | no | no |  |
-| 8 | 7 | c1302 | 337 | -4.4 | no | no |  |
+| 7 | 8 | c277 | 79 | -4.40 | no | no |  |
+| 8 | 7 | c1302 | 337 | -4.40 | no | no |  |
 | 9 | 6 | c997 | 253 | -4.54 | no | no |  |
 | 10 | 3 | c799 | 210 | -7.26 | yes | no |  |
 
@@ -506,7 +506,7 @@ saving throw. Creatures inside the cube can be seen but have total cover. A crea
 
 ## Q6. How many magic items can one creature bond with?
 
-### bge-small  |  gold chunk(s): c781  |  gold rank 3 → 1
+### bge-small | gold chunk(s): c781 | gold rank 3 -> 1
 
 | Re-ranked # | Bi-encoder # | Chunk | Page | Cross-encoder score | In baseline top-3 | In re-ranked top-3 | Gold |
 |---|---|---|---|---|---|---|---|
@@ -555,7 +555,7 @@ such as fiends, shapechangers, trolls, or wizards. 3 Protector: The item seeks t
 
 </details>
 
-### embeddinggemma-2  |  gold chunk(s): c781  |  gold rank 1 → 1
+### embeddinggemma-2 | gold chunk(s): c781 | gold rank 1 -> 1
 
 | Re-ranked # | Bi-encoder # | Chunk | Page | Cross-encoder score | In baseline top-3 | In re-ranked top-3 | Gold |
 |---|---|---|---|---|---|---|---|
@@ -606,7 +606,7 @@ the creature is too big for its head to be cut off with this weapon. Such a crea
 
 ## Q7. Can I rest twice in a single day to recover everything?
 
-### bge-small  |  gold chunk(s): c309  |  gold rank  → 
+### bge-small | gold chunk(s): c309 | gold rank None -> None
 
 | Re-ranked # | Bi-encoder # | Chunk | Page | Cross-encoder score | In baseline top-3 | In re-ranked top-3 | Gold |
 |---|---|---|---|---|---|---|---|
@@ -655,12 +655,12 @@ how you worded the wish. For example, wishing that a villain were dead might pro
 
 </details>
 
-### embeddinggemma-2  |  gold chunk(s): c309  |  gold rank 5 → 2
+### embeddinggemma-2 | gold chunk(s): c309 | gold rank 5 -> 2
 
 | Re-ranked # | Bi-encoder # | Chunk | Page | Cross-encoder score | In baseline top-3 | In re-ranked top-3 | Gold |
 |---|---|---|---|---|---|---|---|
 | 1 | 7 | c65 | 21 | -2.42 | no | yes |  |
-| 2 | 5 | c309 | 87 | -3.6 | no | yes | GOLD |
+| 2 | 5 | c309 | 87 | -3.60 | no | yes | GOLD |
 | 3 | 2 | c308 | 87 | -4.81 | yes | yes |  |
 | 4 | 3 | c307 | 87 | -4.99 | yes | no |  |
 | 5 | 4 | c51 | 17 | -5.72 | no | no |  |
@@ -706,7 +706,7 @@ of hit points from spending Hit Dice and no hit points from finishing a long res
 
 ## Q8. Can a creature that is held by an enemy still walk away?
 
-### bge-small  |  gold chunk(s): c1373  |  gold rank  → 
+### bge-small | gold chunk(s): c1373 | gold rank None -> None
 
 | Re-ranked # | Bi-encoder # | Chunk | Page | Cross-encoder score | In baseline top-3 | In re-ranked top-3 | Gold |
 |---|---|---|---|---|---|---|---|
@@ -718,7 +718,7 @@ of hit points from spending Hit Dice and no hit points from finishing a long res
 | 6 | 9 | c1044 | 266 | -3.33 | no | no |  |
 | 7 | 8 | c472 | 132 | -3.85 | no | no |  |
 | 8 | 3 | c1375 | 359 | -4.49 | yes | no |  |
-| 9 | 6 | c1007 | 256 | -5.3 | no | no |  |
+| 9 | 6 | c1007 | 256 | -5.30 | no | no |  |
 | 10 | 2 | c715 | 188 | -6.01 | yes | no |  |
 
 <details><summary>Chunk texts</summary>
@@ -755,7 +755,7 @@ petrified creature is transformed, along with any nonmagical object it is wearin
 
 </details>
 
-### embeddinggemma-2  |  gold chunk(s): c1373  |  gold rank  → 
+### embeddinggemma-2 | gold chunk(s): c1373 | gold rank None -> None
 
 | Re-ranked # | Bi-encoder # | Chunk | Page | Cross-encoder score | In baseline top-3 | In re-ranked top-3 | Gold |
 |---|---|---|---|---|---|---|---|
@@ -766,8 +766,8 @@ petrified creature is transformed, along with any nonmagical object it is wearin
 | 5 | 3 | c472 | 132 | -3.85 | yes | no |  |
 | 6 | 2 | c328 | 92 | -4.63 | yes | no |  |
 | 7 | 9 | c837 | 219 | -4.91 | no | no |  |
-| 8 | 6 | c596 | 161 | -5.2 | no | no |  |
-| 9 | 5 | c799 | 210 | -5.3 | no | no |  |
+| 8 | 6 | c596 | 161 | -5.20 | no | no |  |
+| 9 | 5 | c799 | 210 | -5.30 | no | no |  |
 | 10 | 10 | c519 | 143 | -9.96 | no | no |  |
 
 <details><summary>Chunk texts</summary>
@@ -806,14 +806,14 @@ condition). • The condition also ends if an effect removes the grappled creatu
 
 ## Q9. Does teleporting away from an enemy provoke an attack?
 
-### bge-small  |  gold chunk(s): c340, c341  |  gold rank 1 → 1
+### bge-small | gold chunk(s): c340, c341 | gold rank 1 -> 1
 
 | Re-ranked # | Bi-encoder # | Chunk | Page | Cross-encoder score | In baseline top-3 | In re-ranked top-3 | Gold |
 |---|---|---|---|---|---|---|---|
 | 1 | 1 | c341 | 95 | 4.66 | yes | yes | GOLD |
 | 2 | 9 | c704 | 186 | -2.23 | no | yes |  |
 | 3 | 3 | c340 | 95 | -2.94 | yes | yes | GOLD |
-| 4 | 6 | c338 | 94 | -4 | no | no |  |
+| 4 | 6 | c338 | 94 | -4.00 | no | no |  |
 | 5 | 5 | c497 | 138 | -4.64 | no | no |  |
 | 6 | 7 | c705 | 186 | -5.87 | no | no |  |
 | 7 | 2 | c702 | 185 | -7.39 | yes | no |  |
@@ -855,7 +855,7 @@ target randomly by rolling a d8 and designating 1 as north, 2 as northeast, 3 as
 
 </details>
 
-### embeddinggemma-2  |  gold chunk(s): c340, c341  |  gold rank 2 → 1
+### embeddinggemma-2 | gold chunk(s): c340, c341 | gold rank 2 -> 1
 
 | Re-ranked # | Bi-encoder # | Chunk | Page | Cross-encoder score | In baseline top-3 | In re-ranked top-3 | Gold |
 |---|---|---|---|---|---|---|---|
@@ -906,7 +906,7 @@ share a language with the monster to communicate in this way with it, but it mus
 
 ## Q10. Can a surprised character act in the first round?
 
-### bge-small  |  gold chunk(s): c317  |  gold rank 1 → 1
+### bge-small | gold chunk(s): c317 | gold rank 1 -> 1
 
 | Re-ranked # | Bi-encoder # | Chunk | Page | Cross-encoder score | In baseline top-3 | In re-ranked top-3 | Gold |
 |---|---|---|---|---|---|---|---|
@@ -955,7 +955,7 @@ emotional state. If the target fails a DC 10 Charisma saving throw, the sprite a
 
 </details>
 
-### embeddinggemma-2  |  gold chunk(s): c317  |  gold rank 1 → 1
+### embeddinggemma-2 | gold chunk(s): c317 | gold rank 1 -> 1
 
 | Re-ranked # | Bi-encoder # | Chunk | Page | Cross-encoder score | In baseline top-3 | In re-ranked top-3 | Gold |
 |---|---|---|---|---|---|---|---|
@@ -1006,7 +1006,7 @@ against deception in a 15-­‐‑foot-­‐‑radius sphere centered on a point
 
 ## Q11. What happens if a character plunges off a cliff?
 
-### bge-small  |  gold chunk(s): c300  |  gold rank 4 → 9
+### bge-small | gold chunk(s): c300 | gold rank 4 -> 9
 
 | Re-ranked # | Bi-encoder # | Chunk | Page | Cross-encoder score | In baseline top-3 | In re-ranked top-3 | Gold |
 |---|---|---|---|---|---|---|---|
@@ -1055,7 +1055,7 @@ until you are targeted by the remove curse spell or similar magic. Removing the 
 
 </details>
 
-### embeddinggemma-2  |  gold chunk(s): c300  |  gold rank 1 → 10
+### embeddinggemma-2 | gold chunk(s): c300 | gold rank 1 -> 10
 
 | Re-ranked # | Bi-encoder # | Chunk | Page | Cross-encoder score | In baseline top-3 | In re-ranked top-3 | Gold |
 |---|---|---|---|---|---|---|---|
@@ -1106,12 +1106,12 @@ that covers the pit is spring-­‐‑loaded. After a creature falls into the pi
 
 ## Q12. When does a character die outright instead of falling unconscious?
 
-### bge-small  |  gold chunk(s): c351, c352  |  gold rank 1 → 1
+### bge-small | gold chunk(s): c351, c352 | gold rank 1 -> 1
 
 | Re-ranked # | Bi-encoder # | Chunk | Page | Cross-encoder score | In baseline top-3 | In re-ranked top-3 | Gold |
 |---|---|---|---|---|---|---|---|
 | 1 | 1 | c352 | 97 | 4.34 | yes | yes | GOLD |
-| 2 | 3 | c355 | 98 | 0.8 | yes | yes |  |
+| 2 | 3 | c355 | 98 | 0.80 | yes | yes |  |
 | 3 | 2 | c767 | 201 | -0.57 | yes | yes |  |
 | 4 | 5 | c766 | 201 | -0.67 | no | no |  |
 | 5 | 4 | c765 | 201 | -3.42 | no | no |  |
@@ -1155,13 +1155,13 @@ tremors or tics, which impose disadvantage on attack rolls, ability checks, and 
 
 </details>
 
-### embeddinggemma-2  |  gold chunk(s): c351, c352  |  gold rank 1 → 1
+### embeddinggemma-2 | gold chunk(s): c351, c352 | gold rank 1 -> 1
 
 | Re-ranked # | Bi-encoder # | Chunk | Page | Cross-encoder score | In baseline top-3 | In re-ranked top-3 | Gold |
 |---|---|---|---|---|---|---|---|
 | 1 | 1 | c352 | 97 | 4.34 | yes | yes | GOLD |
 | 2 | 9 | c27 | 9 | 1.28 | no | yes |  |
-| 3 | 3 | c355 | 98 | 0.8 | yes | yes |  |
+| 3 | 3 | c355 | 98 | 0.80 | yes | yes |  |
 | 4 | 2 | c354 | 98 | -4.39 | yes | no |  |
 | 5 | 4 | c351 | 97 | -8.01 | no | no | GOLD |
 | 6 | 10 | c268 | 77 | -8.41 | no | no |  |
@@ -1206,7 +1206,7 @@ condition). • The condition also ends if an effect removes the grappled creatu
 
 ## Q13. Can I cast a second leveled spell after a bonus action spell?
 
-### bge-small  |  gold chunk(s): c367  |  gold rank 1 → 1
+### bge-small | gold chunk(s): c367 | gold rank 1 -> 1
 
 | Re-ranked # | Bi-encoder # | Chunk | Page | Cross-encoder score | In baseline top-3 | In re-ranked top-3 | Gold |
 |---|---|---|---|---|---|---|---|
@@ -1218,7 +1218,7 @@ condition). • The condition also ends if an effect removes the grappled creatu
 | 6 | 5 | c365 | 100 | -1.59 | no | no |  |
 | 7 | 2 | c111 | 36 | -3.02 | yes | no |  |
 | 8 | 9 | c149 | 48 | -3.09 | no | no |  |
-| 9 | 4 | c184 | 58 | -3.2 | no | no |  |
+| 9 | 4 | c184 | 58 | -3.20 | no | no |  |
 | 10 | 7 | c182 | 57 | -7.77 | no | no |  |
 
 <details><summary>Chunk texts</summary>
@@ -1255,7 +1255,7 @@ time, range, components, and duration. The rest of a spell entry describes the s
 
 </details>
 
-### embeddinggemma-2  |  gold chunk(s): c367  |  gold rank 1 → 1
+### embeddinggemma-2 | gold chunk(s): c367 | gold rank 1 -> 1
 
 | Re-ranked # | Bi-encoder # | Chunk | Page | Cross-encoder score | In baseline top-3 | In re-ranked top-3 | Gold |
 |---|---|---|---|---|---|---|---|
@@ -1267,7 +1267,7 @@ time, range, components, and duration. The rest of a spell entry describes the s
 | 6 | 7 | c380 | 104 | -1.29 | no | no |  |
 | 7 | 2 | c365 | 100 | -1.59 | yes | no |  |
 | 8 | 8 | c976 | 248 | -2.81 | no | no |  |
-| 9 | 3 | c184 | 58 | -3.2 | yes | no |  |
+| 9 | 3 | c184 | 58 | -3.20 | yes | no |  |
 | 10 | 10 | c361 | 100 | -7.57 | no | no |  |
 
 <details><summary>Chunk texts</summary>
@@ -1306,16 +1306,16 @@ use the Dodge action. At the end of each of its turns, a creature can repeat the
 
 ## Q14. Can I concentrate on two spells at once?
 
-### bge-small  |  gold chunk(s): c371, c372  |  gold rank 1 → 1
+### bge-small | gold chunk(s): c371, c372 | gold rank 1 -> 1
 
 | Re-ranked # | Bi-encoder # | Chunk | Page | Cross-encoder score | In baseline top-3 | In re-ranked top-3 | Gold |
 |---|---|---|---|---|---|---|---|
 | 1 | 1 | c372 | 102 | 7.16 | yes | yes | GOLD |
 | 2 | 3 | c371 | 102 | 1.72 | yes | yes | GOLD |
 | 3 | 5 | c334 | 94 | -1.04 | no | yes |  |
-| 4 | 10 | c483 | 135 | -2.5 | no | no |  |
+| 4 | 10 | c483 | 135 | -2.50 | no | no |  |
 | 5 | 4 | c182 | 57 | -3.49 | no | no |  |
-| 6 | 9 | c167 | 53 | -3.6 | no | no |  |
+| 6 | 9 | c167 | 53 | -3.60 | no | no |  |
 | 7 | 2 | c380 | 104 | -3.66 | yes | no |  |
 | 8 | 6 | c183 | 58 | -4.58 | no | no |  |
 | 9 | 7 | c164 | 53 | -5.27 | no | no |  |
@@ -1355,7 +1355,7 @@ Thoughts 2nd-­‐‑level divination Casting Time: 1 action Range: Self Compone
 
 </details>
 
-### embeddinggemma-2  |  gold chunk(s): c371, c372  |  gold rank 1 → 1
+### embeddinggemma-2 | gold chunk(s): c371, c372 | gold rank 1 -> 1
 
 | Re-ranked # | Bi-encoder # | Chunk | Page | Cross-encoder score | In baseline top-3 | In re-ranked top-3 | Gold |
 |---|---|---|---|---|---|---|---|
@@ -1406,7 +1406,7 @@ unable to cast wish ever again if you suffer this stress. Word of Recall 6th-­�
 
 ## Q15. Can I recover from exhaustion by resting?
 
-### bge-small  |  gold chunk(s): c1373  |  gold rank 2 → 1
+### bge-small | gold chunk(s): c1373 | gold rank 2 -> 1
 
 | Re-ranked # | Bi-encoder # | Chunk | Page | Cross-encoder score | In baseline top-3 | In re-ranked top-3 | Gold |
 |---|---|---|---|---|---|---|---|
@@ -1415,10 +1415,10 @@ unable to cast wish ever again if you suffer this stress. Word of Recall 6th-­�
 | 3 | 8 | c166 | 53 | -3.12 | no | yes |  |
 | 4 | 10 | c737 | 193 | -3.19 | no | no |  |
 | 5 | 1 | c308 | 87 | -4.61 | yes | no |  |
-| 6 | 4 | c307 | 87 | -6.7 | no | no |  |
+| 6 | 4 | c307 | 87 | -6.70 | no | no |  |
 | 7 | 5 | c87 | 28 | -6.84 | no | no |  |
 | 8 | 6 | c159 | 51 | -7.46 | no | no |  |
-| 9 | 9 | c73 | 24 | -8.3 | no | no |  |
+| 9 | 9 | c73 | 24 | -8.30 | no | no |  |
 | 10 | 7 | c88 | 29 | -8.44 | no | no |  |
 
 <details><summary>Chunk texts</summary>
@@ -1455,17 +1455,17 @@ increases by the amount specified in the effect’s description. A creature suff
 
 </details>
 
-### embeddinggemma-2  |  gold chunk(s): c1373  |  gold rank 4 → 3
+### embeddinggemma-2 | gold chunk(s): c1373 | gold rank 4 -> 3
 
 | Re-ranked # | Bi-encoder # | Chunk | Page | Cross-encoder score | In baseline top-3 | In re-ranked top-3 | Gold |
 |---|---|---|---|---|---|---|---|
-| 1 | 2 | c762 | 199 | 1.1 | yes | yes |  |
+| 1 | 2 | c762 | 199 | 1.10 | yes | yes |  |
 | 2 | 7 | c65 | 21 | -1.48 | no | yes |  |
 | 3 | 4 | c1373 | 358 | -1.91 | no | yes | GOLD |
 | 4 | 8 | c51 | 17 | -4.39 | no | no |  |
 | 5 | 1 | c308 | 87 | -4.61 | yes | no |  |
-| 6 | 6 | c309 | 87 | -5.5 | no | no |  |
-| 7 | 3 | c307 | 87 | -6.7 | yes | no |  |
+| 6 | 6 | c309 | 87 | -5.50 | no | no |  |
+| 7 | 3 | c307 | 87 | -6.70 | yes | no |  |
 | 8 | 9 | c1372 | 358 | -8.79 | no | no |  |
 | 9 | 5 | c313 | 88 | -9.47 | no | no |  |
 | 10 | 10 | c384 | 107 | -11.29 | no | no |  |
@@ -1506,7 +1506,7 @@ increases by the amount specified in the effect’s description. A creature suff
 
 ## Q16. How long can a creature hold its breath?
 
-### bge-small  |  gold chunk(s): c300, c301  |  gold rank 1 → 1
+### bge-small | gold chunk(s): c300, c301 | gold rank 1 -> 1
 
 | Re-ranked # | Bi-encoder # | Chunk | Page | Cross-encoder score | In baseline top-3 | In re-ranked top-3 | Gold |
 |---|---|---|---|---|---|---|---|
@@ -1515,7 +1515,7 @@ increases by the amount specified in the effect’s description. A creature suff
 | 3 | 9 | c905 | 233 | 4.72 | no | yes |  |
 | 4 | 4 | c1419 | 374 | 4.01 | no | no |  |
 | 5 | 5 | c1445 | 383 | 3.68 | no | no |  |
-| 6 | 3 | c1250 | 323 | 1.9 | yes | no |  |
+| 6 | 3 | c1250 | 323 | 1.90 | yes | no |  |
 | 7 | 10 | c1154 | 296 | 1.81 | no | no |  |
 | 8 | 7 | c1134 | 291 | 1.22 | no | no |  |
 | 9 | 8 | c1179 | 302 | 1.21 | no | no |  |
@@ -1555,7 +1555,7 @@ CHA 21 (+5) 9 (−1) 17 (+3) 2 (−4) 10 (+0) 7 (−2) Skills Stealth +5 Senses 
 
 </details>
 
-### embeddinggemma-2  |  gold chunk(s): c300, c301  |  gold rank 1 → 1
+### embeddinggemma-2 | gold chunk(s): c300, c301 | gold rank 1 -> 1
 
 | Re-ranked # | Bi-encoder # | Chunk | Page | Cross-encoder score | In baseline top-3 | In re-ranked top-3 | Gold |
 |---|---|---|---|---|---|---|---|
@@ -1566,7 +1566,7 @@ CHA 21 (+5) 9 (−1) 17 (+3) 2 (−4) 10 (+0) 7 (−2) Skills Stealth +5 Senses 
 | 5 | 3 | c1158 | 297 | 1.79 | yes | no |  |
 | 6 | 6 | c1134 | 291 | 1.22 | no | no |  |
 | 7 | 4 | c1179 | 302 | 1.21 | no | no |  |
-| 8 | 5 | c1165 | 298 | 1.1 | no | no |  |
+| 8 | 5 | c1165 | 298 | 1.10 | no | no |  |
 | 9 | 8 | c1144 | 293 | 0.39 | no | no |  |
 | 10 | 10 | c1242 | 320 | -4.93 | no | no |  |
 
@@ -1606,7 +1606,7 @@ recalculating the creature’s challenge rating, apply the template only to a cr
 
 ## Q17. Can two clerics cast the same blessing on one ally to stack it?
 
-### bge-small  |  gold chunk(s): c380  |  gold rank 2 → 1
+### bge-small | gold chunk(s): c380 | gold rank 2 -> 1
 
 | Re-ranked # | Bi-encoder # | Chunk | Page | Cross-encoder score | In baseline top-3 | In re-ranked top-3 | Gold |
 |---|---|---|---|---|---|---|---|
@@ -1655,7 +1655,7 @@ rule that it doesn’t adjust. For example, drow-­‐‑made armor might fit el
 
 </details>
 
-### embeddinggemma-2  |  gold chunk(s): c380  |  gold rank 1 → 1
+### embeddinggemma-2 | gold chunk(s): c380 | gold rank 1 -> 1
 
 | Re-ranked # | Bi-encoder # | Chunk | Page | Cross-encoder score | In baseline top-3 | In re-ranked top-3 | Gold |
 |---|---|---|---|---|---|---|---|
@@ -1665,7 +1665,7 @@ rule that it doesn’t adjust. For example, drow-­‐‑made armor might fit el
 | 4 | 4 | c46 | 16 | -6.35 | no | no |  |
 | 5 | 6 | c181 | 57 | -7.62 | no | no |  |
 | 6 | 8 | c52 | 17 | -8.49 | no | no |  |
-| 7 | 2 | c1497 | 401 | -9 | yes | no |  |
+| 7 | 2 | c1497 | 401 | -9.00 | yes | no |  |
 | 8 | 9 | c491 | 136 | -10.61 | no | no |  |
 | 9 | 7 | c196 | 61 | -10.92 | no | no |  |
 | 10 | 10 | c1053 | 268 | -11.29 | no | no |  |
@@ -1706,7 +1706,7 @@ Challenge 2 (450 XP) Divine Eminence. As a bonus action, the priest can expend a
 
 ## Q18. Can I disengage and still be hit as I leave?
 
-### bge-small  |  gold chunk(s): c340, c341  |  gold rank 1 → 1
+### bge-small | gold chunk(s): c340, c341 | gold rank 1 -> 1
 
 | Re-ranked # | Bi-encoder # | Chunk | Page | Cross-encoder score | In baseline top-3 | In re-ranked top-3 | Gold |
 |---|---|---|---|---|---|---|---|
@@ -1755,7 +1755,7 @@ that you can see within range, causing the appropriate effect below. You can aff
 
 </details>
 
-### embeddinggemma-2  |  gold chunk(s): c340, c341  |  gold rank 1 → 1
+### embeddinggemma-2 | gold chunk(s): c340, c341 | gold rank 1 -> 1
 
 | Re-ranked # | Bi-encoder # | Chunk | Page | Cross-encoder score | In baseline top-3 | In re-ranked top-3 | Gold |
 |---|---|---|---|---|---|---|---|
@@ -1806,7 +1806,7 @@ hit with a melee attack using the staff, you can expend 1 charge to deal an extr
 
 ## Q19. Can I take two reactions before my next turn?
 
-### bge-small  |  gold chunk(s): c321  |  gold rank 2 → 2
+### bge-small | gold chunk(s): c321 | gold rank 2 -> 2
 
 | Re-ranked # | Bi-encoder # | Chunk | Page | Cross-encoder score | In baseline top-3 | In re-ranked top-3 | Gold |
 |---|---|---|---|---|---|---|---|
@@ -1817,7 +1817,7 @@ hit with a melee attack using the staff, you can expend 1 charge to deal an extr
 | 5 | 9 | c73 | 24 | -1.74 | no | no |  |
 | 6 | 5 | c72 | 24 | -2.47 | no | no |  |
 | 7 | 10 | c497 | 138 | -2.76 | no | no |  |
-| 8 | 4 | c320 | 90 | -2.9 | no | no |  |
+| 8 | 4 | c320 | 90 | -2.90 | no | no |  |
 | 9 | 7 | c341 | 95 | -4.63 | no | no |  |
 | 10 | 8 | c700 | 185 | -6.73 | no | no |  |
 
@@ -1855,7 +1855,7 @@ that you can see within range, causing the appropriate effect below. You can aff
 
 </details>
 
-### embeddinggemma-2  |  gold chunk(s): c321  |  gold rank 3 → 2
+### embeddinggemma-2 | gold chunk(s): c321 | gold rank 3 -> 2
 
 | Re-ranked # | Bi-encoder # | Chunk | Page | Cross-encoder score | In baseline top-3 | In re-ranked top-3 | Gold |
 |---|---|---|---|---|---|---|---|
@@ -1866,7 +1866,7 @@ that you can see within range, causing the appropriate effect below. You can aff
 | 5 | 5 | c73 | 24 | -1.74 | no | no |  |
 | 6 | 6 | c72 | 24 | -2.47 | no | no |  |
 | 7 | 8 | c367 | 101 | -2.74 | no | no |  |
-| 8 | 2 | c320 | 90 | -2.9 | yes | no |  |
+| 8 | 2 | c320 | 90 | -2.90 | yes | no |  |
 | 9 | 7 | c341 | 95 | -4.63 | no | no |  |
 | 10 | 10 | c1020 | 259 | -10.34 | no | no |  |
 
@@ -1906,19 +1906,19 @@ be a single melee attack. Ammunition A monster carries enough ammunition to make
 
 ## Q20. Is a paralyzed creature able to act?
 
-### bge-small  |  gold chunk(s): c1374  |  gold rank 1 → 1
+### bge-small | gold chunk(s): c1374 | gold rank 1 -> 1
 
 | Re-ranked # | Bi-encoder # | Chunk | Page | Cross-encoder score | In baseline top-3 | In re-ranked top-3 | Gold |
 |---|---|---|---|---|---|---|---|
 | 1 | 1 | c1374 | 358 | 2.81 | yes | yes | GOLD |
 | 2 | 6 | c1176 | 301 | -2.07 | no | yes |  |
 | 3 | 2 | c715 | 188 | -3.75 | yes | yes |  |
-| 4 | 9 | c451 | 127 | -4.1 | no | no |  |
+| 4 | 9 | c451 | 127 | -4.10 | no | no |  |
 | 5 | 3 | c699 | 185 | -4.15 | yes | no |  |
 | 6 | 10 | c1375 | 359 | -5.02 | no | no |  |
 | 7 | 8 | c1376 | 359 | -5.66 | no | no |  |
-| 8 | 7 | c1022 | 259 | -6.3 | no | no |  |
-| 9 | 5 | c327 | 92 | -6.9 | no | no |  |
+| 8 | 7 | c1022 | 259 | -6.30 | no | no |  |
+| 9 | 5 | c327 | 92 | -6.90 | no | no |  |
 | 10 | 4 | c603 | 162 | -9.24 | no | no |  |
 
 <details><summary>Chunk texts</summary>
@@ -1955,7 +1955,7 @@ the attack roll has disadvantage. Restrained • A restrained creature’s speed
 
 </details>
 
-### embeddinggemma-2  |  gold chunk(s): c1374  |  gold rank 1 → 1
+### embeddinggemma-2 | gold chunk(s): c1374 | gold rank 1 -> 1
 
 | Re-ranked # | Bi-encoder # | Chunk | Page | Cross-encoder score | In baseline top-3 | In re-ranked top-3 | Gold |
 |---|---|---|---|---|---|---|---|
@@ -2006,17 +2006,17 @@ the attack roll has disadvantage. Restrained • A restrained creature’s speed
 
 ## Q21. Can I double my proficiency bonus twice on the same roll?
 
-### bge-small  |  gold chunk(s): c264, c265  |  gold rank 1 → 1
+### bge-small | gold chunk(s): c264, c265 | gold rank 1 -> 1
 
 | Re-ranked # | Bi-encoder # | Chunk | Page | Cross-encoder score | In baseline top-3 | In re-ranked top-3 | Gold |
 |---|---|---|---|---|---|---|---|
 | 1 | 1 | c265 | 77 | 8.14 | yes | yes | GOLD |
 | 2 | 4 | c266 | 77 | 4.53 | no | yes |  |
-| 3 | 2 | c264 | 76 | 1.9 | yes | yes | GOLD |
+| 3 | 2 | c264 | 76 | 1.90 | yes | yes | GOLD |
 | 4 | 10 | c37 | 12 | 1.78 | no | no |  |
-| 5 | 5 | c179 | 57 | 0.2 | no | no |  |
+| 5 | 5 | c179 | 57 | 0.20 | no | no |  |
 | 6 | 6 | c336 | 94 | -0.34 | no | no |  |
-| 7 | 7 | c175 | 56 | -0.5 | no | no |  |
+| 7 | 7 | c175 | 56 | -0.50 | no | no |  |
 | 8 | 3 | c263 | 76 | -2.54 | yes | no |  |
 | 9 | 8 | c271 | 78 | -3.56 | no | no |  |
 | 10 | 9 | c615 | 165 | -4.54 | no | no |  |
@@ -2055,16 +2055,16 @@ whether the attack instead targets one of your duplicates. If you have three dup
 
 </details>
 
-### embeddinggemma-2  |  gold chunk(s): c264, c265  |  gold rank 1 → 1
+### embeddinggemma-2 | gold chunk(s): c264, c265 | gold rank 1 -> 1
 
 | Re-ranked # | Bi-encoder # | Chunk | Page | Cross-encoder score | In baseline top-3 | In re-ranked top-3 | Gold |
 |---|---|---|---|---|---|---|---|
 | 1 | 1 | c265 | 77 | 8.14 | yes | yes | GOLD |
 | 2 | 3 | c266 | 77 | 4.53 | yes | yes |  |
 | 3 | 7 | c109 | 36 | 2.06 | no | yes |  |
-| 4 | 2 | c264 | 76 | 1.9 | yes | no | GOLD |
+| 4 | 2 | c264 | 76 | 1.90 | yes | no | GOLD |
 | 5 | 5 | c37 | 12 | 1.78 | no | no |  |
-| 6 | 6 | c179 | 57 | 0.2 | no | no |  |
+| 6 | 6 | c179 | 57 | 0.20 | no | no |  |
 | 7 | 8 | c263 | 76 | -2.54 | no | no |  |
 | 8 | 10 | c615 | 165 | -4.54 | no | no |  |
 | 9 | 9 | c52 | 17 | -7.96 | no | no |  |
@@ -2106,18 +2106,18 @@ whether the attack instead targets one of your duplicates. If you have three dup
 
 ## Q22. Can advantage and disadvantage cancel each other out?
 
-### bge-small  |  gold chunk(s): c263, c264  |  gold rank 1 → 1
+### bge-small | gold chunk(s): c263, c264 | gold rank 1 -> 1
 
 | Re-ranked # | Bi-encoder # | Chunk | Page | Cross-encoder score | In baseline top-3 | In re-ranked top-3 | Gold |
 |---|---|---|---|---|---|---|---|
 | 1 | 1 | c263 | 76 | -1.56 | yes | yes | GOLD |
-| 2 | 2 | c264 | 76 | -1.6 | yes | yes | GOLD |
-| 3 | 6 | c736 | 193 | -6.1 | no | yes |  |
+| 2 | 2 | c264 | 76 | -1.60 | yes | yes | GOLD |
+| 3 | 6 | c736 | 193 | -6.10 | no | yes |  |
 | 4 | 3 | c1376 | 359 | -6.17 | yes | no |  |
 | 5 | 5 | c1372 | 358 | -6.95 | no | no |  |
 | 6 | 4 | c1373 | 358 | -8.74 | no | no |  |
-| 7 | 10 | c461 | 129 | -9.6 | no | no |  |
-| 8 | 8 | c1371 | 357 | -9.7 | no | no |  |
+| 7 | 10 | c461 | 129 | -9.60 | no | no |  |
+| 8 | 8 | c1371 | 357 | -9.70 | no | no |  |
 | 9 | 9 | c266 | 77 | -11.15 | no | no |  |
 | 10 | 7 | c380 | 104 | -11.21 | no | no |  |
 
@@ -2155,12 +2155,12 @@ the attack roll has disadvantage. Restrained • A restrained creature’s speed
 
 </details>
 
-### embeddinggemma-2  |  gold chunk(s): c263, c264  |  gold rank 1 → 1
+### embeddinggemma-2 | gold chunk(s): c263, c264 | gold rank 1 -> 1
 
 | Re-ranked # | Bi-encoder # | Chunk | Page | Cross-encoder score | In baseline top-3 | In re-ranked top-3 | Gold |
 |---|---|---|---|---|---|---|---|
 | 1 | 1 | c263 | 76 | -1.56 | yes | yes | GOLD |
-| 2 | 2 | c264 | 76 | -1.6 | yes | yes | GOLD |
+| 2 | 2 | c264 | 76 | -1.60 | yes | yes | GOLD |
 | 3 | 10 | c292 | 83 | -6.31 | no | yes |  |
 | 4 | 5 | c1372 | 358 | -6.95 | no | no |  |
 | 5 | 4 | c273 | 78 | -7.86 | no | no |  |
@@ -2206,7 +2206,7 @@ rolls against the creature have advantage, and the creature’s attack rolls hav
 
 ## Q23. Can the Dash action be used as a bonus action?
 
-### bge-small  |  gold chunk(s): c122  |  gold rank  → 
+### bge-small | gold chunk(s): c122 | gold rank None -> None
 
 | Re-ranked # | Bi-encoder # | Chunk | Page | Cross-encoder score | In baseline top-3 | In re-ranked top-3 | Gold |
 |---|---|---|---|---|---|---|---|
@@ -2255,7 +2255,7 @@ play the pipes as an action, you can use a bonus action to expend 1 to 3 charges
 
 </details>
 
-### embeddinggemma-2  |  gold chunk(s): c122  |  gold rank 9 → 2
+### embeddinggemma-2 | gold chunk(s): c122 | gold rank 9 -> 2
 
 | Re-ranked # | Bi-encoder # | Chunk | Page | Cross-encoder score | In baseline top-3 | In re-ranked top-3 | Gold |
 |---|---|---|---|---|---|---|---|
@@ -2268,7 +2268,7 @@ play the pipes as an action, you can use a bonus action to expend 1 to 3 charges
 | 7 | 7 | c822 | 215 | -1.04 | no | no |  |
 | 8 | 1 | c331 | 93 | -2.68 | yes | no |  |
 | 9 | 10 | c359 | 99 | -3.85 | no | no |  |
-| 10 | 6 | c332 | 93 | -9.5 | no | no |  |
+| 10 | 6 | c332 | 93 | -9.50 | no | no |  |
 
 <details><summary>Chunk texts</summary>
 
@@ -2306,7 +2306,7 @@ controlled mount changes to match yours when you mount it. It moves as you direc
 
 ## Q24. Can a prone creature stand up for free?
 
-### bge-small  |  gold chunk(s): c324, c325  |  gold rank 1 → 2
+### bge-small | gold chunk(s): c324, c325 | gold rank 1 -> 2
 
 | Re-ranked # | Bi-encoder # | Chunk | Page | Cross-encoder score | In baseline top-3 | In re-ranked top-3 | Gold |
 |---|---|---|---|---|---|---|---|
@@ -2317,7 +2317,7 @@ controlled mount changes to match yours when you mount it. It moves as you direc
 | 5 | 2 | c358 | 99 | -3.31 | yes | no |  |
 | 6 | 3 | c1376 | 359 | -3.33 | yes | no |  |
 | 7 | 7 | c327 | 92 | -3.72 | no | no |  |
-| 8 | 6 | c626 | 168 | -7.5 | no | no |  |
+| 8 | 6 | c626 | 168 | -7.50 | no | no |  |
 | 9 | 5 | c354 | 98 | -9.74 | no | no |  |
 | 10 | 8 | c357 | 99 | -9.89 | no | no |  |
 
@@ -2355,14 +2355,14 @@ the attack roll has disadvantage. Restrained • A restrained creature’s speed
 
 </details>
 
-### embeddinggemma-2  |  gold chunk(s): c324, c325  |  gold rank 1 → 2
+### embeddinggemma-2 | gold chunk(s): c324, c325 | gold rank 1 -> 2
 
 | Re-ranked # | Bi-encoder # | Chunk | Page | Cross-encoder score | In baseline top-3 | In re-ranked top-3 | Gold |
 |---|---|---|---|---|---|---|---|
 | 1 | 2 | c1375 | 359 | 1.34 | yes | yes |  |
 | 2 | 1 | c325 | 91 | -0.09 | yes | yes | GOLD |
 | 3 | 4 | c324 | 91 | -6.01 | no | yes | GOLD |
-| 4 | 10 | c626 | 168 | -7.5 | no | no |  |
+| 4 | 10 | c626 | 168 | -7.50 | no | no |  |
 | 5 | 3 | c1374 | 358 | -8.18 | yes | no |  |
 | 6 | 8 | c1158 | 297 | -8.56 | no | no |  |
 | 7 | 9 | c1154 | 296 | -8.64 | no | no |  |
@@ -2406,7 +2406,7 @@ petrified creature is transformed, along with any nonmagical object it is wearin
 
 ## Q25. Can a monster use a legendary action in the middle of its own turn?
 
-### bge-small  |  gold chunk(s): c1023  |  gold rank 1 → 2
+### bge-small | gold chunk(s): c1023 | gold rank 1 -> 2
 
 | Re-ranked # | Bi-encoder # | Chunk | Page | Cross-encoder score | In baseline top-3 | In re-ranked top-3 | Gold |
 |---|---|---|---|---|---|---|---|
@@ -2419,7 +2419,7 @@ petrified creature is transformed, along with any nonmagical object it is wearin
 | 7 | 8 | c1177 | 301 | 3.84 | no | no |  |
 | 8 | 5 | c1180 | 302 | 2.74 | no | no |  |
 | 9 | 10 | c1166 | 299 | 2.53 | no | no |  |
-| 10 | 9 | c715 | 188 | -5.2 | no | no |  |
+| 10 | 9 | c715 | 188 | -5.20 | no | no |  |
 
 <details><summary>Chunk texts</summary>
 
@@ -2455,7 +2455,7 @@ capabilities are otherwise replaced by those of the new form, except any class f
 
 </details>
 
-### embeddinggemma-2  |  gold chunk(s): c1023  |  gold rank 1 → 2
+### embeddinggemma-2 | gold chunk(s): c1023 | gold rank 1 -> 2
 
 | Re-ranked # | Bi-encoder # | Chunk | Page | Cross-encoder score | In baseline top-3 | In re-ranked top-3 | Gold |
 |---|---|---|---|---|---|---|---|
@@ -2465,7 +2465,7 @@ capabilities are otherwise replaced by those of the new form, except any class f
 | 4 | 7 | c1155 | 296 | 4.57 | no | no |  |
 | 5 | 10 | c1107 | 283 | 4.27 | no | no |  |
 | 6 | 9 | c1291 | 334 | 4.11 | no | no |  |
-| 7 | 8 | c1359 | 353 | 4 | no | no |  |
+| 7 | 8 | c1359 | 353 | 4.00 | no | no |  |
 | 8 | 4 | c1096 | 280 | 3.23 | no | no |  |
 | 9 | 6 | c1114 | 285 | 3.12 | no | no |  |
 | 10 | 5 | c1138 | 292 | -0.06 | no | no |  |

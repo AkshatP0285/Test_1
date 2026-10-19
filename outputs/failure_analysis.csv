@@ -1,0 +1,51 @@
+embedder,q,type,question,gold_chunk,rank_baseline,rank_reranked,buried_then_promoted,answer1_verdict,answer2_verdict,restored
+bge-small,1,Keyword trap,What breaks my focus on a spell?,372.0,5.0,2.0,True,P,C,True
+bge-small,2,Negation / constraint,Do I need to see a target to attack it?,337.0,8.0,3.0,True,W,C,True
+bge-small,3,Exception / corner,Can I punish an unseen enemy that runs away from me?,340.0,4.0,3.0,True,A,P,False
+bge-small,4,Negation / constraint,Can I cast a spell while a silence effect is on me?,369.0,3.0,1.0,False,C,C,False
+bge-small,5,Exception / corner,Can I shove a creature much bigger than me?,343.0,3.0,1.0,False,C,C,False
+bge-small,6,Keyword trap (synonym),How many magic items can one creature bond with?,781.0,3.0,1.0,False,C,C,False
+bge-small,7,Counter-example,Can I rest twice in a single day to recover everything?,,,,False,C,A,False
+bge-small,8,Counter-example,Can a creature that is held by an enemy still walk away?,,,,False,A,P,False
+bge-small,9,Exception / corner,Does teleporting away from an enemy provoke an attack?,341.0,1.0,1.0,False,C,C,False
+bge-small,10,Negation / constraint,Can a surprised character act in the first round?,317.0,1.0,1.0,False,C,P,False
+bge-small,11,Neutral rule,What happens if a character plunges off a cliff?,300.0,4.0,9.0,False,A,A,False
+bge-small,12,Neutral rule,When does a character die outright instead of falling unconscious?,352.0,1.0,1.0,False,C,C,False
+bge-small,13,Exception / corner,Can I cast a second leveled spell after a bonus action spell?,367.0,1.0,1.0,False,C,C,False
+bge-small,14,Negation / constraint,Can I concentrate on two spells at once?,372.0,1.0,1.0,False,C,C,False
+bge-small,15,Neutral rule,Can I recover from exhaustion by resting?,1373.0,2.0,1.0,False,C,C,False
+bge-small,16,Neutral rule,How long can a creature hold its breath?,301.0,1.0,1.0,False,C,C,False
+bge-small,17,Exception / corner,Can two clerics cast the same blessing on one ally to stack it?,380.0,2.0,1.0,False,C,C,False
+bge-small,18,Exception / corner,Can I disengage and still be hit as I leave?,341.0,1.0,1.0,False,P,P,False
+bge-small,19,Negation / constraint,Can I take two reactions before my next turn?,321.0,2.0,2.0,False,C,C,False
+bge-small,20,Neutral rule,Is a paralyzed creature able to act?,1374.0,1.0,1.0,False,C,C,False
+bge-small,21,Negation / constraint,Can I double my proficiency bonus twice on the same roll?,265.0,1.0,1.0,False,C,C,False
+bge-small,22,Neutral rule,Can advantage and disadvantage cancel each other out?,263.0,1.0,1.0,False,C,C,False
+bge-small,23,Exception / corner,Can the Dash action be used as a bonus action?,,,,False,P,C,False
+bge-small,24,Neutral rule,Can a prone creature stand up for free?,325.0,1.0,2.0,False,C,C,False
+bge-small,25,Exception / corner,Can a monster use a legendary action in the middle of its own turn?,1023.0,1.0,2.0,False,C,C,False
+embeddinggemma-2,1,Keyword trap,What breaks my focus on a spell?,372.0,6.0,2.0,True,P,C,True
+embeddinggemma-2,2,Negation / constraint,Do I need to see a target to attack it?,337.0,5.0,2.0,True,P,C,True
+embeddinggemma-2,3,Exception / corner,Can I punish an unseen enemy that runs away from me?,340.0,5.0,5.0,False,A,A,False
+embeddinggemma-2,4,Negation / constraint,Can I cast a spell while a silence effect is on me?,369.0,6.0,1.0,True,P,C,True
+embeddinggemma-2,5,Exception / corner,Can I shove a creature much bigger than me?,,,,False,A,A,False
+embeddinggemma-2,6,Keyword trap (synonym),How many magic items can one creature bond with?,781.0,1.0,1.0,False,C,C,False
+embeddinggemma-2,7,Counter-example,Can I rest twice in a single day to recover everything?,309.0,5.0,2.0,True,P,C,True
+embeddinggemma-2,8,Counter-example,Can a creature that is held by an enemy still walk away?,,,,False,A,P,False
+embeddinggemma-2,9,Exception / corner,Does teleporting away from an enemy provoke an attack?,341.0,2.0,1.0,False,C,C,False
+embeddinggemma-2,10,Negation / constraint,Can a surprised character act in the first round?,317.0,1.0,1.0,False,C,P,False
+embeddinggemma-2,11,Neutral rule,What happens if a character plunges off a cliff?,300.0,1.0,10.0,False,C,A,False
+embeddinggemma-2,12,Neutral rule,When does a character die outright instead of falling unconscious?,352.0,1.0,1.0,False,C,C,False
+embeddinggemma-2,13,Exception / corner,Can I cast a second leveled spell after a bonus action spell?,367.0,1.0,1.0,False,C,C,False
+embeddinggemma-2,14,Negation / constraint,Can I concentrate on two spells at once?,372.0,1.0,1.0,False,C,C,False
+embeddinggemma-2,15,Neutral rule,Can I recover from exhaustion by resting?,1373.0,4.0,3.0,True,A,P,False
+embeddinggemma-2,16,Neutral rule,How long can a creature hold its breath?,301.0,1.0,1.0,False,C,C,False
+embeddinggemma-2,17,Exception / corner,Can two clerics cast the same blessing on one ally to stack it?,380.0,1.0,1.0,False,C,C,False
+embeddinggemma-2,18,Exception / corner,Can I disengage and still be hit as I leave?,341.0,1.0,1.0,False,P,P,False
+embeddinggemma-2,19,Negation / constraint,Can I take two reactions before my next turn?,321.0,3.0,2.0,False,C,C,False
+embeddinggemma-2,20,Neutral rule,Is a paralyzed creature able to act?,1374.0,1.0,1.0,False,C,C,False
+embeddinggemma-2,21,Negation / constraint,Can I double my proficiency bonus twice on the same roll?,265.0,1.0,1.0,False,C,P,False
+embeddinggemma-2,22,Neutral rule,Can advantage and disadvantage cancel each other out?,263.0,1.0,1.0,False,C,C,False
+embeddinggemma-2,23,Exception / corner,Can the Dash action be used as a bonus action?,122.0,9.0,2.0,True,P,C,True
+embeddinggemma-2,24,Neutral rule,Can a prone creature stand up for free?,325.0,1.0,2.0,False,C,C,False
+embeddinggemma-2,25,Exception / corner,Can a monster use a legendary action in the middle of its own turn?,1023.0,1.0,2.0,False,C,C,False

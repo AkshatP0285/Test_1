@@ -1,9 +1,0 @@
-category,query,bge-small: base→rerank,embeddinggemma-2: base→rerank
-Keyword trap,What breaks my focus on a spell?,5 → 2,6 → 2
-Negation / constraint,Do I need to see a target to attack it?,8 → 3,5 → 2
-Exception / corner,Can I punish an unseen enemy that runs away from me?,4 → 3,5 → 5
-Negation / constraint,Can I cast a spell while a silence effect is on me?,3 → 1,6 → 1
-Exception / corner,Can I shove a creature much bigger than me?,3 → 1,None → None
-Keyword trap (synonym),How many magic items can one creature bond with?,3 → 1,1 → 1
-Counter-example,Can I rest twice in a single day to recover everything?,1 → 4,2 → 2
-Counter-example,Can a creature that is held by an enemy still walk away?,None → None,None → None

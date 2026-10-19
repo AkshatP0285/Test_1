@@ -1,4 +1,4 @@
-embedder,category,n,recall@3 base,recall@3 rerank
+embedder,type,questions,recall@3 baseline,recall@3 re-ranked
 bge-small,Counter-example,2,0,0
 bge-small,Exception / corner,8,6,7
 bge-small,Keyword trap,1,0,1

@@ -1,0 +1,26 @@
+#,type,question,bge-small: baseline -> re-ranked,embeddinggemma-2: baseline -> re-ranked
+1,Keyword trap,What breaks my focus on a spell?,5 -> 2,6 -> 2
+2,Negation / constraint,Do I need to see a target to attack it?,8 -> 3,5 -> 2
+3,Exception / corner,Can I punish an unseen enemy that runs away from me?,4 -> 3,5 -> 5
+4,Negation / constraint,Can I cast a spell while a silence effect is on me?,3 -> 1,6 -> 1
+5,Exception / corner,Can I shove a creature much bigger than me?,3 -> 1,None -> None
+6,Keyword trap (synonym),How many magic items can one creature bond with?,3 -> 1,1 -> 1
+7,Counter-example,Can I rest twice in a single day to recover everything?,None -> None,5 -> 2
+8,Counter-example,Can a creature that is held by an enemy still walk away?,None -> None,None -> None
+9,Exception / corner,Does teleporting away from an enemy provoke an attack?,1 -> 1,2 -> 1
+10,Negation / constraint,Can a surprised character act in the first round?,1 -> 1,1 -> 1
+11,Neutral rule,What happens if a character plunges off a cliff?,4 -> 9,1 -> 10
+12,Neutral rule,When does a character die outright instead of falling unconscious?,1 -> 1,1 -> 1
+13,Exception / corner,Can I cast a second leveled spell after a bonus action spell?,1 -> 1,1 -> 1
+14,Negation / constraint,Can I concentrate on two spells at once?,1 -> 1,1 -> 1
+15,Neutral rule,Can I recover from exhaustion by resting?,2 -> 1,4 -> 3
+16,Neutral rule,How long can a creature hold its breath?,1 -> 1,1 -> 1
+17,Exception / corner,Can two clerics cast the same blessing on one ally to stack it?,2 -> 1,1 -> 1
+18,Exception / corner,Can I disengage and still be hit as I leave?,1 -> 1,1 -> 1
+19,Negation / constraint,Can I take two reactions before my next turn?,2 -> 2,3 -> 2
+20,Neutral rule,Is a paralyzed creature able to act?,1 -> 1,1 -> 1
+21,Negation / constraint,Can I double my proficiency bonus twice on the same roll?,1 -> 1,1 -> 1
+22,Neutral rule,Can advantage and disadvantage cancel each other out?,1 -> 1,1 -> 1
+23,Exception / corner,Can the Dash action be used as a bonus action?,None -> None,9 -> 2
+24,Neutral rule,Can a prone creature stand up for free?,1 -> 2,1 -> 2
+25,Exception / corner,Can a monster use a legendary action in the middle of its own turn?,1 -> 2,1 -> 2

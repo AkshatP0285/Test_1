@@ -1,0 +1,12 @@
+,bge-small,embeddinggemma-2
+questions,25.0,25.0
+recall@3 baseline,18.0,16.0
+recall@3 re-ranked,21.0,21.0
+recall@10,22.0,23.0
+rescued (out of top 3 -> in),3.0,6.0
+lost (in -> out),0.0,1.0
+MRR baseline,0.613,0.645
+MRR re-ranked,0.711,0.685
+rank improved,8.0,8.0
+rank worsened,3.0,3.0
+rank unchanged,11.0,12.0
